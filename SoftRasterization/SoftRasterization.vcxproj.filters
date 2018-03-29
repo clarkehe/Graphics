@@ -16,9 +16,18 @@
     <Filter Include="Common">
       <UniqueIdentifier>{f5e9fd5a-2f19-4ddc-9b75-e4012bfde2b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{91d518c5-4ca8-49be-892d-360da4e1f747}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="StandardShading.fragmentshader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="StandardShading.vertexshader">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

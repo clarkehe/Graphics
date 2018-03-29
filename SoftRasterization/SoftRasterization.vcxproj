@@ -76,6 +76,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
+    <None Include="StandardShading.fragmentshader" />
+    <None Include="StandardShading.vertexshader" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\controls.hpp" />
