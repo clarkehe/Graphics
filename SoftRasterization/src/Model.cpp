@@ -7,7 +7,8 @@
 
 namespace SoftRender
 { 
-	Model::Model(std::string path, Vec3f worldPos, Material m):path(path), pos(worldPos),material(m)
+	Model::Model(std::string path, Vec3f worldPos, Material m):
+		mPath(path), mPos(worldPos), mMaterial(m)
 	{
 		loadModel(path);
 	}
@@ -22,7 +23,7 @@ namespace SoftRender
 			return ;
 		} 
 
-		directory = path.substr(0, path.find_last_of('/'));
+		mDirectory = path.substr(0, path.find_last_of('/'));
 		processNode(scene->mRootNode, scene);
 	}
 
@@ -31,7 +32,7 @@ namespace SoftRender
 		for (unsigned int i = 0; i < node->mNumMeshes; i++)
 		{
 			aiMesh *mesh = scene->mMeshes[node->mMeshes[i]];
-			meshes.push_back(processMesh(mesh, scene));
+			mMeshes.push_back(processMesh(mesh, scene));
 		}
 
 		for (unsigned int i = 0; i < node->mNumChildren; i++)
@@ -44,10 +45,6 @@ namespace SoftRender
 	{
 		vector<Vertex> vertices;
 		vector<unsigned int> indices;
-
-		std::vector<Texture> ambientTextures;
-		std::vector<Texture> diffuseTextures;
-		std::vector<Texture> specularTextures;
 
 		for (unsigned int i = 0; i < mesh->mNumVertices; i++)
 		{
@@ -83,19 +80,20 @@ namespace SoftRender
 			}
 		}
 
+		std::vector<Texture> ambientTextures;
+		std::vector<Texture> diffuseTextures;
+		std::vector<Texture> specularTextures;
+
 		if(mesh->mMaterialIndex > 0)
 		{
 			aiMaterial *mat = scene->mMaterials[mesh->mMaterialIndex];
 
-			//物体Color贴图
 			std::vector<Texture> ambientMaps  = loadMaterialTextures(mat, aiTextureType_AMBIENT, "texture_ambient");
 			ambientTextures.insert(ambientTextures.end(), ambientMaps.begin(), ambientMaps.end());
 
-			//漫反射贴图
 			std::vector<Texture> diffuseMaps = loadMaterialTextures(mat, aiTextureType_DIFFUSE, "texture_diffuse");
 			diffuseTextures.insert(diffuseTextures.end(), diffuseMaps.begin(), diffuseMaps.end());
 
-			//镜面贴图
 			vector<Texture> specularMaps = loadMaterialTextures(mat, aiTextureType_SPECULAR, "texture_specular");
 			specularTextures.insert(specularTextures.end(), specularMaps.begin(), specularMaps.end());
 		}
@@ -120,9 +118,9 @@ namespace SoftRender
 			if (path.find("materials") != string::npos)
 				path = path.substr(path.find("materials"), path.length());
 
-			TextureFromFile(texture, path, directory);
+			TextureFromFile(texture, path, mDirectory);
 			texture.type = typeName;
-			texture.path = string(directory + "/" + path);
+			texture.path = string(mDirectory + "/" + path);
 
 			if (texture.width > 0 && texture.height > 0)
 			{

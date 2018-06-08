@@ -15,15 +15,15 @@ namespace SoftRender
 		Model(std::string path, Vec3f worldPos, Material m);
 
 	private:
-		friend struct Render;
+		friend class Render;
 
-		Vec3f pos;
-		Material material;
-		vector<Mesh> meshes;
+		Vec3f mPos;
+		Material mMaterial;
+		vector<Mesh> mMeshes;
 
 	private:
-		std::string path;
-		string directory;
+		std::string mPath;
+		std::string mDirectory;
 
 		void loadModel(string path);
 		void processNode(aiNode *node, const aiScene *scene);

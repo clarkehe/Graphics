@@ -217,9 +217,9 @@ namespace SoftRender{
 				if (zTest(v.projPos.z, depthBuffer[x+y*width]))
 				{
 					if (mesh.diffuseTextures.size() > 0 && mesh.specularTextures.size() > 0)
-						SetPixel(x, y, PixelShader(v, mesh, light, cameraPos), v.projPos.z);
+						SetPixel(x, y, PixelShader(v, mesh, mLight, mCameraPos), v.projPos.z);
 					else
-						SetPixel(x, y,  PixelShader(v, light, cameraPos, material), v.projPos.z);
+						SetPixel(x, y,  PixelShader(v, mLight, mCameraPos, mCurMaterial), v.projPos.z);
 				}
 			}
 		}
@@ -257,19 +257,23 @@ namespace SoftRender{
 
 	void Render::DrawModel (Model &model) 
 	{
-		mModelMatrix = ModelMatrix(model.pos);
+		mModelMatrix = ModelMatrix(model.mPos);
 		mvMat = mModelMatrix * mViewMatrix;
 		mvpMat = mvMat * mProjMatrix;
 		nmvMat = mvMat.Inverse().Transpose ();
 
 		// we need light position(in view space) in pixel shader
-		light.viewPos = MultPointMatrix(light.worldPos, mvMat);
-		material = model.material;
+		mLight.viewPos = MultPointMatrix(mLight.worldPos, mvMat);
+		mCurMaterial = model.mMaterial;
 
-		for (int i = 0; i < model.meshes.size(); i++) {
-			Mesh mesh = model.meshes[i];
+		for (int i = 0; i < model.mMeshes.size(); i++)
+		{
+			Mesh mesh = model.mMeshes[i];
 
-			std::cout << mesh.diffuseTextures.size() << " " << mesh.specularTextures.size() << std::endl;
+			std::cout << "\nStart render mesh:" << i << std::endl;
+			std::cout << "Ambient texture count:"   << mesh.ambientTextures.size() << std::endl;
+			std::cout << "Diffuse texture count:"   << mesh.diffuseTextures.size() << std::endl;
+			std::cout << "Specular texture count: " << mesh.specularTextures.size() << std::endl;
 
 			for (int j = 0; j < mesh.indices.size(); j+=3)
 			{

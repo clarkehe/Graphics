@@ -23,7 +23,6 @@ namespace SoftRender {
 		float derivZ ;
 		VertexOut():projPos(Vec3f()),normal(Vec3f()), uv(Vec2f()), color(Color()){}
 	};
-
 }
 
 #endif
