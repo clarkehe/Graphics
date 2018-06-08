@@ -10,18 +10,13 @@ namespace SoftRender
 	class TextureManager
 	{
 	public:
-		TextureManager* create();
-		virtual ~TextureManager();
-
-		bool LoadTexture (Texture &texture, std::string& file);
-		void SaveTexture(std::vector<Color> &frameBuffer, int width, int height, std::string& file);
-
 		static TextureManager* getInstance();
-		std::vector<Color> getTexture(std::string& filepath);
-		
+	public:
+		bool LoadTexture (Texture &texture, std::string& file);
+		std::vector<Color> &getTexture(std::string& filepath);
+	private:
 		std::map<std::string, std::vector<Color>> textureMaps;
 	};
 }
-
 
 #endif

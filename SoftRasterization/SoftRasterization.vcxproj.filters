@@ -19,6 +19,12 @@
     <Filter Include="Shader">
       <UniqueIdentifier>{91d518c5-4ca8-49be-892d-360da4e1f747}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{7c8a36c2-b174-4d18-bdd4-cde1c0a2b141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{b9c2c9b9-cf9d-4fe9-9100-05a0b6609f26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -66,16 +72,10 @@
     <ClInclude Include="src\Common.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Index.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Light.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Material.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Matrix4.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Mesh.h">
@@ -87,18 +87,6 @@
     <ClInclude Include="src\Render.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\slm.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\stb_image.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\stb_image_write.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\test.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Texture.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -106,16 +94,31 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Vector2.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="src\Vector3.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="src\Vector4.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matrix4.h">
+      <Filter>Source Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="src\Vertex.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SoftRender.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image_write.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matrix2.h">
+      <Filter>Source Files\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -152,12 +155,12 @@
     <ClCompile Include="src\Render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\TextureManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\SoftRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

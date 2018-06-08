@@ -3,6 +3,7 @@
 #include <vector>
 
 namespace SoftRender {
+
 	struct Vertex{
 		Vec3f modelPos;
 		Vec3f normal;
@@ -22,7 +23,7 @@ namespace SoftRender {
 		float derivZ ;
 		VertexOut():projPos(Vec3f()),normal(Vec3f()), uv(Vec2f()), color(Color()){}
 	};
-	
+
 }
 
 #endif

@@ -3,6 +3,7 @@
 #include <memory>
 
 namespace SoftRender{
+
 	struct Mesh
 	{
 		std::vector<Vertex> vertices;
@@ -13,7 +14,8 @@ namespace SoftRender{
 		std::vector<Texture> diffuseTextures;
 		std::vector<Texture> specularTextures;
 
-		Mesh(std::vector<Vertex>& _vertices, std::vector<unsigned int>& _indices,
+		Mesh(std::vector<Vertex>& _vertices, 
+			std::vector<unsigned int>& _indices,
 			std::vector<Texture>& _ambientTextures,
 			std::vector<Texture>& _diffuseTextures,
 			std::vector<Texture>& _specularTextures)
@@ -25,17 +27,6 @@ namespace SoftRender{
 			diffuseTextures = _diffuseTextures;
 			specularTextures = _specularTextures;
 		}
-
-		Mesh(const Mesh& _m)
-		{
-			vertices = _m.vertices;
-			indices = _m.indices;
-			ambientTextures = _m.ambientTextures;
-			diffuseTextures = _m.diffuseTextures;
-			specularTextures = _m.specularTextures;
-		}
-
-
 	};
 }
 #endif

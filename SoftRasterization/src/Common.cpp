@@ -11,7 +11,6 @@
 #include <xutility>
 #include <algorithm>
 
-
 namespace SoftRender
 {
     enum TextureType
@@ -19,8 +18,7 @@ namespace SoftRender
         PNG, JPG, BMP
     };
     
-    //png, jpg, jpeg, bmp, tga
-    void SaveTexture(std::vector<Color> &frameBuffer, int width, int height, std::string file)
+    void SaveTexture(Color *frameBuffer, int width, int height, std::string file)
     {
         std::string suffix = file.substr(file.find_last_of('.')+1);
         int comp = 3;
@@ -37,9 +35,10 @@ namespace SoftRender
         unsigned char* data = new unsigned char[width*height*comp];
         int count = 0;
         
-		auto it = frameBuffer.begin();
-        for (; it != frameBuffer.end(); it++) {
-			auto &color = *it;
+		int size = width * height;
+		for (int i=0; i<size; i++)
+		{
+			auto &color = frameBuffer[i];
             data[count+0] = (unsigned char)std::min (255, (int)(color.R * 255));
             data[count+1] = (unsigned char)std::min (255, (int)(color.G * 255));
             data[count+2] = (unsigned char)std::min (255, (int)(color.B * 255));
@@ -85,7 +84,6 @@ namespace SoftRender
     Mat4f ModelMatrix(Vec3f & translate)
     {
         Mat4f m;
-
         m[3][0] = translate.x;
         m[3][1] = translate.y;
         m[3][2] = translate.z;
@@ -112,15 +110,15 @@ namespace SoftRender
 		return v;
 	}
 
-    Vec4f operator*(const Vec4f& d, const Mat4f& m )
-    {
-        Vec4f v;
-        v.w = d.x*m[0][3] + d.y*m[1][3] + d.z*m[2][3] + m[3][3];
-        v.x = (d.x*m[0][0] + d.y*m[1][0] + d.z*m[2][0] + m[3][0]);
-        v.y = (d.x*m[0][1] + d.y*m[1][1] + d.z*m[2][1] + m[3][1]);
-        v.z = (d.x*m[0][2] + d.y*m[1][2] + d.z*m[2][2] + m[3][2]);
-        return v;
-    }
+	Vec4f operator*(const Vec4f& d, const Mat4f& m )
+	{
+		Vec4f v;
+		v.w = d.x*m[0][3] + d.y*m[1][3] + d.z*m[2][3] + m[3][3];
+		v.x = (d.x*m[0][0] + d.y*m[1][0] + d.z*m[2][0] + m[3][0]);
+		v.y = (d.x*m[0][1] + d.y*m[1][1] + d.z*m[2][1] + m[3][1]);
+		v.z = (d.x*m[0][2] + d.y*m[1][2] + d.z*m[2][2] + m[3][2]);
+		return v;
+	}
 
     bool Clip(VertexOut& v)
     {
@@ -132,15 +130,16 @@ namespace SoftRender
         return true;
     }
 
-    void Ndc2Screen (Vec3f &pos, float width, float height) {
+    void Ndc2Screen (Vec3f &pos, float width, float height) 
+	{
         pos.x = (pos.x + 1)* 0.5f * width; 
         pos.y = (1 - pos.y)* 0.5f * height;//flip y on screen coordinate
     }
 
-    bool BackFaceCulling (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2) { 
+    bool BackFaceCulling (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2)
+	{ 
         return (p0.Dot ((p1 - p0).Cross (p2 - p0)) > 0); 
     }
-    
 
     Color NearestFilter(Texture& texture, int s, int t)
     {
@@ -148,9 +147,9 @@ namespace SoftRender
         t = t % texture.height;
         s = std::max (0, std::min (s, texture.width-1));
         t = std::max (0, std::min (t, texture.height-1));
-        /*vector<Color> data = TextureManager::getInstance()->getTexture(texture.path);*/
         
-        return TextureManager::getInstance()->textureMaps[texture.path][s + t*texture.width];
+		auto &texColor = TextureManager::getInstance()->getTexture(texture.path);
+		return texColor[s + t*texture.width];
     }
 
     Color BilinearFilter(Texture& texture, float s, float t)
@@ -175,14 +174,13 @@ namespace SoftRender
 	void VertexShader(Mat4f& model, Mat4f& view, Mat4f& proj, Vertex& inVertex, VertexOut& outVertex)
     {
         Mat4f mvp = model * view * proj;
-		Mat4f nmv = model * view.Inverse().Transpose();
-        Vec4f v = Vec4f(inVertex.modelPos, 1.0f)*(mvp);
+        Vec4f postion = Vec4f(inVertex.modelPos, 1.0f)*(mvp);
 
-        outVertex.projPos.x = v.x/v.w;
-        outVertex.projPos.y = v.y/v.w;
-        outVertex.projPos.z = v.z/v.w;
+        outVertex.projPos.x = postion.x/postion.w;
+        outVertex.projPos.y = postion.y/postion.w;
+        outVertex.projPos.z = postion.z/postion.w;
 
-        outVertex.derivZ = 1.0f/v.w;
+        outVertex.derivZ = 1.0f/postion.w;
 
         outVertex.uv = inVertex.uv*outVertex.derivZ;
         outVertex.color = inVertex.color*outVertex.derivZ;
@@ -190,6 +188,7 @@ namespace SoftRender
 		outVertex.worldPos = MultPointMatrix(inVertex.modelPos, model);
         outVertex.viewPos = MultPointMatrix(inVertex.modelPos, model*view);
 
+		//normal??
 		outVertex.normal = MultDirMatrix(inVertex.normal, model.Inverse().Transpose());
     }
 
@@ -246,7 +245,6 @@ namespace SoftRender
 		float diff = std::max(lightDir.Dot(norm), 0.0f);
 		Color diffuse = light.diffuse*(material.diffuse*diff);
 
-
 		Vec3f viewDir = (cameraPos - inVertex.worldPos).Normalize();
 		Vec3f reflectDir = Reflect(-lightDir, norm).Normalize();
 		float spec = std::pow(std::max(viewDir.Dot(reflectDir), 0.0f), 128);
@@ -254,7 +252,6 @@ namespace SoftRender
 
 		Color result = ambient + diffuse + specular;
 		result.A = 1.0;
-
 		return result;
 	}
 }

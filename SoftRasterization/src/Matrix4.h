@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <assert.h>
 
 namespace SoftRender{
     template<typename T>
@@ -80,8 +81,9 @@ namespace SoftRender{
 		{
 			Matrix4<T> r;
 			T d = Determinant();
-			if (std::abs(d) < 0.001)
+			if (std::abs(d) < 0.0001f)
 			{
+				assert(!"no inverse");
 				return r;
 			}else
 			{

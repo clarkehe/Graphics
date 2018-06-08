@@ -20,6 +20,7 @@ using namespace glm;
 #include <common/controls.hpp>
 #include <common/objloader.hpp>
 #include <common/vboindexer.hpp>
+#include "src/SoftRender.h"
 
 int main( void )
 {
@@ -78,9 +79,6 @@ int main( void )
 	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
 	GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
 	GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
-
-	// Load the texture
-	GLuint Texture = loadDDS("uvmap.DDS");
 	
 	// Get a handle for our "myTextureSampler" uniform
 	GLuint TextureID  = glGetUniformLocation(programID, "myTextureSampler");
@@ -89,10 +87,39 @@ int main( void )
 	std::vector<glm::vec3> vertices;
 	std::vector<glm::vec2> uvs;
 	std::vector<glm::vec3> normals;
-	bool res = loadOBJ("suzanne.obj", vertices, uvs, normals);
+
+	/*
+		2   3
+		0   1
+	*/
+
+	//0 1 2
+	vertices.push_back(glm::vec3(-1, -1, 0));
+	vertices.push_back(glm::vec3(1, -1, 0));
+	vertices.push_back(glm::vec3(-1, 1, 0));
+
+	//1 3 2
+	vertices.push_back(glm::vec3(1, -1, 0));
+	vertices.push_back(glm::vec3(1, 1, 0));
+	vertices.push_back(glm::vec3(-1, 1, 0));
+
+	uvs.push_back(glm::vec2(0, 1-0));
+	uvs.push_back(glm::vec2(1, 1-0));
+	uvs.push_back(glm::vec2(0, 1-1));
+
+	uvs.push_back(glm::vec2(1, 1-0));
+	uvs.push_back(glm::vec2(1, 1-1));
+	uvs.push_back(glm::vec2(0, 1-1));
+
+	normals.push_back(glm::vec3(0, 0, 1));
+	normals.push_back(glm::vec3(0, 0, 1));
+	normals.push_back(glm::vec3(0, 0, 1));
+
+	normals.push_back(glm::vec3(0, 0, 1));
+	normals.push_back(glm::vec3(0, 0, 1));
+	normals.push_back(glm::vec3(0, 0, 1));
 
 	// Load it into a VBO
-
 	GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
@@ -112,8 +139,10 @@ int main( void )
 	glUseProgram(programID);
 	GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
 
-	do{
+	CSoftRender softRender;
+	GLuint renderTex = softRender.testRender();
 
+	do{
 		// Clear the screen
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -124,7 +153,7 @@ int main( void )
 		computeMatricesFromInputs();
 		glm::mat4 ProjectionMatrix = getProjectionMatrix();
 		glm::mat4 ViewMatrix = getViewMatrix();
-		glm::mat4 ModelMatrix = glm::mat4(1.0);
+		glm::mat4 ModelMatrix = glm::scale(glm::mat4(1.0), glm::vec3(4/3.0f, 1.0f, 1.0f));
 		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 
 		// Send our transformation to the currently bound shader, 
@@ -138,7 +167,7 @@ int main( void )
 
 		// Bind our texture in Texture Unit 0
 		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, Texture);
+		glBindTexture(GL_TEXTURE_2D, renderTex);
 		// Set our "myTextureSampler" sampler to user Texture Unit 0
 		glUniform1i(TextureID, 0);
 
@@ -197,7 +226,7 @@ int main( void )
 	glDeleteBuffers(1, &uvbuffer);
 	glDeleteBuffers(1, &normalbuffer);
 	glDeleteProgram(programID);
-	glDeleteTextures(1, &Texture);
+	glDeleteTextures(1, &renderTex);
 	glDeleteVertexArrays(1, &VertexArrayID);
 
 	// Close OpenGL window and terminate GLFW
