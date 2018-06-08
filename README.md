@@ -2,7 +2,7 @@
 图形学基础（OpenGL实现）
 
 **SoftRasterization**         
-SoftRasterization是一个完整的VS 2015的工程，通过CPU模拟GPU的渲染管线，对两个模型进行了渲染。
+SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管线，对两个模型进行了渲染。
 ![](https://github.com/clarkehe/Graphics/blob/master/SoftRasterization/screenshot.jpg)
 
 **Math**   
