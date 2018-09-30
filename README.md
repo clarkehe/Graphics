@@ -13,7 +13,9 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 [Linear algebra](https://www.khanacademy.org/math/linear-algebra)           
 [Mathonline](http://mathonline.wikidot.com/vector-cross-product)         
 [Vector Cross Product](http://people.sju.edu/~pklingsb/crossproduct.pdf)             
-[数学笔记](http://math.tianpeng.org/)                    
+[数学笔记](http://math.tianpeng.org/)                     
+[Rotations and Orientation](https://www.cs.utexas.edu/~theshark/courses/cs354/lectures/cs354-14.pdf)                 
+
 
 **多线程、并发**   
 [Multi-threaded Game Engines](http://seanmiddleditch.com/multi-threaded-game-engines/)                
