@@ -22,4 +22,6 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 
 **C++**   
 [C++ rvalue references and move semantics for beginners](https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners)                                 
-
+                   
+**OpenGL**                          
+[GLSL 详解](https://colin1994.github.io/2017/11/11/OpenGLES-Lesson04/)                    
