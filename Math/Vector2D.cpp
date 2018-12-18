@@ -1,4 +1,3 @@
-#include "StdAfx.h"
 #include "Vector2D.h"
 #include <complex>
 
@@ -48,3 +47,10 @@ Vector2D Vector2D::operator*(const double scale)
 {
 	return Vector2D(x * scale, y * scale);
 }
+
+ostream & operator << (ostream &out, const Vector2D &v)
+{
+    out << v.x << "," << v.y << endl;
+    return out;
+}
+
