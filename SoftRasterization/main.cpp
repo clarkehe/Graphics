@@ -21,6 +21,44 @@ using namespace glm;
 #include <common/objloader.hpp>
 #include <common/vboindexer.hpp>
 #include "src/SoftRender.h"
+#include <Windows.h>
+
+
+LONGLONG CalculateFrequency()
+{
+	LARGE_INTEGER frequency;
+	QueryPerformanceFrequency(&frequency);
+	return frequency.QuadPart;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Updated once on boot
+static const LONGLONG TIMER_FREQUENCY = CalculateFrequency(); 
+
+struct TimeProfile
+{
+	TimeProfile()
+	{
+		LARGE_INTEGER largeInteger;
+		QueryPerformanceCounter( &largeInteger );
+		mStartTime =  largeInteger.QuadPart;
+	}
+
+	~TimeProfile()
+	{
+		LARGE_INTEGER largeInteger;
+		QueryPerformanceCounter( &largeInteger );
+		LONGLONG endTime = largeInteger.QuadPart;
+
+		LONGLONG costTime = endTime - mStartTime;
+		double time = costTime * 1000.0f;
+		time /= TIMER_FREQUENCY;
+
+		printf("cost Time: %f \n", time);
+	}
+
+	LONGLONG mStartTime;
+};
 
 int main( void )
 {
@@ -135,6 +173,13 @@ int main( void )
 	glBindBuffer(GL_ARRAY_BUFFER, normalbuffer);
 	glBufferData(GL_ARRAY_BUFFER, normals.size() * sizeof(glm::vec3), &normals[0], GL_STATIC_DRAW);
 
+	GLuint mGLBuffer;
+	{
+		glGenBuffers( 1, &mGLBuffer );
+		glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
+		glBufferData( GL_ARRAY_BUFFER, 5*1024*1024, NULL, GL_STREAM_DRAW );
+	}
+
 	// Get a handle for our "LightPosition" uniform
 	glUseProgram(programID);
 	GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
@@ -171,6 +216,12 @@ int main( void )
 		// Set our "myTextureSampler" sampler to user Texture Unit 0
 		glUniform1i(TextureID, 0);
 
+		{
+			TimeProfile tem;
+			glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
+			glMapBufferRange( GL_ARRAY_BUFFER, 0, 5*1024*1024, GL_MAP_WRITE_BIT | GL_MAP_UNSYNCHRONIZED_BIT);
+		}
+
 		// 1rst attribute buffer : vertices
 		glEnableVertexAttribArray(0);
 		glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
@@ -206,6 +257,11 @@ int main( void )
 			0,                                // stride
 			(void*)0                          // array buffer offset
 		);
+
+		{
+			glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );		
+			glUnmapBuffer( GL_ARRAY_BUFFER );
+		}
 
 		// Draw the triangles !
 		glDrawArrays(GL_TRIANGLES, 0, vertices.size() );
