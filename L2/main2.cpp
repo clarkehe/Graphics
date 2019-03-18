@@ -1,5 +1,4 @@
 // Include standard headers
-#include "stdafx.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
@@ -15,14 +14,11 @@
 #include <glm/gtc/matrix_transform.hpp>
 using namespace glm;
 
-#include <common/shader.hpp>
-#include <common/texture.hpp>
-#include <common/controls.hpp>
-#include <common/objloader.hpp>
-#include <common/vboindexer.hpp>
-#include "src/SoftRender.h"
-
-#if 0
+#include <shader.hpp>
+#include <texture.hpp>
+#include <controls.hpp>
+#include <objloader.hpp>
+#include <vboindexer.hpp>
 
 // Define main function
 int main()
@@ -60,8 +56,8 @@ int main()
     glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
     
     // Create and compile our GLSL program from the shaders
-    GLuint programID = LoadShaders( "../../../SoftRasterization/StandardShading.vertexshader",
-                                   "../../../SoftRasterization/StandardShading.fragmentshader" );
+    GLuint programID = LoadShaders( "../../../L2/StandardShading.vertexshader",
+                                   "../../../L2/StandardShading.fragmentshader" );
     //
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
@@ -82,7 +78,6 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
     // Give our vertices to OpenGL.
     glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
-    
     
     // Event loop
     while(!glfwWindowShouldClose(window))
@@ -114,5 +109,3 @@ int main()
     // Terminate GLFW
     glfwTerminate(); return 0;
 }
-
-#endif

@@ -7,85 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		750D287F61B21960268C4575 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3815769C1323630775F968A8 /* Matrix4x4.cpp */; };
-		258006FC3F1846247393433A /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D948EB482D1D854409420E /* Quaternion.cpp */; };
-		56F872FD5BF770210B215DEA /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DF924B31ABB2A1161805B11 /* Vector2D.cpp */; };
-		1BE82BD0045904CE786955CF /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39BA135820434F9E10292E5D /* Vector3D.cpp */; };
-		33A85FB3714E79704FF030B4 /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EF276960E9B7289389D043E /* Vector4D.cpp */; };
-		34F95A0F378537F0072324BD /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A71E36F7F007477D61B5B /* stdafx.cpp */; };
-		31C854B15F9021541BD80519 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDF50AC54E86BCF68F20C39 /* CoreServices.framework */; };
+		1B853D2D65C43E786F250F11 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */; };
+		0F8F0BC13FEB6D130B7823F4 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662605D4415A30F67539091A /* Quaternion.cpp */; };
+		2D6A318A05B32EAE401C6ECD /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BE63E14BB1605028583804 /* Vector2D.cpp */; };
+		4A024D375BCA5BF16C8A5C6E /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0510762504792E5829BE1ABA /* Vector3D.cpp */; };
+		72974FE350EA4A932F9E3D3F /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55367B9505FF3FEE517F0958 /* Vector4D.cpp */; };
+		175E1ED33AA80A0A182E11B3 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538C4449437E2F4D046C5DF9 /* stdafx.cpp */; };
+		20412D7D067B193323ED2573 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD747C707EB13865E8E75CF /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3815769C1323630775F968A8 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Matrix4x4.cpp"; path = "../../Math/Matrix4x4.cpp"; sourceTree = "<group>"; };
-		16446ADD037672033FD95832 /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix4x4.hpp"; path = "../../Math/Matrix4x4.hpp"; sourceTree = "<group>"; };
-		52D948EB482D1D854409420E /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Quaternion.cpp"; path = "../../Math/Quaternion.cpp"; sourceTree = "<group>"; };
-		24E347142F2958150109290F /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Quaternion.hpp"; path = "../../Math/Quaternion.hpp"; sourceTree = "<group>"; };
-		4DF924B31ABB2A1161805B11 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector2D.cpp"; path = "../../Math/Vector2D.cpp"; sourceTree = "<group>"; };
-		6E3D1F35101177650AE63DD4 /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector2D.hpp"; path = "../../Math/Vector2D.hpp"; sourceTree = "<group>"; };
-		39BA135820434F9E10292E5D /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector3D.cpp"; path = "../../Math/Vector3D.cpp"; sourceTree = "<group>"; };
-		14DC7E5845BB28995A0D128A /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector3D.hpp"; path = "../../Math/Vector3D.hpp"; sourceTree = "<group>"; };
-		5EF276960E9B7289389D043E /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector4D.cpp"; path = "../../Math/Vector4D.cpp"; sourceTree = "<group>"; };
-		7B092CD761F52FE76A6A5A73 /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector4D.hpp"; path = "../../Math/Vector4D.hpp"; sourceTree = "<group>"; };
-		5D2A71E36F7F007477D61B5B /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../Math/stdafx.cpp"; sourceTree = "<group>"; };
-		220032475BC423555B694B60 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../Math/stdafx.h"; sourceTree = "<group>"; };
-		4FDF50AC54E86BCF68F20C39 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
-		42170EBC5FAA13FC1EC00DE6 /* libMath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libMath.dylib"; path = "libMath.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Matrix4x4.cpp"; path = "../../Math/Matrix4x4.cpp"; sourceTree = "<group>"; };
+		41EE29316E8305E30D406582 /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix4x4.hpp"; path = "../../Math/Matrix4x4.hpp"; sourceTree = "<group>"; };
+		662605D4415A30F67539091A /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Quaternion.cpp"; path = "../../Math/Quaternion.cpp"; sourceTree = "<group>"; };
+		11B50E5C79332D250D3F24AD /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Quaternion.hpp"; path = "../../Math/Quaternion.hpp"; sourceTree = "<group>"; };
+		77BE63E14BB1605028583804 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector2D.cpp"; path = "../../Math/Vector2D.cpp"; sourceTree = "<group>"; };
+		59A9174F67A674147235323C /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector2D.hpp"; path = "../../Math/Vector2D.hpp"; sourceTree = "<group>"; };
+		0510762504792E5829BE1ABA /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector3D.cpp"; path = "../../Math/Vector3D.cpp"; sourceTree = "<group>"; };
+		62455FE8002D14691D642512 /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector3D.hpp"; path = "../../Math/Vector3D.hpp"; sourceTree = "<group>"; };
+		55367B9505FF3FEE517F0958 /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector4D.cpp"; path = "../../Math/Vector4D.cpp"; sourceTree = "<group>"; };
+		0C155EC014186FD467843078 /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector4D.hpp"; path = "../../Math/Vector4D.hpp"; sourceTree = "<group>"; };
+		538C4449437E2F4D046C5DF9 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../Math/stdafx.cpp"; sourceTree = "<group>"; };
+		057E2AB021D60E5372D71970 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../Math/stdafx.h"; sourceTree = "<group>"; };
+		0AD747C707EB13865E8E75CF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
+		57593D40395515D50C01521C /* libMath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libMath.dylib"; path = "libMath.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D9B09A155DB237227503614 /* Frameworks */ = {
+		0A2C068859AD2836091432E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31C854B15F9021541BD80519 /* CoreServices.framework in Frameworks */,
+				20412D7D067B193323ED2573 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47464C1117557F180B3638E6 /* Math */ = {
+		7851441E1ABD7D6C50302E87 /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				043154E11C7208BE73043844 /* Math */,
-				11C7224E336149566B8703EF /* Frameworks */,
-				45015DBE1A1B1175202E46C0 /* Products */,
+				4A5E6E5253E828A031157992 /* Math */,
+				1B962BBB42DE03B2598206EE /* Frameworks */,
+				56F22B1D3CCA2B873B7A0163 /* Products */,
 			);
 			name = "Math";
 			sourceTree = "<group>";
 		};
-		043154E11C7208BE73043844 /* Math */ = {
+		4A5E6E5253E828A031157992 /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				3815769C1323630775F968A8 /* Matrix4x4.cpp */,
-				16446ADD037672033FD95832 /* Matrix4x4.hpp */,
-				52D948EB482D1D854409420E /* Quaternion.cpp */,
-				24E347142F2958150109290F /* Quaternion.hpp */,
-				4DF924B31ABB2A1161805B11 /* Vector2D.cpp */,
-				6E3D1F35101177650AE63DD4 /* Vector2D.hpp */,
-				39BA135820434F9E10292E5D /* Vector3D.cpp */,
-				14DC7E5845BB28995A0D128A /* Vector3D.hpp */,
-				5EF276960E9B7289389D043E /* Vector4D.cpp */,
-				7B092CD761F52FE76A6A5A73 /* Vector4D.hpp */,
-				5D2A71E36F7F007477D61B5B /* stdafx.cpp */,
-				220032475BC423555B694B60 /* stdafx.h */,
+				6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */,
+				41EE29316E8305E30D406582 /* Matrix4x4.hpp */,
+				662605D4415A30F67539091A /* Quaternion.cpp */,
+				11B50E5C79332D250D3F24AD /* Quaternion.hpp */,
+				77BE63E14BB1605028583804 /* Vector2D.cpp */,
+				59A9174F67A674147235323C /* Vector2D.hpp */,
+				0510762504792E5829BE1ABA /* Vector3D.cpp */,
+				62455FE8002D14691D642512 /* Vector3D.hpp */,
+				55367B9505FF3FEE517F0958 /* Vector4D.cpp */,
+				0C155EC014186FD467843078 /* Vector4D.hpp */,
+				538C4449437E2F4D046C5DF9 /* stdafx.cpp */,
+				057E2AB021D60E5372D71970 /* stdafx.h */,
 			);
 			name = "Math";
 			sourceTree = "<group>";
 		};
-		11C7224E336149566B8703EF /* Frameworks */ = {
+		1B962BBB42DE03B2598206EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4FDF50AC54E86BCF68F20C39 /* CoreServices.framework */,
+				0AD747C707EB13865E8E75CF /* CoreServices.framework */,
 			);
 			name = "Frameworks";
 			sourceTree = "<group>";
 		};
-		45015DBE1A1B1175202E46C0 /* Products */ = {
+		56F22B1D3CCA2B873B7A0163 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42170EBC5FAA13FC1EC00DE6 /* libMath.dylib */,
+				57593D40395515D50C01521C /* libMath.dylib */,
 			);
 			name = "Products";
 			sourceTree = "<group>";
@@ -93,13 +93,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04E62DD3218807292F3D7D33 /* Math */ = {
+		2FA045E94E351642555541A8 /* Math */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 109279E748E06F3B1DD125F1 /* Build configuration list for PBXNativeTarget "Math" */;
+			buildConfigurationList = 197D715946CD74F907FF0E19 /* Build configuration list for PBXNativeTarget "Math" */;
 			buildPhases = (
-				74DB0A72436E251675EC13F8 /* Resources */,
-				40173BD613C70E2413AA37BF /* Sources */,
-				6D9B09A155DB237227503614 /* Frameworks */,
+				1EAD73F458E80D310DCC6246 /* Resources */,
+				057E264B3C4E642B5BB101D7 /* Sources */,
+				0A2C068859AD2836091432E2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,7 +107,7 @@
 			);
 			name = "Math";
 			productName = "Math";
-			productReference = 42170EBC5FAA13FC1EC00DE6 /* libMath.dylib */;
+			productReference = 57593D40395515D50C01521C /* libMath.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -118,17 +118,17 @@
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
-			mainGroup = 47464C1117557F180B3638E6 /* Math */;
+			mainGroup = 7851441E1ABD7D6C50302E87 /* Math */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04E62DD3218807292F3D7D33 /* libMath.dylib */,
+				2FA045E94E351642555541A8 /* libMath.dylib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74DB0A72436E251675EC13F8 /* Resources */ = {
+		1EAD73F458E80D310DCC6246 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,16 +138,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		40173BD613C70E2413AA37BF /* Sources */ = {
+		057E264B3C4E642B5BB101D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750D287F61B21960268C4575 /* Matrix4x4.cpp in Sources */,
-				258006FC3F1846247393433A /* Quaternion.cpp in Sources */,
-				56F872FD5BF770210B215DEA /* Vector2D.cpp in Sources */,
-				1BE82BD0045904CE786955CF /* Vector3D.cpp in Sources */,
-				33A85FB3714E79704FF030B4 /* Vector4D.cpp in Sources */,
-				34F95A0F378537F0072324BD /* stdafx.cpp in Sources */,
+				1B853D2D65C43E786F250F11 /* Matrix4x4.cpp in Sources */,
+				0F8F0BC13FEB6D130B7823F4 /* Quaternion.cpp in Sources */,
+				2D6A318A05B32EAE401C6ECD /* Vector2D.cpp in Sources */,
+				4A024D375BCA5BF16C8A5C6E /* Vector3D.cpp in Sources */,
+				72974FE350EA4A932F9E3D3F /* Vector4D.cpp in Sources */,
+				175E1ED33AA80A0A182E11B3 /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +157,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C9612970CAF6783672E3D66 /* Release */ = {
+		107432EE28C20C026E72173B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,7 +170,7 @@
 			};
 			name = "Release";
 		};
-		4C2B215E39971A7045B26414 /* Debug */ = {
+		413E5B6B79D27FB74FC5236C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +183,7 @@
 			};
 			name = "Debug";
 		};
-		3E1D75710B1872A82A51404A /* Profile */ = {
+		41593BD748F35EEF356B1AB2 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +196,7 @@
 			};
 			name = "Profile";
 		};
-		1A131236535B19877FA00F32 /* Release */ = {
+		2D4D394047C62EBD21CB3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -251,7 +251,7 @@
 			};
 			name = "Release";
 		};
-		111E76C53F3F5A5072520D58 /* Debug */ = {
+		103E163F2AA5393550431324 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -306,7 +306,7 @@
 			};
 			name = "Debug";
 		};
-		402B0094071D2B03611F4D84 /* Profile */ = {
+		458062D05434309329470F04 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -364,12 +364,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		109279E748E06F3B1DD125F1 /* Build configuration list for PBXNativeTarget "libMath.dylib" */ = {
+		197D715946CD74F907FF0E19 /* Build configuration list for PBXNativeTarget "libMath.dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C9612970CAF6783672E3D66 /* Release */,
-				4C2B215E39971A7045B26414 /* Debug */,
-				3E1D75710B1872A82A51404A /* Profile */,
+				107432EE28C20C026E72173B /* Release */,
+				413E5B6B79D27FB74FC5236C /* Debug */,
+				41593BD748F35EEF356B1AB2 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";
@@ -377,9 +377,9 @@
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A131236535B19877FA00F32 /* Release */,
-				111E76C53F3F5A5072520D58 /* Debug */,
-				402B0094071D2B03611F4D84 /* Profile */,
+				2D4D394047C62EBD21CB3E39 /* Release */,
+				103E163F2AA5393550431324 /* Debug */,
+				458062D05434309329470F04 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";

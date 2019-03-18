@@ -3,268 +3,280 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01EC4D96550F5FE21A9A2987 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 657E4A4A509178965EB14318 /* Model.cpp */; };
-		06324108237F1870772962F2 /* tangentspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6488555C24D93A59512B133E /* tangentspace.cpp */; };
-		06DA543E393B7B046D240E34 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3327527D1D235E1964334B /* OpenGL.framework */; };
-		121F3238190E08945DC937D3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061D684A595D242F454B6311 /* AppKit.framework */; };
-		13DA0373255E7ACF51204C95 /* text2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 577C49727531187932834125 /* text2D.cpp */; };
-		145E643844FE3CE8249956F9 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20060EE77939418F30F210FC /* texture.cpp */; };
-		1B5368C8361F43213C40270D /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A320C066D88165A146B2EB7 /* shader.cpp */; };
-		2B82152809DF4CC8025200C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703611A90ED77A4163B85BF4 /* CoreGraphics.framework */; };
-		367E49A855664E6A2FDA41FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 004407E76C3A68CD0EFF0F1B /* main.cpp */; };
-		3788552D1D0E0C987EC344E9 /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 779A3B09667B194C74F90BA5 /* objloader.cpp */; };
-		37DD380A4358468A2ED6089F /* vboindexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 465D407E44B422BE6B0867BB /* vboindexer.cpp */; };
-		3FF05801429822140F3160D0 /* libMath_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF43C1D244F000B5B953BEE /* libMath_d.dylib */; };
-		409C5B806F5F4694590B6330 /* Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73D61A880D521A26745C5E0B /* Common.cpp */; };
-		413133AE7D8C30D92D236541 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B0174BB565709A77254052C /* controls.cpp */; };
-		4363A7E0223F7D3100DC2434 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363A7DF223F7D3100DC2434 /* Cocoa.framework */; };
-		4363A7E2223F7D3A00DC2434 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363A7E1223F7D3A00DC2434 /* IOKit.framework */; };
-		4363A7E4223F7D5300DC2434 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363A7E3223F7D5300DC2434 /* CoreVideo.framework */; };
-		484553A2455C470137E9616D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136E211F7CB23C5D0D331BCF /* CoreFoundation.framework */; };
-		5E9853956102503E34697939 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5017265B42B6542D5D1D3992 /* TextureManager.cpp */; };
-		5F021FF5393D085B42753BA1 /* SoftRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 229B1A921A2056112E4B5138 /* SoftRender.cpp */; };
-		6D0912BE2D9804F732A43F79 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BEF6A2E26F87053044D7EAE /* stdafx.cpp */; };
-		71032CE930127B86454E2B67 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77D5547E3721177043003DC7 /* Render.cpp */; };
-		7C3E61A3305258D71DEF37BF /* quaternion_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F61726423A72F3A2EE41E68 /* quaternion_utils.cpp */; };
-		7FB6337634EC7E600C6B76F4 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F92278871045D86306A3C05 /* test.cpp */; };
+		4DF953045D0C7E187EF85601 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 016C7A9353320FB479155EA5 /* controls.cpp */; };
+		2F397EC3516B5593301C0DDE /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47660C3E442856C81F3833AB /* objloader.cpp */; };
+		29572B447F8D423741555083 /* quaternion_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01236152012548D116C313CD /* quaternion_utils.cpp */; };
+		62A612CA151D52F916A74543 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 415B695567B53F3424117C23 /* shader.cpp */; };
+		48926F196B2374FC03A02622 /* tangentspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 644F28B254AE1AAC36E523ED /* tangentspace.cpp */; };
+		64B621D758007CD879500C8F /* text2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3735198B074B6EAA753B7CDA /* text2D.cpp */; };
+		5A9F1C58713221435BA80857 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D6207792A39308867A84A8C /* texture.cpp */; };
+		6460012611D009654D3A1ED2 /* vboindexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CB428862F5056FA3D2F084A /* vboindexer.cpp */; };
+		0C7A27D85DB347D913A35746 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10FC37722864462A18B00859 /* main.cpp */; };
+		5DB6085C736B0E5C58CE46AE /* Common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 385D71C81E5242D221664442 /* Common.cpp */; };
+		59440E335A7E439371841941 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B83DFB3AE40A473B753CB2 /* Model.cpp */; };
+		386D155E568D47C15BA615B7 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5599439114E643AF4E366F05 /* Render.cpp */; };
+		7CB16930644E68C761770710 /* SoftRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75336E7F78344D6968B02C89 /* SoftRender.cpp */; };
+		591C5DA92D8C5EB13C260822 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74C12EBF1ED47D820F826093 /* TextureManager.cpp */; };
+		232708FA0F156AE03EB570DE /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC44C83D214A9446ED1D9A /* test.cpp */; };
+		43146C8314B738272D6226F8 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17366AD437751A90719F3EC2 /* stdafx.cpp */; };
+		6EB755137DD94B8C13926F15 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B735E03301146A6ECA1094 /* CoreFoundation.framework */; };
+		019E3C2A07692FEC3D844168 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62101CED29C95C4D664E4879 /* CoreGraphics.framework */; };
+		4D8B0F2353B6757A3E6101FF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FF703752BF102251032399 /* OpenGL.framework */; };
+		7CF41A33162417F9032D3CE7 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11687BDB1017105156E168F4 /* AppKit.framework */; };
+		20473F4B77E519E851AB4046 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763340DF238921631EEE5403 /* Cocoa.framework */; };
+		3C2A227217A3002E0D12370C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568D4D322E2F2FCA1F06013A /* IOKit.framework */; };
+		4DCF7539752A20D5047138E3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D11EA852F7670A6AEB1693 /* CoreVideo.framework */; };
+		5805660617F963184AB132B6 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46997A1439E061C972CC41DE /* libMath.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		118F4EE617E403655E6628FD /* PBXContainerItemProxy */ = {
+		626162FD69DC6C7B28BE7BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 689F573F13F755B578C83393 /* Math.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 04E62DD3218807292F3D7D33;
-			remoteInfo = libMath.dylib;
-		};
-		3F077470206579C32A9D4187 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 689F573F13F755B578C83393 /* Math.xcodeproj */;
+			containerPortal = 44C90D8D598407C14A64726E /* Math.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 42170EBC5FAA13FC1EC00DE6;
-			remoteInfo = libMath.dylib;
+			remoteGlobalIDString = 57593D40395515D50C01521C;
+			remoteInfo = "libMath.dylib";
+		};
+		08E927580B9D0B395A681B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44C90D8D598407C14A64726E /* Math.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA045E94E351642555541A8;
+			remoteInfo = "libMath.dylib";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000571B32E772EDD44DB0AE5 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mesh.h; path = ../../SoftRasterization/src/Mesh.h; sourceTree = "<group>"; };
-		004407E76C3A68CD0EFF0F1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../SoftRasterization/main.cpp; sourceTree = "<group>"; };
-		0617709647154C5312EA7911 /* vboindexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = vboindexer.hpp; path = ../../SoftRasterization/common/vboindexer.hpp; sourceTree = "<group>"; };
-		061D684A595D242F454B6311 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		07874EC97AAE6CAE54687EE7 /* quaternion_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = quaternion_utils.hpp; path = ../../SoftRasterization/common/quaternion_utils.hpp; sourceTree = "<group>"; };
-		0A320C066D88165A146B2EB7 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../SoftRasterization/common/shader.cpp; sourceTree = "<group>"; };
-		10F833B34523360A0BF5418B /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ../../SoftRasterization/src/Vector3.h; sourceTree = "<group>"; };
-		119217B11CF7252E18D54B22 /* Index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Index.h; path = ../../SoftRasterization/src/Index.h; sourceTree = "<group>"; };
-		11AE52232D9A60220FD10E92 /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = texture.hpp; path = ../../SoftRasterization/common/texture.hpp; sourceTree = "<group>"; };
-		136E211F7CB23C5D0D331BCF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		1649406C0CAC04AD16DC5F40 /* Material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Material.h; path = ../../SoftRasterization/src/Material.h; sourceTree = "<group>"; };
-		19990CD640FF322B34723B96 /* Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Render.h; path = ../../SoftRasterization/src/Render.h; sourceTree = "<group>"; };
-		1B5E40DC412033E270FF11EC /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = ../../SoftRasterization/src/stb_image.h; sourceTree = "<group>"; };
-		1C2143486C64597278CE287F /* Matrix2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Matrix2.h; path = ../../SoftRasterization/src/Matrix2.h; sourceTree = "<group>"; };
-		1E792C337A79539432A24E3A /* tangentspace.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = tangentspace.hpp; path = ../../SoftRasterization/common/tangentspace.hpp; sourceTree = "<group>"; };
-		1F3303F411876AF43B8672AA /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextureManager.h; path = ../../SoftRasterization/src/TextureManager.h; sourceTree = "<group>"; };
-		1FF2647574DB76922BEF0D21 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../../SoftRasterization/src/Common.h; sourceTree = "<group>"; };
-		20060EE77939418F30F210FC /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../SoftRasterization/common/texture.cpp; sourceTree = "<group>"; };
-		21E62C8A259F18AB27272C3E /* Vector4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vector4.h; path = ../../SoftRasterization/src/Vector4.h; sourceTree = "<group>"; };
-		229B1A921A2056112E4B5138 /* SoftRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SoftRender.cpp; path = ../../SoftRasterization/src/SoftRender.cpp; sourceTree = "<group>"; };
-		289A24C73C1050E56CD879D2 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test.h; path = ../../SoftRasterization/src/test.h; sourceTree = "<group>"; };
-		295105534C3A0E4A54A732B9 /* slm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = slm.h; path = ../../SoftRasterization/src/slm.h; sourceTree = "<group>"; };
-		2C032CF67629331E1F222000 /* Matrix4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Matrix4.h; path = ../../SoftRasterization/src/Matrix4.h; sourceTree = "<group>"; };
-		2F92278871045D86306A3C05 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../../SoftRasterization/src/test.cpp; sourceTree = "<group>"; };
-		3B0174BB565709A77254052C /* controls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = controls.cpp; path = ../../SoftRasterization/common/controls.cpp; sourceTree = "<group>"; };
-		3E3327527D1D235E1964334B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		3F9E29FC79725AB80CBC4004 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ../../SoftRasterization/src/Color.h; sourceTree = "<group>"; };
-		4363A7DF223F7D3100DC2434 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		4363A7E1223F7D3A00DC2434 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		4363A7E3223F7D5300DC2434 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		43B143AF31057E6E6DBD47C6 /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image_write.h; path = ../../SoftRasterization/src/stb_image_write.h; sourceTree = "<group>"; };
-		465D407E44B422BE6B0867BB /* vboindexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vboindexer.cpp; path = ../../SoftRasterization/common/vboindexer.cpp; sourceTree = "<group>"; };
-		4680331328F979F344966086 /* objloader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = objloader.hpp; path = ../../SoftRasterization/common/objloader.hpp; sourceTree = "<group>"; };
-		485A251279474B622CC16927 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = ../../SoftRasterization/src/Vertex.h; sourceTree = "<group>"; };
-		4AA95C9823F82907223E2DA0 /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = controls.hpp; path = ../../SoftRasterization/common/controls.hpp; sourceTree = "<group>"; };
-		4AED24E75B4805F872FD67ED /* Light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Light.h; path = ../../SoftRasterization/src/Light.h; sourceTree = "<group>"; };
-		4BEF6A2E26F87053044D7EAE /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../../SoftRasterization/stdafx.cpp; sourceTree = "<group>"; };
-		4F53087B539A417923716D2A /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = shader.hpp; path = ../../SoftRasterization/common/shader.hpp; sourceTree = "<group>"; };
-		5017265B42B6542D5D1D3992 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TextureManager.cpp; path = ../../SoftRasterization/src/TextureManager.cpp; sourceTree = "<group>"; };
-		51633E8C77F176EC0971617F /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../../SoftRasterization/stdafx.h; sourceTree = "<group>"; };
-		577C49727531187932834125 /* text2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = text2D.cpp; path = ../../SoftRasterization/common/text2D.cpp; sourceTree = "<group>"; };
-		6488555C24D93A59512B133E /* tangentspace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tangentspace.cpp; path = ../../SoftRasterization/common/tangentspace.cpp; sourceTree = "<group>"; };
-		657E4A4A509178965EB14318 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Model.cpp; path = ../../SoftRasterization/src/Model.cpp; sourceTree = "<group>"; };
-		689F573F13F755B578C83393 /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Math.xcodeproj; sourceTree = SOURCE_ROOT; };
-		7013108812072FC947F676E6 /* SoftRasterization_d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SoftRasterization_d; sourceTree = BUILT_PRODUCTS_DIR; };
-		703611A90ED77A4163B85BF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		70704A687A6C06096C521D35 /* text2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = text2D.hpp; path = ../../SoftRasterization/common/text2D.hpp; sourceTree = "<group>"; };
-		73D61A880D521A26745C5E0B /* Common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Common.cpp; path = ../../SoftRasterization/src/Common.cpp; sourceTree = "<group>"; };
-		779A3B09667B194C74F90BA5 /* objloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objloader.cpp; path = ../../SoftRasterization/common/objloader.cpp; sourceTree = "<group>"; };
-		77D5547E3721177043003DC7 /* Render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Render.cpp; path = ../../SoftRasterization/src/Render.cpp; sourceTree = "<group>"; };
-		7B2B59A8536A7BDE41812B4B /* Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = ../../SoftRasterization/src/Texture.h; sourceTree = "<group>"; };
-		7D12507D65920E43048F714D /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../../SoftRasterization/src/Model.h; sourceTree = "<group>"; };
-		7E4921A16CE27CE955E2776A /* Vector2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ../../SoftRasterization/src/Vector2.h; sourceTree = "<group>"; };
-		7F5878DE532B675F483A5A18 /* SoftRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SoftRender.h; path = ../../SoftRasterization/src/SoftRender.h; sourceTree = "<group>"; };
-		7F61726423A72F3A2EE41E68 /* quaternion_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = quaternion_utils.cpp; path = ../../SoftRasterization/common/quaternion_utils.cpp; sourceTree = "<group>"; };
+		016C7A9353320FB479155EA5 /* controls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "controls.cpp"; path = "../../Common/controls.cpp"; sourceTree = "<group>"; };
+		04ED7AC52CC63BA756D348CD /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "controls.hpp"; path = "../../Common/controls.hpp"; sourceTree = "<group>"; };
+		47660C3E442856C81F3833AB /* objloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "objloader.cpp"; path = "../../Common/objloader.cpp"; sourceTree = "<group>"; };
+		026C02DB078F789D1D717E09 /* objloader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "objloader.hpp"; path = "../../Common/objloader.hpp"; sourceTree = "<group>"; };
+		01236152012548D116C313CD /* quaternion_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "quaternion_utils.cpp"; path = "../../Common/quaternion_utils.cpp"; sourceTree = "<group>"; };
+		51161D4344FA2117178130A5 /* quaternion_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "quaternion_utils.hpp"; path = "../../Common/quaternion_utils.hpp"; sourceTree = "<group>"; };
+		415B695567B53F3424117C23 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "shader.cpp"; path = "../../Common/shader.cpp"; sourceTree = "<group>"; };
+		45C137A345CC56FF1CC55966 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "shader.hpp"; path = "../../Common/shader.hpp"; sourceTree = "<group>"; };
+		644F28B254AE1AAC36E523ED /* tangentspace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "tangentspace.cpp"; path = "../../Common/tangentspace.cpp"; sourceTree = "<group>"; };
+		1A7B3D85267212DB7B395C85 /* tangentspace.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "tangentspace.hpp"; path = "../../Common/tangentspace.hpp"; sourceTree = "<group>"; };
+		3735198B074B6EAA753B7CDA /* text2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "text2D.cpp"; path = "../../Common/text2D.cpp"; sourceTree = "<group>"; };
+		1ED60C1F7C723DEB4B360114 /* text2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "text2D.hpp"; path = "../../Common/text2D.hpp"; sourceTree = "<group>"; };
+		4D6207792A39308867A84A8C /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "texture.cpp"; path = "../../Common/texture.cpp"; sourceTree = "<group>"; };
+		1B442DBE43DD7BF95491295C /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "texture.hpp"; path = "../../Common/texture.hpp"; sourceTree = "<group>"; };
+		7CB428862F5056FA3D2F084A /* vboindexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "vboindexer.cpp"; path = "../../Common/vboindexer.cpp"; sourceTree = "<group>"; };
+		02B20EA8483E03264CBC6AEF /* vboindexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "vboindexer.hpp"; path = "../../Common/vboindexer.hpp"; sourceTree = "<group>"; };
+		1170617E1CDB78912B3D4329 /* StandardShading.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = "StandardShading.fragmentshader"; path = "../../L2/StandardShading.fragmentshader"; sourceTree = "<group>"; };
+		59301B11119036296B5D27ED /* StandardShading.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = "StandardShading.vertexshader"; path = "../../L2/StandardShading.vertexshader"; sourceTree = "<group>"; };
+		10FC37722864462A18B00859 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../SoftRasterization/main.cpp"; sourceTree = "<group>"; };
+		2C6A7BFC647D7B3443151A41 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Color.h"; path = "../../SoftRasterization/src/Color.h"; sourceTree = "<group>"; };
+		385D71C81E5242D221664442 /* Common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Common.cpp"; path = "../../SoftRasterization/src/Common.cpp"; sourceTree = "<group>"; };
+		4A9E7FFD634D6DF91B957922 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Common.h"; path = "../../SoftRasterization/src/Common.h"; sourceTree = "<group>"; };
+		463C33B823FC7D903A642B29 /* Index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Index.h"; path = "../../SoftRasterization/src/Index.h"; sourceTree = "<group>"; };
+		4D71720E33451D8043F925DB /* Light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Light.h"; path = "../../SoftRasterization/src/Light.h"; sourceTree = "<group>"; };
+		681B6CC30FDC44C36C040194 /* Material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Material.h"; path = "../../SoftRasterization/src/Material.h"; sourceTree = "<group>"; };
+		23020FCE4999667A6D077F7A /* Matrix2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Matrix2.h"; path = "../../SoftRasterization/src/Matrix2.h"; sourceTree = "<group>"; };
+		30B762344ECF7DC60D264CE5 /* Matrix4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Matrix4.h"; path = "../../SoftRasterization/src/Matrix4.h"; sourceTree = "<group>"; };
+		092A4D19566D22C977505CD0 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mesh.h"; path = "../../SoftRasterization/src/Mesh.h"; sourceTree = "<group>"; };
+		16B83DFB3AE40A473B753CB2 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Model.cpp"; path = "../../SoftRasterization/src/Model.cpp"; sourceTree = "<group>"; };
+		295A093862CE78CB79B84D44 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Model.h"; path = "../../SoftRasterization/src/Model.h"; sourceTree = "<group>"; };
+		5599439114E643AF4E366F05 /* Render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Render.cpp"; path = "../../SoftRasterization/src/Render.cpp"; sourceTree = "<group>"; };
+		32B73E1B6EB1567E74D23128 /* Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Render.h"; path = "../../SoftRasterization/src/Render.h"; sourceTree = "<group>"; };
+		75336E7F78344D6968B02C89 /* SoftRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "SoftRender.cpp"; path = "../../SoftRasterization/src/SoftRender.cpp"; sourceTree = "<group>"; };
+		66374465541C11D018F25D1E /* SoftRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SoftRender.h"; path = "../../SoftRasterization/src/SoftRender.h"; sourceTree = "<group>"; };
+		01B7483D29B673F032367CB3 /* Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Texture.h"; path = "../../SoftRasterization/src/Texture.h"; sourceTree = "<group>"; };
+		74C12EBF1ED47D820F826093 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "TextureManager.cpp"; path = "../../SoftRasterization/src/TextureManager.cpp"; sourceTree = "<group>"; };
+		7F4A6BEC097314F71501343A /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TextureManager.h"; path = "../../SoftRasterization/src/TextureManager.h"; sourceTree = "<group>"; };
+		088E48AA2551760166B51FB6 /* Vector2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Vector2.h"; path = "../../SoftRasterization/src/Vector2.h"; sourceTree = "<group>"; };
+		015B02770D5D137221873B9B /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Vector3.h"; path = "../../SoftRasterization/src/Vector3.h"; sourceTree = "<group>"; };
+		75D77D7B4B8469A16E99005A /* Vector4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Vector4.h"; path = "../../SoftRasterization/src/Vector4.h"; sourceTree = "<group>"; };
+		40FC719D225B07151B0979C6 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Vertex.h"; path = "../../SoftRasterization/src/Vertex.h"; sourceTree = "<group>"; };
+		4F7C10FA35565B5D46924630 /* slm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "slm.h"; path = "../../SoftRasterization/src/slm.h"; sourceTree = "<group>"; };
+		319946EF2C1F3FC121727D4B /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stb_image.h"; path = "../../SoftRasterization/src/stb_image.h"; sourceTree = "<group>"; };
+		7BA65BF9579171E300B92936 /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stb_image_write.h"; path = "../../SoftRasterization/src/stb_image_write.h"; sourceTree = "<group>"; };
+		4BCC44C83D214A9446ED1D9A /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "test.cpp"; path = "../../SoftRasterization/src/test.cpp"; sourceTree = "<group>"; };
+		19B373841E5A55A5623318A7 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "test.h"; path = "../../SoftRasterization/src/test.h"; sourceTree = "<group>"; };
+		17366AD437751A90719F3EC2 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../SoftRasterization/stdafx.cpp"; sourceTree = "<group>"; };
+		12C230E534A904347A3351F6 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../SoftRasterization/stdafx.h"; sourceTree = "<group>"; };
+		59B735E03301146A6ECA1094 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		62101CED29C95C4D664E4879 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		51FF703752BF102251032399 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		11687BDB1017105156E168F4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		763340DF238921631EEE5403 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = "SDKROOT"; };
+		568D4D322E2F2FCA1F06013A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IOKit.framework"; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = "SDKROOT"; };
+		76D11EA852F7670A6AEB1693 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = "SDKROOT"; };
+		310C0AD95D2818043E05727F /* SoftRasterization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "SoftRasterization"; path = "SoftRasterization"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C90D8D598407C14A64726E /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D9615E72B4D09D530770A7F /* Frameworks */ = {
+		2806386B7D9D08D37A423D05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4363A7E4223F7D5300DC2434 /* CoreVideo.framework in Frameworks */,
-				4363A7E2223F7D3A00DC2434 /* IOKit.framework in Frameworks */,
-				4363A7E0223F7D3100DC2434 /* Cocoa.framework in Frameworks */,
-				484553A2455C470137E9616D /* CoreFoundation.framework in Frameworks */,
-				2B82152809DF4CC8025200C5 /* CoreGraphics.framework in Frameworks */,
-				06DA543E393B7B046D240E34 /* OpenGL.framework in Frameworks */,
-				121F3238190E08945DC937D3 /* AppKit.framework in Frameworks */,
-				3FF05801429822140F3160D0 /* libMath_d.dylib in Frameworks */,
+				6EB755137DD94B8C13926F15 /* CoreFoundation.framework in Frameworks */,
+				019E3C2A07692FEC3D844168 /* CoreGraphics.framework in Frameworks */,
+				4D8B0F2353B6757A3E6101FF /* OpenGL.framework in Frameworks */,
+				7CF41A33162417F9032D3CE7 /* AppKit.framework in Frameworks */,
+				20473F4B77E519E851AB4046 /* Cocoa.framework in Frameworks */,
+				3C2A227217A3002E0D12370C /* IOKit.framework in Frameworks */,
+				4DCF7539752A20D5047138E3 /* CoreVideo.framework in Frameworks */,
+				5805660617F963184AB132B6 /* libMath.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BF46BE3183A0801240C4D71 /* SoftRasterization */ = {
+		3EAD017D72B369C31A4F66C8 /* SoftRasterization */ = {
 			isa = PBXGroup;
 			children = (
-				38DA1960732B1DC458164B20 /* common */,
-				004407E76C3A68CD0EFF0F1B /* main.cpp */,
-				729E04422E3940B074962D5B /* src */,
-				4BEF6A2E26F87053044D7EAE /* stdafx.cpp */,
-				51633E8C77F176EC0971617F /* stdafx.h */,
+				559156A520FC387A5D8F6827 /* Common */,
+				21062F80054B312D02E05A26 /* L2 */,
+				3CE77365780E09270FC436C4 /* SoftRasterization */,
+				0D3C019B79C26AD94D836B02 /* Frameworks */,
+				5BFA2E947FDD2FB660A8582D /* Products */,
+				727A56E4350570CF64B73FC1 /* Projects */,
 			);
-			name = SoftRasterization;
+			name = "SoftRasterization";
 			sourceTree = "<group>";
 		};
-		1CDA6AA1312A45907A632D44 /* Products */ = {
+		559156A520FC387A5D8F6827 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7013108812072FC947F676E6 /* SoftRasterization_d */,
+				016C7A9353320FB479155EA5 /* controls.cpp */,
+				04ED7AC52CC63BA756D348CD /* controls.hpp */,
+				47660C3E442856C81F3833AB /* objloader.cpp */,
+				026C02DB078F789D1D717E09 /* objloader.hpp */,
+				01236152012548D116C313CD /* quaternion_utils.cpp */,
+				51161D4344FA2117178130A5 /* quaternion_utils.hpp */,
+				415B695567B53F3424117C23 /* shader.cpp */,
+				45C137A345CC56FF1CC55966 /* shader.hpp */,
+				644F28B254AE1AAC36E523ED /* tangentspace.cpp */,
+				1A7B3D85267212DB7B395C85 /* tangentspace.hpp */,
+				3735198B074B6EAA753B7CDA /* text2D.cpp */,
+				1ED60C1F7C723DEB4B360114 /* text2D.hpp */,
+				4D6207792A39308867A84A8C /* texture.cpp */,
+				1B442DBE43DD7BF95491295C /* texture.hpp */,
+				7CB428862F5056FA3D2F084A /* vboindexer.cpp */,
+				02B20EA8483E03264CBC6AEF /* vboindexer.hpp */,
+			);
+			name = "Common";
+			sourceTree = "<group>";
+		};
+		21062F80054B312D02E05A26 /* L2 */ = {
+			isa = PBXGroup;
+			children = (
+				1170617E1CDB78912B3D4329 /* StandardShading.fragmentshader */,
+				59301B11119036296B5D27ED /* StandardShading.vertexshader */,
+			);
+			name = "L2";
+			sourceTree = "<group>";
+		};
+		3CE77365780E09270FC436C4 /* SoftRasterization */ = {
+			isa = PBXGroup;
+			children = (
+				10FC37722864462A18B00859 /* main.cpp */,
+				383A11D87D1431CA55076510 /* src */,
+				17366AD437751A90719F3EC2 /* stdafx.cpp */,
+				12C230E534A904347A3351F6 /* stdafx.h */,
+			);
+			name = "SoftRasterization";
+			sourceTree = "<group>";
+		};
+		383A11D87D1431CA55076510 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2C6A7BFC647D7B3443151A41 /* Color.h */,
+				385D71C81E5242D221664442 /* Common.cpp */,
+				4A9E7FFD634D6DF91B957922 /* Common.h */,
+				463C33B823FC7D903A642B29 /* Index.h */,
+				4D71720E33451D8043F925DB /* Light.h */,
+				681B6CC30FDC44C36C040194 /* Material.h */,
+				23020FCE4999667A6D077F7A /* Matrix2.h */,
+				30B762344ECF7DC60D264CE5 /* Matrix4.h */,
+				092A4D19566D22C977505CD0 /* Mesh.h */,
+				16B83DFB3AE40A473B753CB2 /* Model.cpp */,
+				295A093862CE78CB79B84D44 /* Model.h */,
+				5599439114E643AF4E366F05 /* Render.cpp */,
+				32B73E1B6EB1567E74D23128 /* Render.h */,
+				75336E7F78344D6968B02C89 /* SoftRender.cpp */,
+				66374465541C11D018F25D1E /* SoftRender.h */,
+				01B7483D29B673F032367CB3 /* Texture.h */,
+				74C12EBF1ED47D820F826093 /* TextureManager.cpp */,
+				7F4A6BEC097314F71501343A /* TextureManager.h */,
+				088E48AA2551760166B51FB6 /* Vector2.h */,
+				015B02770D5D137221873B9B /* Vector3.h */,
+				75D77D7B4B8469A16E99005A /* Vector4.h */,
+				40FC719D225B07151B0979C6 /* Vertex.h */,
+				4F7C10FA35565B5D46924630 /* slm.h */,
+				319946EF2C1F3FC121727D4B /* stb_image.h */,
+				7BA65BF9579171E300B92936 /* stb_image_write.h */,
+				4BCC44C83D214A9446ED1D9A /* test.cpp */,
+				19B373841E5A55A5623318A7 /* test.h */,
+			);
+			name = "src";
+			sourceTree = "<group>";
+		};
+		0D3C019B79C26AD94D836B02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59B735E03301146A6ECA1094 /* CoreFoundation.framework */,
+				62101CED29C95C4D664E4879 /* CoreGraphics.framework */,
+				51FF703752BF102251032399 /* OpenGL.framework */,
+				11687BDB1017105156E168F4 /* AppKit.framework */,
+				763340DF238921631EEE5403 /* Cocoa.framework */,
+				568D4D322E2F2FCA1F06013A /* IOKit.framework */,
+				76D11EA852F7670A6AEB1693 /* CoreVideo.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		5BFA2E947FDD2FB660A8582D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				310C0AD95D2818043E05727F /* SoftRasterization */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		727A56E4350570CF64B73FC1 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				44C90D8D598407C14A64726E /* Math.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		1CBB58445D8B556B04955AC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46997A1439E061C972CC41DE /* libMath.dylib */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		38DA1960732B1DC458164B20 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				3B0174BB565709A77254052C /* controls.cpp */,
-				4AA95C9823F82907223E2DA0 /* controls.hpp */,
-				779A3B09667B194C74F90BA5 /* objloader.cpp */,
-				4680331328F979F344966086 /* objloader.hpp */,
-				7F61726423A72F3A2EE41E68 /* quaternion_utils.cpp */,
-				07874EC97AAE6CAE54687EE7 /* quaternion_utils.hpp */,
-				0A320C066D88165A146B2EB7 /* shader.cpp */,
-				4F53087B539A417923716D2A /* shader.hpp */,
-				6488555C24D93A59512B133E /* tangentspace.cpp */,
-				1E792C337A79539432A24E3A /* tangentspace.hpp */,
-				577C49727531187932834125 /* text2D.cpp */,
-				70704A687A6C06096C521D35 /* text2D.hpp */,
-				20060EE77939418F30F210FC /* texture.cpp */,
-				11AE52232D9A60220FD10E92 /* texture.hpp */,
-				465D407E44B422BE6B0867BB /* vboindexer.cpp */,
-				0617709647154C5312EA7911 /* vboindexer.hpp */,
-			);
-			name = common;
-			sourceTree = "<group>";
-		};
-		5B8508D0488E7E8758F20974 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1BF43C1D244F000B5B953BEE /* libMath_d.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		632B395042875C020C575E70 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4363A7E3223F7D5300DC2434 /* CoreVideo.framework */,
-				4363A7E1223F7D3A00DC2434 /* IOKit.framework */,
-				4363A7DF223F7D3100DC2434 /* Cocoa.framework */,
-				136E211F7CB23C5D0D331BCF /* CoreFoundation.framework */,
-				703611A90ED77A4163B85BF4 /* CoreGraphics.framework */,
-				3E3327527D1D235E1964334B /* OpenGL.framework */,
-				061D684A595D242F454B6311 /* AppKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		729E04422E3940B074962D5B /* src */ = {
-			isa = PBXGroup;
-			children = (
-				3F9E29FC79725AB80CBC4004 /* Color.h */,
-				73D61A880D521A26745C5E0B /* Common.cpp */,
-				1FF2647574DB76922BEF0D21 /* Common.h */,
-				119217B11CF7252E18D54B22 /* Index.h */,
-				4AED24E75B4805F872FD67ED /* Light.h */,
-				1649406C0CAC04AD16DC5F40 /* Material.h */,
-				1C2143486C64597278CE287F /* Matrix2.h */,
-				2C032CF67629331E1F222000 /* Matrix4.h */,
-				000571B32E772EDD44DB0AE5 /* Mesh.h */,
-				657E4A4A509178965EB14318 /* Model.cpp */,
-				7D12507D65920E43048F714D /* Model.h */,
-				77D5547E3721177043003DC7 /* Render.cpp */,
-				19990CD640FF322B34723B96 /* Render.h */,
-				229B1A921A2056112E4B5138 /* SoftRender.cpp */,
-				7F5878DE532B675F483A5A18 /* SoftRender.h */,
-				7B2B59A8536A7BDE41812B4B /* Texture.h */,
-				5017265B42B6542D5D1D3992 /* TextureManager.cpp */,
-				1F3303F411876AF43B8672AA /* TextureManager.h */,
-				7E4921A16CE27CE955E2776A /* Vector2.h */,
-				10F833B34523360A0BF5418B /* Vector3.h */,
-				21E62C8A259F18AB27272C3E /* Vector4.h */,
-				485A251279474B622CC16927 /* Vertex.h */,
-				295105534C3A0E4A54A732B9 /* slm.h */,
-				1B5E40DC412033E270FF11EC /* stb_image.h */,
-				43B143AF31057E6E6DBD47C6 /* stb_image_write.h */,
-				2F92278871045D86306A3C05 /* test.cpp */,
-				289A24C73C1050E56CD879D2 /* test.h */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
-		751626AF48D12C635499499B /* SoftRasterization */ = {
-			isa = PBXGroup;
-			children = (
-				1BF46BE3183A0801240C4D71 /* SoftRasterization */,
-				632B395042875C020C575E70 /* Frameworks */,
-				1CDA6AA1312A45907A632D44 /* Products */,
-				7D0F781F3C85785C039D4F70 /* Projects */,
-			);
-			name = SoftRasterization;
-			sourceTree = "<group>";
-		};
-		7D0F781F3C85785C039D4F70 /* Projects */ = {
-			isa = PBXGroup;
-			children = (
-				689F573F13F755B578C83393 /* Math.xcodeproj */,
-			);
-			name = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		072743856CF7051134284F2F /* SoftRasterization */ = {
+		7CB410E82EE2245B668C09E0 /* SoftRasterization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01BE00B77B8A459202A54C79 /* Build configuration list for PBXNativeTarget "SoftRasterization" */;
+			buildConfigurationList = 6E21677E37D03F937D145F9A /* Build configuration list for PBXNativeTarget "SoftRasterization" */;
 			buildPhases = (
-				31FC58EE2BB2724E6CA40ABE /* Resources */,
-				7FA86F6E498B4DAD435861AE /* Sources */,
-				6D9615E72B4D09D530770A7F /* Frameworks */,
+				134110EA2ADB3D6E1D013416 /* Resources */,
+				2EC264E8686E1A5C17DC1D58 /* Sources */,
+				2806386B7D9D08D37A423D05 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				080E673D0D8E74DB6DDF672B /* PBXTargetDependency */,
+				10CB0B7D3BAA4BF41A9A3378 /* PBXTargetDependency */,
 			);
-			name = SoftRasterization;
+			name = "SoftRasterization";
 			productInstallPath = "$(HOME)/bin";
-			productName = SoftRasterization;
-			productReference = 7013108812072FC947F676E6 /* SoftRasterization_d */;
+			productName = "SoftRasterization";
+			productReference = 310C0AD95D2818043E05727F /* SoftRasterization */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -272,42 +284,36 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SoftRasterization" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 751626AF48D12C635499499B /* SoftRasterization */;
+			mainGroup = 3EAD017D72B369C31A4F66C8 /* SoftRasterization */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5B8508D0488E7E8758F20974 /* Products */;
-					ProjectRef = 689F573F13F755B578C83393 /* Math.xcodeproj */;
+					ProductGroup = 1CBB58445D8B556B04955AC7 /* Products */;
+					ProjectRef = 44C90D8D598407C14A64726E /* Math.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				072743856CF7051134284F2F /* SoftRasterization */,
+				7CB410E82EE2245B668C09E0 /* SoftRasterization */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1BF43C1D244F000B5B953BEE /* libMath_d.dylib */ = {
+		46997A1439E061C972CC41DE /* libMath.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
-			path = libMath_d.dylib;
-			remoteRef = 3F077470206579C32A9D4187 /* PBXContainerItemProxy */;
+			path = "../../Bin/Xcode4-OSX/Native/libMath.dylib";
+			remoteRef = 626162FD69DC6C7B28BE7BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		31FC58EE2BB2724E6CA40ABE /* Resources */ = {
+		134110EA2ADB3D6E1D013416 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,53 +323,80 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7FA86F6E498B4DAD435861AE /* Sources */ = {
+		2EC264E8686E1A5C17DC1D58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413133AE7D8C30D92D236541 /* controls.cpp in Sources */,
-				3788552D1D0E0C987EC344E9 /* objloader.cpp in Sources */,
-				7C3E61A3305258D71DEF37BF /* quaternion_utils.cpp in Sources */,
-				1B5368C8361F43213C40270D /* shader.cpp in Sources */,
-				06324108237F1870772962F2 /* tangentspace.cpp in Sources */,
-				13DA0373255E7ACF51204C95 /* text2D.cpp in Sources */,
-				145E643844FE3CE8249956F9 /* texture.cpp in Sources */,
-				37DD380A4358468A2ED6089F /* vboindexer.cpp in Sources */,
-				367E49A855664E6A2FDA41FD /* main.cpp in Sources */,
-				409C5B806F5F4694590B6330 /* Common.cpp in Sources */,
-				01EC4D96550F5FE21A9A2987 /* Model.cpp in Sources */,
-				71032CE930127B86454E2B67 /* Render.cpp in Sources */,
-				5F021FF5393D085B42753BA1 /* SoftRender.cpp in Sources */,
-				5E9853956102503E34697939 /* TextureManager.cpp in Sources */,
-				7FB6337634EC7E600C6B76F4 /* test.cpp in Sources */,
-				6D0912BE2D9804F732A43F79 /* stdafx.cpp in Sources */,
+				4DF953045D0C7E187EF85601 /* controls.cpp in Sources */,
+				2F397EC3516B5593301C0DDE /* objloader.cpp in Sources */,
+				29572B447F8D423741555083 /* quaternion_utils.cpp in Sources */,
+				62A612CA151D52F916A74543 /* shader.cpp in Sources */,
+				48926F196B2374FC03A02622 /* tangentspace.cpp in Sources */,
+				64B621D758007CD879500C8F /* text2D.cpp in Sources */,
+				5A9F1C58713221435BA80857 /* texture.cpp in Sources */,
+				6460012611D009654D3A1ED2 /* vboindexer.cpp in Sources */,
+				0C7A27D85DB347D913A35746 /* main.cpp in Sources */,
+				5DB6085C736B0E5C58CE46AE /* Common.cpp in Sources */,
+				59440E335A7E439371841941 /* Model.cpp in Sources */,
+				386D155E568D47C15BA615B7 /* Render.cpp in Sources */,
+				7CB16930644E68C761770710 /* SoftRender.cpp in Sources */,
+				591C5DA92D8C5EB13C260822 /* TextureManager.cpp in Sources */,
+				232708FA0F156AE03EB570DE /* test.cpp in Sources */,
+				43146C8314B738272D6226F8 /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
 /* Begin PBXTargetDependency section */
-		080E673D0D8E74DB6DDF672B /* PBXTargetDependency */ = {
+		10CB0B7D3BAA4BF41A9A3378 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = libMath.dylib;
-			targetProxy = 118F4EE617E403655E6628FD /* PBXContainerItemProxy */;
+			name = "libMath.dylib";
+			targetProxy = 08E927580B9D0B395A681B38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		32375FE75A3358C37E65292F /* Profile */ = {
+		68DA5659144637A276A41C54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = SoftRasterization_p;
+				PRODUCT_NAME = "SoftRasterization";
 			};
-			name = Profile;
+			name = "Release";
 		};
-		378847D43E3454283D19351C /* Release */ = {
+		696442C1133D17770E1B196D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "SoftRasterization_d";
+			};
+			name = "Debug";
+		};
+		2779303F388F6145170E4B29 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "SoftRasterization_p";
+			};
+			name = "Profile";
+		};
+		08FD3AA81717210037325B3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -374,27 +407,27 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../SoftRasterization/stdafx.h;
+				GCC_PREFIX_HEADER = "../../SoftRasterization/stdafx.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					NDEBUG,
-					_NDEBUG,
-					GLM_ENABLE_EXPERIMENTAL,
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
-					../../SoftRasterization/src/Platforms/OSX,
-					../../SoftRasterization/src/Platforms/Apple,
-					../../SoftRasterization/src/Platforms/Unix,
-					../../SoftRasterization/src,
-					../../SoftRasterization/common/Platforms/OSX,
-					../../SoftRasterization/common/Platforms/Apple,
-					../../SoftRasterization/common/Platforms/Unix,
-					../../SoftRasterization/common,
-					../../SoftRasterization/Platforms/OSX,
-					../../SoftRasterization/Platforms/Apple,
-					../../SoftRasterization/Platforms/Unix,
-					../../SoftRasterization,
+					"../../Common/Platforms/OSX",
+					"../../Common/Platforms/Apple",
+					"../../Common/Platforms/Unix",
+					"../../Common",
+					"../../SoftRasterization/src/Platforms/OSX",
+					"../../SoftRasterization/src/Platforms/Apple",
+					"../../SoftRasterization/src/Platforms/Unix",
+					"../../SoftRasterization/src",
+					"../../SoftRasterization/Platforms/OSX",
+					"../../SoftRasterization/Platforms/Apple",
+					"../../SoftRasterization/Platforms/Unix",
+					"../../SoftRasterization",
 					"../../External/glew-2.1.0/include",
 					"../../External/glfw-3.2.1/include",
 					"../../External/glm-0.9.9.3",
@@ -410,7 +443,7 @@
 					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
 					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OBJROOT = "../../Temp/Xcode4-OSX/Release/SoftRasterization";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -443,21 +476,9 @@
 					"-Wextra",
 				);
 			};
-			name = Release;
+			name = "Release";
 		};
-		51D3169E6F3655AB6DCB45AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
-				GCC_DYNAMIC_NO_PIC = NO;
-				INSTALL_PATH = "@rpath";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = SoftRasterization;
-			};
-			name = Release;
-		};
-		62D123E54D767F100E3E1605 /* Debug */ = {
+		60ED04C12B4E1AAF5B3A4DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -468,27 +489,27 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../SoftRasterization/stdafx.h;
+				GCC_PREFIX_HEADER = "../../SoftRasterization/stdafx.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					DEBUG,
-					_DEBUG,
-					GLM_ENABLE_EXPERIMENTAL,
+					"DEBUG",
+					"_DEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
-					../../SoftRasterization/src/Platforms/OSX,
-					../../SoftRasterization/src/Platforms/Apple,
-					../../SoftRasterization/src/Platforms/Unix,
-					../../SoftRasterization/src,
-					../../SoftRasterization/common/Platforms/OSX,
-					../../SoftRasterization/common/Platforms/Apple,
-					../../SoftRasterization/common/Platforms/Unix,
-					../../SoftRasterization/common,
-					../../SoftRasterization/Platforms/OSX,
-					../../SoftRasterization/Platforms/Apple,
-					../../SoftRasterization/Platforms/Unix,
-					../../SoftRasterization,
+					"../../Common/Platforms/OSX",
+					"../../Common/Platforms/Apple",
+					"../../Common/Platforms/Unix",
+					"../../Common",
+					"../../SoftRasterization/src/Platforms/OSX",
+					"../../SoftRasterization/src/Platforms/Apple",
+					"../../SoftRasterization/src/Platforms/Unix",
+					"../../SoftRasterization/src",
+					"../../SoftRasterization/Platforms/OSX",
+					"../../SoftRasterization/Platforms/Apple",
+					"../../SoftRasterization/Platforms/Unix",
+					"../../SoftRasterization",
 					"../../External/glew-2.1.0/include",
 					"../../External/glfw-3.2.1/include",
 					"../../External/glm-0.9.9.3",
@@ -504,7 +525,7 @@
 					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
 					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OBJROOT = "../../Temp/Xcode4-OSX/Debug/SoftRasterization";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -537,21 +558,9 @@
 					"-Wextra",
 				);
 			};
-			name = Debug;
+			name = "Debug";
 		};
-		75B743C6394F29FF60624B61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
-				GCC_DYNAMIC_NO_PIC = NO;
-				INSTALL_PATH = "@rpath";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = SoftRasterization_d;
-			};
-			name = Debug;
-		};
-		7F0B388950F5355D18396666 /* Profile */ = {
+		27AE48C84C7F584357F272D9 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -562,27 +571,27 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../SoftRasterization/stdafx.h;
+				GCC_PREFIX_HEADER = "../../SoftRasterization/stdafx.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					NDEBUG,
-					_NDEBUG,
-					GLM_ENABLE_EXPERIMENTAL,
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
-					../../SoftRasterization/src/Platforms/OSX,
-					../../SoftRasterization/src/Platforms/Apple,
-					../../SoftRasterization/src/Platforms/Unix,
-					../../SoftRasterization/src,
-					../../SoftRasterization/common/Platforms/OSX,
-					../../SoftRasterization/common/Platforms/Apple,
-					../../SoftRasterization/common/Platforms/Unix,
-					../../SoftRasterization/common,
-					../../SoftRasterization/Platforms/OSX,
-					../../SoftRasterization/Platforms/Apple,
-					../../SoftRasterization/Platforms/Unix,
-					../../SoftRasterization,
+					"../../Common/Platforms/OSX",
+					"../../Common/Platforms/Apple",
+					"../../Common/Platforms/Unix",
+					"../../Common",
+					"../../SoftRasterization/src/Platforms/OSX",
+					"../../SoftRasterization/src/Platforms/Apple",
+					"../../SoftRasterization/src/Platforms/Unix",
+					"../../SoftRasterization/src",
+					"../../SoftRasterization/Platforms/OSX",
+					"../../SoftRasterization/Platforms/Apple",
+					"../../SoftRasterization/Platforms/Unix",
+					"../../SoftRasterization",
 					"../../External/glew-2.1.0/include",
 					"../../External/glfw-3.2.1/include",
 					"../../External/glm-0.9.9.3",
@@ -598,7 +607,7 @@
 					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
 					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OBJROOT = "../../Temp/Xcode4-OSX/Profile/SoftRasterization";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -631,32 +640,33 @@
 					"-Wextra",
 				);
 			};
-			name = Profile;
+			name = "Profile";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01BE00B77B8A459202A54C79 /* Build configuration list for PBXNativeTarget "SoftRasterization" */ = {
+		6E21677E37D03F937D145F9A /* Build configuration list for PBXNativeTarget "SoftRasterization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51D3169E6F3655AB6DCB45AE /* Release */,
-				75B743C6394F29FF60624B61 /* Debug */,
-				32375FE75A3358C37E65292F /* Profile */,
+				68DA5659144637A276A41C54 /* Release */,
+				696442C1133D17770E1B196D /* Debug */,
+				2779303F388F6145170E4B29 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release";
 		};
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "SoftRasterization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378847D43E3454283D19351C /* Release */,
-				62D123E54D767F100E3E1605 /* Debug */,
-				7F0B388950F5355D18396666 /* Profile */,
+				08FD3AA81717210037325B3C /* Release */,
+				60ED04C12B4E1AAF5B3A4DD0 /* Debug */,
+				27AE48C84C7F584357F272D9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release";
 		};
 /* End XCConfigurationList section */
+
 	};
 	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
 }

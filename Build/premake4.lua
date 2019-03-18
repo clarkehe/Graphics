@@ -390,6 +390,11 @@ function SetUpGlfw( )
 		links { "glfw3" }
 		libdirs { "../External/glfw-3.2.1/build/src/Debug"}
 	end
+
+	--for glfw3
+	if IsTargetApple() then
+		links { "Cocoa.framework", "IOKit.framework", "CoreVideo.framework" }
+	end
 end
 
 function SetUpGlm( )
@@ -706,13 +711,15 @@ project "SoftRasterization"
 	end
 
 	AddFiles    ( "../SoftRasterization/src", "stdafx" )
-	AddFiles    ( "../SoftRasterization/common", nil )
+	AddFiles    ( "../Common", nil )
 	AddFiles    ( "../SoftRasterization", nil )
+	files 		{ "../L2/StandardShading.*" }
 
 	excludes  ("../SoftRasterization/external/**.*")
 	excludes  ("../SoftRasterization/3rdparty/**.*")
 
-	AddIncludes { "../SoftRasterization/src", "../SoftRasterization/common", "../SoftRasterization" }
+	AddIncludes { "../Common"}
+	AddIncludes { "../SoftRasterization/src", "../SoftRasterization" }
 
 	if not IsTargetWindows() then
 		excludes "../SoftRasterization/targetver.*"
@@ -725,4 +732,42 @@ project "SoftRasterization"
 	SetUpGlm()
 	SetUpAssimp()
 
+project "L1"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B33"
+	kind  "ConsoleApp"
+	links { "Math" }
 
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L1", nil )
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+
+project "L2"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B34"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L2", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../L2/StandardShading.*" }
+
+	AddIncludes { "../Common"}
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()

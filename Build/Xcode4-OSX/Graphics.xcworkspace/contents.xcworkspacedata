@@ -10,4 +10,10 @@
 	<FileRef
 		location = "group:SoftRasterization.xcodeproj">
 	</FileRef>
+	<FileRef
+		location = "group:L1.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:L2.xcodeproj">
+	</FileRef>
 </Workspace>

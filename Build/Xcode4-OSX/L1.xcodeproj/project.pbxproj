@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		704966995EFF6CA15E3B3352 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3687664436EF255125917A0D /* main.cpp */; };
+		2CDB1BA04868571E034009B5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */; };
+		5C6E3E3B35064B5A26DE6E6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC013742F923C625AF0732E /* CoreGraphics.framework */; };
+		03DC20A369611F174786371E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C1121F398B000206CD30F4 /* OpenGL.framework */; };
+		084F0DA21BC2740529DC5016 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AB798A7A8021CE6D071918 /* AppKit.framework */; };
+		20B54D757A0A5B2E294916F0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000548F7522B17EC394B15E1 /* Cocoa.framework */; };
+		790F662C64D1708B65FE29F9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5907F96DED6B5801233042 /* IOKit.framework */; };
+		2F557CCB0EEE6B633EF7054D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */; };
+		1E1465581E5D7E69566F4148 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA013827BD6468F15564994 /* libMath.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62F7650418924CF7003D3350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57593D40395515D50C01521C;
+			remoteInfo = "libMath.dylib";
+		};
+		6E3E507E31EE395125D90433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA045E94E351642555541A8;
+			remoteInfo = "libMath.dylib";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3687664436EF255125917A0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../L1/main.cpp"; sourceTree = "<group>"; };
+		208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		6DC013742F923C625AF0732E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		65C1121F398B000206CD30F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		42AB798A7A8021CE6D071918 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		000548F7522B17EC394B15E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = "SDKROOT"; };
+		7E5907F96DED6B5801233042 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IOKit.framework"; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = "SDKROOT"; };
+		4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = "SDKROOT"; };
+		6922775173A4548F1BF116F3 /* L1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "L1"; path = "L1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B905AB533A0B4841986C0A /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A135D645D0370711F167D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDB1BA04868571E034009B5 /* CoreFoundation.framework in Frameworks */,
+				5C6E3E3B35064B5A26DE6E6D /* CoreGraphics.framework in Frameworks */,
+				03DC20A369611F174786371E /* OpenGL.framework in Frameworks */,
+				084F0DA21BC2740529DC5016 /* AppKit.framework in Frameworks */,
+				20B54D757A0A5B2E294916F0 /* Cocoa.framework in Frameworks */,
+				790F662C64D1708B65FE29F9 /* IOKit.framework in Frameworks */,
+				2F557CCB0EEE6B633EF7054D /* CoreVideo.framework in Frameworks */,
+				1E1465581E5D7E69566F4148 /* libMath.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78FE2C16706518444CF11A72 /* L1 */ = {
+			isa = PBXGroup;
+			children = (
+				720071837DBD2FF46E2903AE /* L1 */,
+				0CDB228D722C386232EF23AC /* Frameworks */,
+				1B170F214B4A6B5B52590FC9 /* Products */,
+				69FE55783F767C7E5E283C6A /* Projects */,
+			);
+			name = "L1";
+			sourceTree = "<group>";
+		};
+		720071837DBD2FF46E2903AE /* L1 */ = {
+			isa = PBXGroup;
+			children = (
+				3687664436EF255125917A0D /* main.cpp */,
+			);
+			name = "L1";
+			sourceTree = "<group>";
+		};
+		0CDB228D722C386232EF23AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */,
+				6DC013742F923C625AF0732E /* CoreGraphics.framework */,
+				65C1121F398B000206CD30F4 /* OpenGL.framework */,
+				42AB798A7A8021CE6D071918 /* AppKit.framework */,
+				000548F7522B17EC394B15E1 /* Cocoa.framework */,
+				7E5907F96DED6B5801233042 /* IOKit.framework */,
+				4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		1B170F214B4A6B5B52590FC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6922775173A4548F1BF116F3 /* L1 */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		69FE55783F767C7E5E283C6A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				72B905AB533A0B4841986C0A /* Math.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		67AE01C1582E40ED33966EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA013827BD6468F15564994 /* libMath.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63DA0DA043715551756E3E8E /* L1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A0086406555C266F35193D /* Build configuration list for PBXNativeTarget "L1" */;
+			buildPhases = (
+				2EF4567E1980411A530E7089 /* Resources */,
+				56E049C8279C267D5DCB556F /* Sources */,
+				2A135D645D0370711F167D15 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B054D742E057BD01B3941C9 /* PBXTargetDependency */,
+			);
+			name = "L1";
+			productInstallPath = "$(HOME)/bin";
+			productName = "L1";
+			productReference = 6922775173A4548F1BF116F3 /* L1 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L1" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 78FE2C16706518444CF11A72 /* L1 */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 67AE01C1582E40ED33966EFA /* Products */;
+					ProjectRef = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				63DA0DA043715551756E3E8E /* L1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AA013827BD6468F15564994 /* libMath.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "../../Bin/Xcode4-OSX/Native/libMath.dylib";
+			remoteRef = 62F7650418924CF7003D3350 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EF4567E1980411A530E7089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56E049C8279C267D5DCB556F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704966995EFF6CA15E3B3352 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		4B054D742E057BD01B3941C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libMath.dylib";
+			targetProxy = 6E3E507E31EE395125D90433 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42F102A8094C0A353FB061B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "L1";
+			};
+			name = "Release";
+		};
+		26026B33204731A41AA5075A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "L1_d";
+			};
+			name = "Debug";
+		};
+		280D21402C12056E002D2FB8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "L1_p";
+			};
+			name = "Profile";
+		};
+		5C7657A5490C717E109062F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Release/L1";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Release";
+		};
+		5902356F3D9F374C0E8A1F0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG",
+					"_DEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/L1";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Debug";
+		};
+		68BA2AE4013D557453E171BF /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/L1";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Profile";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A0086406555C266F35193D /* Build configuration list for PBXNativeTarget "L1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F102A8094C0A353FB061B7 /* Release */,
+				26026B33204731A41AA5075A /* Debug */,
+				280D21402C12056E002D2FB8 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C7657A5490C717E109062F8 /* Release */,
+				5902356F3D9F374C0E8A1F0F /* Debug */,
+				68BA2AE4013D557453E171BF /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
