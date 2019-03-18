@@ -35,7 +35,8 @@ LONGLONG CalculateFrequency()
 	return frequency.QuadPart;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+
 // Updated once on boot
 static const LONGLONG TIMER_FREQUENCY = CalculateFrequency(); 
 
@@ -66,6 +67,7 @@ struct TimeProfile
 
 #endif
 
+#if 1
 
 int main( void )
 {
@@ -77,10 +79,13 @@ int main( void )
 	}
 
 	glfwWindowHint(GLFW_SAMPLES, 4);
-	//glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
-	//glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     
+    //The following two lines needed for 3.3 on Mac OSx
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
     GLFWwindow *window = nullptr;
     
     // Open a window and create its OpenGL context
@@ -99,7 +104,7 @@ int main( void )
 		fprintf(stderr, "Failed to initialize GLEW\n");
 		return -1;
 	}
-
+    
 	// Ensure we can capture the escape key being pressed below
 	glfwSetInputMode(window,  GLFW_STICKY_KEYS, GL_TRUE );
 	glfwSetCursorPos(window, 1024/2, 768/2);
@@ -116,10 +121,11 @@ int main( void )
 	// Cull triangles which normal is not towards the camera
 	glEnable(GL_CULL_FACE);
 
-	//GLuint VertexArrayID;
-	//glGenVertexArrays(1, &VertexArrayID);
-	//glBindVertexArray(VertexArrayID);
-
+    //Very important!!!
+	GLuint VertexArrayID;
+	glGenVertexArrays(1, &VertexArrayID);
+	glBindVertexArray(VertexArrayID);
+    
 	// Create and compile our GLSL program from the shaders
 	GLuint programID = LoadShaders( "../../../SoftRasterization/StandardShading.vertexshader",
                                     "../../../SoftRasterization/StandardShading.fragmentshader" );
@@ -271,11 +277,6 @@ int main( void )
 			(void*)0                          // array buffer offset
 		);
 
-		//{
-		//	glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
-		//	glUnmapBuffer( GL_ARRAY_BUFFER );
-		//}
-
 		// Draw the triangles !
 		glDrawArrays(GL_TRIANGLES, 0, vertices.size() );
 
@@ -299,11 +300,11 @@ int main( void )
 	glDeleteBuffers(1, &normalbuffer);
 	glDeleteProgram(programID);
 	glDeleteTextures(1, &renderTex);
-	//glDeleteVertexArrays(1, &VertexArrayID);
+	glDeleteVertexArrays(1, &VertexArrayID);
 
 	// Close OpenGL window and terminate GLFW
 	glfwTerminate();
-
 	return 0;
 }
 
+#endif
