@@ -16,7 +16,7 @@ namespace SoftRender
 			shininess = 0;
 		}
 
-		Material(Color& _ambient, Color& _diffuse, Color& _specular, float _shininess):
+		Material(const Color& _ambient, const Color& _diffuse, const Color& _specular, const float _shininess):
 			ambient(_ambient), diffuse(_diffuse), specular(_specular), shininess(_shininess)
 			{}
 	};

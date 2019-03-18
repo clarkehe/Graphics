@@ -47,10 +47,12 @@ namespace SoftRender{
 		{
 			return (x==rhs.x && y == rhs.y && z == rhs.z);
 		}
+        
 		bool operator!=(const Vec3<T>& rhs) const
 		{
 			return !operator==(rhs);
 		}
+        
 		Vec3<T> Cross(const Vec3<T>& rhs)const{return Vec3<T>(y*rhs.z-z*rhs.y, z*rhs.x - x*rhs.z, x*rhs.y -y*rhs.x);}
 		T Dot(const Vec3<T>& rhs) const{ return x*rhs.x + y*rhs.y + z*rhs.z;}
 		T LengthSqr() const {return x*x + y*y + z*z;}

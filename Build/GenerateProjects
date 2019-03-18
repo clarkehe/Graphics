@@ -1,0 +1,6 @@
+#!/bin/sh
+
+OS_IS_LINUX=`uname | grep -io "linux" | tr "[A-Z]" "[a-z]"`
+../Tools/premake/premake4-osx "$@" --moc --uic xcode4
+
+

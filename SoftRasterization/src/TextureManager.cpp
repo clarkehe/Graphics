@@ -51,7 +51,7 @@ namespace SoftRender
 
 	vector<Color> &TextureManager::getTexture(std::string & filepath)
 	{
-		if (textureMaps.find(filepath) != textureMaps.end())
+		//if (textureMaps.find(filepath) != textureMaps.end())
 		{
 			return textureMaps.at(filepath);
 		}

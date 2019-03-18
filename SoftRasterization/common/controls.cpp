@@ -1,5 +1,5 @@
 // Include GLFW
-#include <GL/glfw.h>
+#include <GLFW/glfw3.h>
 
 // Include GLM
 #include <glm/glm.hpp>
@@ -31,7 +31,7 @@ float speed = 3.0f; // 3 units / second
 float mouseSpeed = 0.005f;
 
 
-void computeMatricesFromInputs(){
+void computeMatricesFromInputs( GLFWwindow *window){
 
 	// glfwGetTime is called only once, the first time this function is called
 	static double lastTime = glfwGetTime();
@@ -41,8 +41,8 @@ void computeMatricesFromInputs(){
 	float deltaTime = float(currentTime - lastTime);
 
 	// Get mouse position
-	int xpos, ypos;
-	glfwGetMousePos(&xpos, &ypos);
+	double xpos, ypos;
+	glfwGetCursorPos(window, &xpos, &ypos);
 
 	// Reset mouse position for next frame
 	//glfwSetMousePos(1024/2, 768/2);
@@ -64,24 +64,24 @@ void computeMatricesFromInputs(){
 		0,
 		cos(horizontalAngle - 3.14f/2.0f)
 	);
-	
+    
 	// Up vector
 	glm::vec3 up = glm::cross( right, direction );
 
 	// Move forward
-	if (glfwGetKey( GLFW_KEY_UP ) == GLFW_PRESS){
+	if (glfwGetKey(window, GLFW_KEY_UP ) == GLFW_PRESS){
 		//position += direction * deltaTime * speed;
 	}
 	// Move backward
-	if (glfwGetKey( GLFW_KEY_DOWN ) == GLFW_PRESS){
+	if (glfwGetKey(window, GLFW_KEY_DOWN ) == GLFW_PRESS){
 		//position -= direction * deltaTime * speed;
 	}
 	// Strafe right
-	if (glfwGetKey( GLFW_KEY_RIGHT ) == GLFW_PRESS){
+	if (glfwGetKey(window, GLFW_KEY_RIGHT ) == GLFW_PRESS){
 		//position += right * deltaTime * speed;
 	}
 	// Strafe left
-	if (glfwGetKey( GLFW_KEY_LEFT ) == GLFW_PRESS){
+	if (glfwGetKey(window, GLFW_KEY_LEFT ) == GLFW_PRESS){
 		//position -= right * deltaTime * speed;
 	}
 
@@ -100,6 +100,5 @@ void computeMatricesFromInputs(){
 
 	// For the next frame, the "last time" will be "now"
 	lastTime = currentTime;
-	float FoV = initialFoV - 5 * glfwGetMouseWheel();
-
+    float FoV = initialFoV; //- 5 * glfwGetMouseWheel();
 }

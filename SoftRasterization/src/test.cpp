@@ -1,5 +1,6 @@
 #include "test.h"
 #include "Render.h"
+#include "Material.h"
 
 using namespace SoftRender;
 using namespace std;
@@ -36,15 +37,15 @@ void test::testRender()
 	render.SetFrustum(M_PI_2, float(WIDTH)/(float)HEIGHT, 0.1f, 1000.0f);
 	render.SetCamera(Vec3f(0, 0, 15.0f));
 
-	Light light(
-		Vec3f(0.0f, 0.0f, 100.0f),
-		Color(0.2f, 0.2f, 0.2f),
-		Color(0.5f, 0.5f, 0.5f),
-		Color(1.0f, 1.0f, 1.0f)
-	);
+    Light light;
+    light.worldPos = Vec3f(0.0f, 0.0f, 100.0f);
+    light.ambient = Color(0.2f, 0.2f, 0.2f);
+    light.diffuse = Color(0.5f, 0.5f, 0.5f);
+    light.specular = Color(1.0f, 1.0f, 1.0f);
+                           
 	render.SetLight(light);
-
 	render.currentMode = Textured;
+                           
 	Material m(
 		Color(1.0f, 0.5f, 0.31f),
 		Color(1.0f, 0.5f, 0.31f),

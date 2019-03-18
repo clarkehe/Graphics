@@ -8,7 +8,7 @@
 #include <GL/glew.h>
 
 // Include GLFW
-#include <GL/glfw.h>
+#include <GLFW/glfw3.h>
 
 // Include GLM
 #include <glm/glm.hpp>
@@ -21,8 +21,12 @@ using namespace glm;
 #include <common/objloader.hpp>
 #include <common/vboindexer.hpp>
 #include "src/SoftRender.h"
-#include <Windows.h>
 
+#ifdef _MSC_VER
+#include <Windows.h>
+#endif
+
+#ifdef _MSC_VER
 
 LONGLONG CalculateFrequency()
 {
@@ -60,6 +64,9 @@ struct TimeProfile
 	LONGLONG mStartTime;
 };
 
+#endif
+
+
 int main( void )
 {
 	// Initialise GLFW
@@ -69,18 +76,22 @@ int main( void )
 		return -1;
 	}
 
-	glfwOpenWindowHint(GLFW_FSAA_SAMPLES, 4);
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 3);
-	glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	// Open a window and create its OpenGL context
-	if( !glfwOpenWindow( 1024, 768, 0,0,0,0, 32,0, GLFW_WINDOW ) )
+	glfwWindowHint(GLFW_SAMPLES, 4);
+	//glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+	//glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    
+    GLFWwindow *window = nullptr;
+    
+    // Open a window and create its OpenGL context
+	if( !(window=glfwCreateWindow( 1024, 768,  "Test", nullptr, nullptr )) )
 	{
 		fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
 		glfwTerminate();
 		return -1;
 	}
+    
+    glfwMakeContextCurrent(window);
 
 	// Initialize GLEW
 	glewExperimental = true; // Needed for core profile
@@ -89,29 +100,29 @@ int main( void )
 		return -1;
 	}
 
-	glfwSetWindowTitle( "Tutorial 08" );
-
 	// Ensure we can capture the escape key being pressed below
-	glfwEnable( GLFW_STICKY_KEYS );
-	glfwSetMousePos(1024/2, 768/2);
+	glfwSetInputMode(window,  GLFW_STICKY_KEYS, GL_TRUE );
+	glfwSetCursorPos(window, 1024/2, 768/2);
 
 	// Dark blue background
 	glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
 
 	// Enable depth test
 	glEnable(GL_DEPTH_TEST);
+    
 	// Accept fragment if it closer to the camera than the former one
 	glDepthFunc(GL_LESS); 
 
 	// Cull triangles which normal is not towards the camera
 	glEnable(GL_CULL_FACE);
 
-	GLuint VertexArrayID;
-	glGenVertexArrays(1, &VertexArrayID);
-	glBindVertexArray(VertexArrayID);
+	//GLuint VertexArrayID;
+	//glGenVertexArrays(1, &VertexArrayID);
+	//glBindVertexArray(VertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = LoadShaders( "StandardShading.vertexshader", "StandardShading.fragmentshader" );
+	GLuint programID = LoadShaders( "../../../SoftRasterization/StandardShading.vertexshader",
+                                    "../../../SoftRasterization/StandardShading.fragmentshader" );
 
 	// Get a handle for our "MVP" uniform
 	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
@@ -173,15 +184,16 @@ int main( void )
 	glBindBuffer(GL_ARRAY_BUFFER, normalbuffer);
 	glBufferData(GL_ARRAY_BUFFER, normals.size() * sizeof(glm::vec3), &normals[0], GL_STATIC_DRAW);
 
-	GLuint mGLBuffer;
-	{
-		glGenBuffers( 1, &mGLBuffer );
-		glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
-		glBufferData( GL_ARRAY_BUFFER, 5*1024*1024, NULL, GL_STREAM_DRAW );
-	}
+	//GLuint mGLBuffer;
+	//{
+	//	glGenBuffers( 1, &mGLBuffer );
+	//	glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
+	//	glBufferData( GL_ARRAY_BUFFER, 5*1024*1024, NULL, GL_STREAM_DRAW );
+	//}
 
 	// Get a handle for our "LightPosition" uniform
 	glUseProgram(programID);
+    
 	GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
 
 	CSoftRender softRender;
@@ -195,7 +207,8 @@ int main( void )
 		glUseProgram(programID);
 
 		// Compute the MVP matrix from keyboard and mouse input
-		computeMatricesFromInputs();
+		computeMatricesFromInputs(window);
+        
 		glm::mat4 ProjectionMatrix = getProjectionMatrix();
 		glm::mat4 ViewMatrix = getViewMatrix();
 		glm::mat4 ModelMatrix = glm::scale(glm::mat4(1.0), glm::vec3(4/3.0f, 1.0f, 1.0f));
@@ -212,15 +225,15 @@ int main( void )
 
 		// Bind our texture in Texture Unit 0
 		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, renderTex);
+        glBindTexture(GL_TEXTURE_2D, renderTex);
 		// Set our "myTextureSampler" sampler to user Texture Unit 0
 		glUniform1i(TextureID, 0);
 
-		{
-			TimeProfile tem;
-			glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
-			glMapBufferRange( GL_ARRAY_BUFFER, 0, 5*1024*1024, GL_MAP_WRITE_BIT | GL_MAP_UNSYNCHRONIZED_BIT);
-		}
+		//{
+		//	//TimeProfile tem;
+		//	glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
+		//	glMapBufferRange( GL_ARRAY_BUFFER, 0, 5*1024*1024, GL_MAP_WRITE_BIT | GL_MAP_UNSYNCHRONIZED_BIT);
+		//}
 
 		// 1rst attribute buffer : vertices
 		glEnableVertexAttribArray(0);
@@ -258,10 +271,10 @@ int main( void )
 			(void*)0                          // array buffer offset
 		);
 
-		{
-			glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );		
-			glUnmapBuffer( GL_ARRAY_BUFFER );
-		}
+		//{
+		//	glBindBuffer( GL_ARRAY_BUFFER, mGLBuffer );
+		//	glUnmapBuffer( GL_ARRAY_BUFFER );
+		//}
 
 		// Draw the triangles !
 		glDrawArrays(GL_TRIANGLES, 0, vertices.size() );
@@ -271,11 +284,14 @@ int main( void )
 		glDisableVertexAttribArray(2);
 
 		// Swap buffers
-		glfwSwapBuffers();
+		glfwSwapBuffers(window);
+        
+        /* Poll for and process events */
+        glfwPollEvents();
 
 	} // Check if the ESC key was pressed or the window was closed
-	while( glfwGetKey( GLFW_KEY_ESC ) != GLFW_PRESS &&
-		   glfwGetWindowParam( GLFW_OPENED ) );
+	while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS /*&&
+		   glfwGetWindowAttrib(window, GLFW_OPENED )*/ );
 
 	// Cleanup VBO and shader
 	glDeleteBuffers(1, &vertexbuffer);
@@ -283,7 +299,7 @@ int main( void )
 	glDeleteBuffers(1, &normalbuffer);
 	glDeleteProgram(programID);
 	glDeleteTextures(1, &renderTex);
-	glDeleteVertexArrays(1, &VertexArrayID);
+	//glDeleteVertexArrays(1, &VertexArrayID);
 
 	// Close OpenGL window and terminate GLFW
 	glfwTerminate();

@@ -1,5 +1,7 @@
 #include "SoftRender.h"
 #include "Render.h"
+#include "Material.h"
+#include "Light.h"
 
 using namespace SoftRender;
 using namespace std;
@@ -33,11 +35,11 @@ GLuint CSoftRender::testRender()
 		32.0f);
 	
 	render.currentMode = Textured;
-	Model cube(std::string("./res/nanosuit/nanosuit.obj"), Vec3f(-10, -5, -5), m);
+	Model cube(std::string("../../../SoftRasterization/res/nanosuit/nanosuit.obj"), Vec3f(-10, -5, -5), m);
 	render.DrawModel(cube);
 
 	render.currentMode = Textured;
-	Model nanosuit2(std::string("./res/crystal_maiden/crystal_maiden_econ.fbx"), Vec3f(10, -75, -150), Material());
+	Model nanosuit2(std::string("../../../SoftRasterization/res/crystal_maiden/crystal_maiden_econ.fbx"), Vec3f(10, -75, -150), Material());
 	render.DrawModel(nanosuit2);
 
 	SaveTexture(render.frameBuffer, WIDTH, HEIGHT, "screenshot.jpg");

@@ -380,7 +380,7 @@ void CreatePPM8()
 	}
 }
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 	CreatePPM8();
 	return 0;
