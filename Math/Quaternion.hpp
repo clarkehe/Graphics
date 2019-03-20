@@ -9,8 +9,6 @@
 #ifndef Quaternion_hpp
 #define Quaternion_hpp
 
-#include <stdio.h>
-
 class Quaternion
 {
 public:

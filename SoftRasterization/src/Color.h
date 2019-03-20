@@ -1,8 +1,7 @@
-#ifndef Color_h
-#define Color_h
+#pragma once
 
-namespace SoftRender{
-
+namespace SoftRender
+{
 	struct Color 
 	{
 		float R, G, B, A;
@@ -28,4 +27,3 @@ namespace SoftRender{
 	};
 }
 
-#endif

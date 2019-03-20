@@ -6,8 +6,8 @@
 //  Copyright © 2018 Clarke. All rights reserved.
 //
 
+#include "stdafx.h"
 #include "Matrix4x4.hpp"
-#include <math.h>
 
 Matrix4x4::Matrix4x4()
 {
@@ -253,3 +253,4 @@ Matrix4x4 Matrix4x4::Translate(const Vector3D &vector)
     m.m23 = vector.z;
     return m;
 }
+

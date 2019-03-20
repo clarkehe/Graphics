@@ -6,6 +6,7 @@
 //  Copyright © 2018 Clarke. All rights reserved.
 //
 
+#include "stdafx.h"
 #include "Quaternion.hpp"
 
 Quaternion::Quaternion()

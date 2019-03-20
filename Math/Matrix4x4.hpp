@@ -9,7 +9,6 @@
 #ifndef Matrix4x4_hpp
 #define Matrix4x4_hpp
 
-#include <stdio.h>
 #include "Vector3D.hpp"
 #include "Vector4D.hpp"
 

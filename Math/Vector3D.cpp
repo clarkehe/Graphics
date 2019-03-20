@@ -6,8 +6,8 @@
 //  Copyright © 2018 Clarke. All rights reserved.
 //
 
+#include "stdafx.h"
 #include "Vector3D.hpp"
-#include <math.h>
 
 Vector3D::Vector3D()
 {
@@ -96,8 +96,8 @@ bool Vector3D::operator==(const Vector3D &vector)
     return deltX < epsilon && deltY < epsilon && deltZ < epsilon;
 }
 
-ostream & operator << (ostream &out, const Vector3D &v)
+std::ostream & operator << (std::ostream &out, const Vector3D &v)
 {
-    out << v.x << "," << v.y << "," << v.z << endl;
+    out << v.x << "," << v.y << "," << v.z << std::endl;
     return out;
 }

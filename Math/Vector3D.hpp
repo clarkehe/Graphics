@@ -9,14 +9,8 @@
 #ifndef Vector3D_hpp
 #define Vector3D_hpp
 
-#include <stdio.h>
-#include <iostream>
-using namespace std;
-
 class Vector3D
 {
-    friend ostream & operator << (ostream &out, const Vector3D &v);
-
 public:
     double x, y, z;
     
@@ -42,6 +36,6 @@ public:
     double AngleWith(const Vector3D &vector) const;
 };
 
-ostream & operator << (ostream &out, const Vector3D &v);
+std::ostream & operator << (std::ostream &out, const Vector3D &v);
 
 #endif /* Vector3D_hpp */

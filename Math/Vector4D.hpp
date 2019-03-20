@@ -9,15 +9,8 @@
 #ifndef Vector4D_hpp
 #define Vector4D_hpp
 
-#include <stdio.h>
-#include <iostream>
-using namespace std;
-
-class Vector3D;
 class Vector4D
 {
-    friend ostream & operator << (ostream &out, const Vector4D &v);
-    
 public:
     double x, y, z, w;
     
@@ -28,7 +21,6 @@ public:
     Vector3D ToVector3D() const;
 };
 
-ostream & operator << (ostream &out, const Vector4D &v);
-
+std::ostream & operator << (std::ostream &out, const Vector4D &v);
 
 #endif /* Vector4D_hpp */

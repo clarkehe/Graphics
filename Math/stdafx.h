@@ -8,11 +8,17 @@
 #ifdef _MSC_VER
 
 #include "targetver.h"
-
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 
 #endif
 
-
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
 
 // TODO: reference additional headers your program requires here
+#include "Vector2D.hpp"
+#include "Vector3D.hpp"
+#include "Vector4D.hpp"
+#include "Matrix2x2.hpp"
+#include "Matrix4x4.hpp"

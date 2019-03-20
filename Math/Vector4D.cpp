@@ -6,6 +6,7 @@
 //  Copyright © 2018 Clarke. All rights reserved.
 //
 
+#include "stdafx.h"
 #include "Vector4D.hpp"
 #include "Vector3D.hpp"
 
@@ -30,8 +31,9 @@ Vector3D Vector4D::ToVector3D() const
     return Vector3D(x, y, z);
 }
 
-ostream & operator << (ostream &out, const Vector4D &v)
+std::ostream & operator << (std::ostream &out, const Vector4D &v)
 {
-    out << v.x << "," << v.y << "," << v.z << "," << v.w << endl;
+    out << v.x << "," << v.y << "," << v.z << "," << v.w << std::endl;
     return out;
 }
+

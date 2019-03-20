@@ -1,5 +1,4 @@
-#ifndef Texture_h
-#define Texture_h
+#pragma once
 
 namespace SoftRender
 {
@@ -9,15 +8,15 @@ namespace SoftRender
 		std::string path;
 		std::string type;
 
-		Texture() {
+		Texture()
+        {
 			width = 0;
 			height = 0;
 		}
 
 		Texture(int _width, int _height):
 			width(_width),
-			height(_height){}
+			height(_height)
+        {}
 	};
 }
-
-#endif

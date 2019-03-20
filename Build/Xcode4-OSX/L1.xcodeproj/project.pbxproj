@@ -7,119 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		704966995EFF6CA15E3B3352 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3687664436EF255125917A0D /* main.cpp */; };
-		2CDB1BA04868571E034009B5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */; };
-		5C6E3E3B35064B5A26DE6E6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC013742F923C625AF0732E /* CoreGraphics.framework */; };
-		03DC20A369611F174786371E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C1121F398B000206CD30F4 /* OpenGL.framework */; };
-		084F0DA21BC2740529DC5016 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AB798A7A8021CE6D071918 /* AppKit.framework */; };
-		20B54D757A0A5B2E294916F0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000548F7522B17EC394B15E1 /* Cocoa.framework */; };
-		790F662C64D1708B65FE29F9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5907F96DED6B5801233042 /* IOKit.framework */; };
-		2F557CCB0EEE6B633EF7054D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */; };
-		1E1465581E5D7E69566F4148 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA013827BD6468F15564994 /* libMath.dylib */; };
+		688866DF715D4AC767DB1C6C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C914A7007B51321010B2BCC /* main.cpp */; };
+		50B05ED06B47370467C14357 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547A19BC0F4E4E555D58612B /* CoreFoundation.framework */; };
+		072813866D4579454A9E0117 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FE106F09804F0D0F1C170B /* CoreGraphics.framework */; };
+		2D3E438C5783672B38C80F9D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFC227C22D03A9117A90D94 /* OpenGL.framework */; };
+		4AB12D594DB52619695F07CB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32997E0E55F571C823061C9C /* AppKit.framework */; };
+		22BB35902213470266886FA2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B96F5C411D16F07E991ADB /* Cocoa.framework */; };
+		32F70CB22C5452037EC968DB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3335FF383C1C4500095810 /* IOKit.framework */; };
+		61B5502B3CD369631D4D5EED /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295C73ED74FF4176390C73BE /* CoreVideo.framework */; };
+		537076F37EA03ACE2B726862 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 326B30214C1664AD4B13033F /* libMath.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62F7650418924CF7003D3350 /* PBXContainerItemProxy */ = {
+		6B491FB066543ACE40F7307A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+			containerPortal = 13386F1E2B5842B17A9D623B /* Math.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 57593D40395515D50C01521C;
+			remoteGlobalIDString = 62B760525FE3546F4D9C671C;
 			remoteInfo = "libMath.dylib";
 		};
-		6E3E507E31EE395125D90433 /* PBXContainerItemProxy */ = {
+		3B3A158E53EE696B2801112A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+			containerPortal = 13386F1E2B5842B17A9D623B /* Math.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FA045E94E351642555541A8;
+			remoteGlobalIDString = 0FFF6C867BF463DD5AB55704;
 			remoteInfo = "libMath.dylib";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3687664436EF255125917A0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../L1/main.cpp"; sourceTree = "<group>"; };
-		208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
-		6DC013742F923C625AF0732E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
-		65C1121F398B000206CD30F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
-		42AB798A7A8021CE6D071918 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
-		000548F7522B17EC394B15E1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = "SDKROOT"; };
-		7E5907F96DED6B5801233042 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IOKit.framework"; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = "SDKROOT"; };
-		4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = "SDKROOT"; };
-		6922775173A4548F1BF116F3 /* L1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "L1"; path = "L1"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72B905AB533A0B4841986C0A /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		7C914A7007B51321010B2BCC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../L1/main.cpp"; sourceTree = "<group>"; };
+		547A19BC0F4E4E555D58612B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		43FE106F09804F0D0F1C170B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		2AFC227C22D03A9117A90D94 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		32997E0E55F571C823061C9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		55B96F5C411D16F07E991ADB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = "SDKROOT"; };
+		7C3335FF383C1C4500095810 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IOKit.framework"; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = "SDKROOT"; };
+		295C73ED74FF4176390C73BE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = "SDKROOT"; };
+		51B703B83A621EB9079B08ED /* L1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "L1"; path = "L1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13386F1E2B5842B17A9D623B /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A135D645D0370711F167D15 /* Frameworks */ = {
+		17BE57336BF9468D751D46B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CDB1BA04868571E034009B5 /* CoreFoundation.framework in Frameworks */,
-				5C6E3E3B35064B5A26DE6E6D /* CoreGraphics.framework in Frameworks */,
-				03DC20A369611F174786371E /* OpenGL.framework in Frameworks */,
-				084F0DA21BC2740529DC5016 /* AppKit.framework in Frameworks */,
-				20B54D757A0A5B2E294916F0 /* Cocoa.framework in Frameworks */,
-				790F662C64D1708B65FE29F9 /* IOKit.framework in Frameworks */,
-				2F557CCB0EEE6B633EF7054D /* CoreVideo.framework in Frameworks */,
-				1E1465581E5D7E69566F4148 /* libMath.dylib in Frameworks */,
+				50B05ED06B47370467C14357 /* CoreFoundation.framework in Frameworks */,
+				072813866D4579454A9E0117 /* CoreGraphics.framework in Frameworks */,
+				2D3E438C5783672B38C80F9D /* OpenGL.framework in Frameworks */,
+				4AB12D594DB52619695F07CB /* AppKit.framework in Frameworks */,
+				22BB35902213470266886FA2 /* Cocoa.framework in Frameworks */,
+				32F70CB22C5452037EC968DB /* IOKit.framework in Frameworks */,
+				61B5502B3CD369631D4D5EED /* CoreVideo.framework in Frameworks */,
+				537076F37EA03ACE2B726862 /* libMath.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78FE2C16706518444CF11A72 /* L1 */ = {
+		50F1344E2A347B4716407711 /* L1 */ = {
 			isa = PBXGroup;
 			children = (
-				720071837DBD2FF46E2903AE /* L1 */,
-				0CDB228D722C386232EF23AC /* Frameworks */,
-				1B170F214B4A6B5B52590FC9 /* Products */,
-				69FE55783F767C7E5E283C6A /* Projects */,
+				19D11F79534D20F63684413A /* L1 */,
+				1EC865F370AA372F00270483 /* Frameworks */,
+				512577821D3717F0291D5472 /* Products */,
+				322013A56214392F48C37FC1 /* Projects */,
 			);
 			name = "L1";
 			sourceTree = "<group>";
 		};
-		720071837DBD2FF46E2903AE /* L1 */ = {
+		19D11F79534D20F63684413A /* L1 */ = {
 			isa = PBXGroup;
 			children = (
-				3687664436EF255125917A0D /* main.cpp */,
+				7C914A7007B51321010B2BCC /* main.cpp */,
 			);
 			name = "L1";
 			sourceTree = "<group>";
 		};
-		0CDB228D722C386232EF23AC /* Frameworks */ = {
+		1EC865F370AA372F00270483 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				208C4E865BEA61A66E8A5F9C /* CoreFoundation.framework */,
-				6DC013742F923C625AF0732E /* CoreGraphics.framework */,
-				65C1121F398B000206CD30F4 /* OpenGL.framework */,
-				42AB798A7A8021CE6D071918 /* AppKit.framework */,
-				000548F7522B17EC394B15E1 /* Cocoa.framework */,
-				7E5907F96DED6B5801233042 /* IOKit.framework */,
-				4C6A7CE876814EB01BBC59B3 /* CoreVideo.framework */,
+				547A19BC0F4E4E555D58612B /* CoreFoundation.framework */,
+				43FE106F09804F0D0F1C170B /* CoreGraphics.framework */,
+				2AFC227C22D03A9117A90D94 /* OpenGL.framework */,
+				32997E0E55F571C823061C9C /* AppKit.framework */,
+				55B96F5C411D16F07E991ADB /* Cocoa.framework */,
+				7C3335FF383C1C4500095810 /* IOKit.framework */,
+				295C73ED74FF4176390C73BE /* CoreVideo.framework */,
 			);
 			name = "Frameworks";
 			sourceTree = "<group>";
 		};
-		1B170F214B4A6B5B52590FC9 /* Products */ = {
+		512577821D3717F0291D5472 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6922775173A4548F1BF116F3 /* L1 */,
+				51B703B83A621EB9079B08ED /* L1 */,
 			);
 			name = "Products";
 			sourceTree = "<group>";
 		};
-		69FE55783F767C7E5E283C6A /* Projects */ = {
+		322013A56214392F48C37FC1 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				72B905AB533A0B4841986C0A /* Math.xcodeproj */,
+				13386F1E2B5842B17A9D623B /* Math.xcodeproj */,
 			);
 			name = "Projects";
 			sourceTree = "<group>";
 		};
-		67AE01C1582E40ED33966EFA /* Products */ = {
+		3893663819065A6A15310537 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AA013827BD6468F15564994 /* libMath.dylib */,
+				326B30214C1664AD4B13033F /* libMath.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,23 +127,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63DA0DA043715551756E3E8E /* L1 */ = {
+		291F43511A36022A349A76C8 /* L1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06A0086406555C266F35193D /* Build configuration list for PBXNativeTarget "L1" */;
+			buildConfigurationList = 270373D4242F2E3F5FA23877 /* Build configuration list for PBXNativeTarget "L1" */;
 			buildPhases = (
-				2EF4567E1980411A530E7089 /* Resources */,
-				56E049C8279C267D5DCB556F /* Sources */,
-				2A135D645D0370711F167D15 /* Frameworks */,
+				12B27156749A3C5313A0017C /* Resources */,
+				1C8B759B2F564C9702D90BCA /* Sources */,
+				17BE57336BF9468D751D46B9 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4B054D742E057BD01B3941C9 /* PBXTargetDependency */,
+				0E5B030375A406F60F5953DB /* PBXTargetDependency */,
 			);
 			name = "L1";
 			productInstallPath = "$(HOME)/bin";
 			productName = "L1";
-			productReference = 6922775173A4548F1BF116F3 /* L1 */;
+			productReference = 51B703B83A621EB9079B08ED /* L1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -154,33 +154,33 @@
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L1" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
-			mainGroup = 78FE2C16706518444CF11A72 /* L1 */;
+			mainGroup = 50F1344E2A347B4716407711 /* L1 */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 67AE01C1582E40ED33966EFA /* Products */;
-					ProjectRef = 72B905AB533A0B4841986C0A /* Math.xcodeproj */;
+					ProductGroup = 3893663819065A6A15310537 /* Products */;
+					ProjectRef = 13386F1E2B5842B17A9D623B /* Math.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				63DA0DA043715551756E3E8E /* L1 */,
+				291F43511A36022A349A76C8 /* L1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3AA013827BD6468F15564994 /* libMath.dylib */ = {
+		326B30214C1664AD4B13033F /* libMath.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
 			path = "../../Bin/Xcode4-OSX/Native/libMath.dylib";
-			remoteRef = 62F7650418924CF7003D3350 /* PBXContainerItemProxy */;
+			remoteRef = 6B491FB066543ACE40F7307A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2EF4567E1980411A530E7089 /* Resources */ = {
+		12B27156749A3C5313A0017C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,11 +190,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		56E049C8279C267D5DCB556F /* Sources */ = {
+		1C8B759B2F564C9702D90BCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				704966995EFF6CA15E3B3352 /* main.cpp in Sources */,
+				688866DF715D4AC767DB1C6C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,15 +204,15 @@
 /* End PBXVariantGroup section */
 
 /* Begin PBXTargetDependency section */
-		4B054D742E057BD01B3941C9 /* PBXTargetDependency */ = {
+		0E5B030375A406F60F5953DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libMath.dylib";
-			targetProxy = 6E3E507E31EE395125D90433 /* PBXContainerItemProxy */;
+			targetProxy = 3B3A158E53EE696B2801112A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		42F102A8094C0A353FB061B7 /* Release */ = {
+		71321BA71E3537291D8F3262 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +224,7 @@
 			};
 			name = "Release";
 		};
-		26026B33204731A41AA5075A /* Debug */ = {
+		14250D6174525DD57F141F2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,7 +236,7 @@
 			};
 			name = "Debug";
 		};
-		280D21402C12056E002D2FB8 /* Profile */ = {
+		06752B0829A276467B9D1868 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = "Profile";
 		};
-		5C7657A5490C717E109062F8 /* Release */ = {
+		49F2486A593C78A5507A0B53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -316,7 +316,7 @@
 			};
 			name = "Release";
 		};
-		5902356F3D9F374C0E8A1F0F /* Debug */ = {
+		04BD2A222D445E5063EC3796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -384,7 +384,7 @@
 			};
 			name = "Debug";
 		};
-		68BA2AE4013D557453E171BF /* Profile */ = {
+		09A13FB93CE21D7030F33837 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -455,12 +455,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06A0086406555C266F35193D /* Build configuration list for PBXNativeTarget "L1" */ = {
+		270373D4242F2E3F5FA23877 /* Build configuration list for PBXNativeTarget "L1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42F102A8094C0A353FB061B7 /* Release */,
-				26026B33204731A41AA5075A /* Debug */,
-				280D21402C12056E002D2FB8 /* Profile */,
+				71321BA71E3537291D8F3262 /* Release */,
+				14250D6174525DD57F141F2D /* Debug */,
+				06752B0829A276467B9D1868 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";
@@ -468,9 +468,9 @@
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C7657A5490C717E109062F8 /* Release */,
-				5902356F3D9F374C0E8A1F0F /* Debug */,
-				68BA2AE4013D557453E171BF /* Profile */,
+				49F2486A593C78A5507A0B53 /* Release */,
+				04BD2A222D445E5063EC3796 /* Debug */,
+				09A13FB93CE21D7030F33837 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";

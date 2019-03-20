@@ -15,12 +15,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 using namespace glm;
 
-#include <common/shader.hpp>
-#include <common/texture.hpp>
-#include <common/controls.hpp>
-#include <common/objloader.hpp>
-#include <common/vboindexer.hpp>
-#include "src/SoftRender.h"
+#include <shader.hpp>
+#include <texture.hpp>
+#include <controls.hpp>
+#include <objloader.hpp>
+#include <vboindexer.hpp>
+
+#include "SoftRender.h"
 
 #ifdef _MSC_VER
 #include <Windows.h>

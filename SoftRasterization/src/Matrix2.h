@@ -1,5 +1,4 @@
 #pragma once
-#include "Vector2.h"
 
 namespace SoftRender
 {
@@ -47,4 +46,3 @@ namespace SoftRender
 		return ret;
 	}
 };
-

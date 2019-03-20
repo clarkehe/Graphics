@@ -1,4 +1,5 @@
 #pragma once
+
 class test
 {
 public:
@@ -7,4 +8,3 @@ public:
 	void testMatrix();
 	void testRender();
 };
-

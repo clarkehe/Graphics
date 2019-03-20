@@ -7,85 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B853D2D65C43E786F250F11 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */; };
-		0F8F0BC13FEB6D130B7823F4 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662605D4415A30F67539091A /* Quaternion.cpp */; };
-		2D6A318A05B32EAE401C6ECD /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BE63E14BB1605028583804 /* Vector2D.cpp */; };
-		4A024D375BCA5BF16C8A5C6E /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0510762504792E5829BE1ABA /* Vector3D.cpp */; };
-		72974FE350EA4A932F9E3D3F /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55367B9505FF3FEE517F0958 /* Vector4D.cpp */; };
-		175E1ED33AA80A0A182E11B3 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538C4449437E2F4D046C5DF9 /* stdafx.cpp */; };
-		20412D7D067B193323ED2573 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD747C707EB13865E8E75CF /* CoreServices.framework */; };
+		2FDE4AE7231C29DE517C4D67 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EF974125697757B05606AF3 /* Matrix4x4.cpp */; };
+		52F959FE4447301D65887204 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5240266A25666870122D50E6 /* Quaternion.cpp */; };
+		620207BC666316DF2A927FB4 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E917DFC6AF726FC77505D3B /* Vector2D.cpp */; };
+		3442646C16447A205F000367 /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D3211A4C7B3C4012A65C4E /* Vector3D.cpp */; };
+		69B9126746FF101E49C22042 /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD339C48021329109F76EB /* Vector4D.cpp */; };
+		0E943C0A6D361D12436333DF /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 746350997538686423FF6946 /* stdafx.cpp */; };
+		59D20E5128B940E641744900 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45581B68D055D2797837DE /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Matrix4x4.cpp"; path = "../../Math/Matrix4x4.cpp"; sourceTree = "<group>"; };
-		41EE29316E8305E30D406582 /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix4x4.hpp"; path = "../../Math/Matrix4x4.hpp"; sourceTree = "<group>"; };
-		662605D4415A30F67539091A /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Quaternion.cpp"; path = "../../Math/Quaternion.cpp"; sourceTree = "<group>"; };
-		11B50E5C79332D250D3F24AD /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Quaternion.hpp"; path = "../../Math/Quaternion.hpp"; sourceTree = "<group>"; };
-		77BE63E14BB1605028583804 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector2D.cpp"; path = "../../Math/Vector2D.cpp"; sourceTree = "<group>"; };
-		59A9174F67A674147235323C /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector2D.hpp"; path = "../../Math/Vector2D.hpp"; sourceTree = "<group>"; };
-		0510762504792E5829BE1ABA /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector3D.cpp"; path = "../../Math/Vector3D.cpp"; sourceTree = "<group>"; };
-		62455FE8002D14691D642512 /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector3D.hpp"; path = "../../Math/Vector3D.hpp"; sourceTree = "<group>"; };
-		55367B9505FF3FEE517F0958 /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector4D.cpp"; path = "../../Math/Vector4D.cpp"; sourceTree = "<group>"; };
-		0C155EC014186FD467843078 /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector4D.hpp"; path = "../../Math/Vector4D.hpp"; sourceTree = "<group>"; };
-		538C4449437E2F4D046C5DF9 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../Math/stdafx.cpp"; sourceTree = "<group>"; };
-		057E2AB021D60E5372D71970 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../Math/stdafx.h"; sourceTree = "<group>"; };
-		0AD747C707EB13865E8E75CF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
-		57593D40395515D50C01521C /* libMath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libMath.dylib"; path = "libMath.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37994EA42279367A0802637D /* Matrix2x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix2x2.hpp"; path = "../../Math/Matrix2x2.hpp"; sourceTree = "<group>"; };
+		2EF974125697757B05606AF3 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Matrix4x4.cpp"; path = "../../Math/Matrix4x4.cpp"; sourceTree = "<group>"; };
+		2D4C02AA195E17E77041441D /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix4x4.hpp"; path = "../../Math/Matrix4x4.hpp"; sourceTree = "<group>"; };
+		5240266A25666870122D50E6 /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Quaternion.cpp"; path = "../../Math/Quaternion.cpp"; sourceTree = "<group>"; };
+		05A3441C339D2C986DF43AEA /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Quaternion.hpp"; path = "../../Math/Quaternion.hpp"; sourceTree = "<group>"; };
+		7E917DFC6AF726FC77505D3B /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector2D.cpp"; path = "../../Math/Vector2D.cpp"; sourceTree = "<group>"; };
+		368F026D4D61573438E90622 /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector2D.hpp"; path = "../../Math/Vector2D.hpp"; sourceTree = "<group>"; };
+		55D3211A4C7B3C4012A65C4E /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector3D.cpp"; path = "../../Math/Vector3D.cpp"; sourceTree = "<group>"; };
+		0EE22A8A06B919A35AE579F5 /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector3D.hpp"; path = "../../Math/Vector3D.hpp"; sourceTree = "<group>"; };
+		5AAD339C48021329109F76EB /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector4D.cpp"; path = "../../Math/Vector4D.cpp"; sourceTree = "<group>"; };
+		4EF419DB79617936751C1D6B /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector4D.hpp"; path = "../../Math/Vector4D.hpp"; sourceTree = "<group>"; };
+		746350997538686423FF6946 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../Math/stdafx.cpp"; sourceTree = "<group>"; };
+		2502502D51DB37F00F8D1A2B /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../Math/stdafx.h"; sourceTree = "<group>"; };
+		1D45581B68D055D2797837DE /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
+		62B760525FE3546F4D9C671C /* libMath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libMath.dylib"; path = "libMath.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A2C068859AD2836091432E2 /* Frameworks */ = {
+		20DC03B3716D533F756C254A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20412D7D067B193323ED2573 /* CoreServices.framework in Frameworks */,
+				59D20E5128B940E641744900 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7851441E1ABD7D6C50302E87 /* Math */ = {
+		74523CE514B8591D0A273CD2 /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				4A5E6E5253E828A031157992 /* Math */,
-				1B962BBB42DE03B2598206EE /* Frameworks */,
-				56F22B1D3CCA2B873B7A0163 /* Products */,
+				18E77A7B319D6C83243115EF /* Math */,
+				2CD706E67B19444071C806B8 /* Frameworks */,
+				22B346B6134076A5027C1EEB /* Products */,
 			);
 			name = "Math";
 			sourceTree = "<group>";
 		};
-		4A5E6E5253E828A031157992 /* Math */ = {
+		18E77A7B319D6C83243115EF /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				6D30268D1A0F087D5D066EC2 /* Matrix4x4.cpp */,
-				41EE29316E8305E30D406582 /* Matrix4x4.hpp */,
-				662605D4415A30F67539091A /* Quaternion.cpp */,
-				11B50E5C79332D250D3F24AD /* Quaternion.hpp */,
-				77BE63E14BB1605028583804 /* Vector2D.cpp */,
-				59A9174F67A674147235323C /* Vector2D.hpp */,
-				0510762504792E5829BE1ABA /* Vector3D.cpp */,
-				62455FE8002D14691D642512 /* Vector3D.hpp */,
-				55367B9505FF3FEE517F0958 /* Vector4D.cpp */,
-				0C155EC014186FD467843078 /* Vector4D.hpp */,
-				538C4449437E2F4D046C5DF9 /* stdafx.cpp */,
-				057E2AB021D60E5372D71970 /* stdafx.h */,
+				37994EA42279367A0802637D /* Matrix2x2.hpp */,
+				2EF974125697757B05606AF3 /* Matrix4x4.cpp */,
+				2D4C02AA195E17E77041441D /* Matrix4x4.hpp */,
+				5240266A25666870122D50E6 /* Quaternion.cpp */,
+				05A3441C339D2C986DF43AEA /* Quaternion.hpp */,
+				7E917DFC6AF726FC77505D3B /* Vector2D.cpp */,
+				368F026D4D61573438E90622 /* Vector2D.hpp */,
+				55D3211A4C7B3C4012A65C4E /* Vector3D.cpp */,
+				0EE22A8A06B919A35AE579F5 /* Vector3D.hpp */,
+				5AAD339C48021329109F76EB /* Vector4D.cpp */,
+				4EF419DB79617936751C1D6B /* Vector4D.hpp */,
+				746350997538686423FF6946 /* stdafx.cpp */,
+				2502502D51DB37F00F8D1A2B /* stdafx.h */,
 			);
 			name = "Math";
 			sourceTree = "<group>";
 		};
-		1B962BBB42DE03B2598206EE /* Frameworks */ = {
+		2CD706E67B19444071C806B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0AD747C707EB13865E8E75CF /* CoreServices.framework */,
+				1D45581B68D055D2797837DE /* CoreServices.framework */,
 			);
 			name = "Frameworks";
 			sourceTree = "<group>";
 		};
-		56F22B1D3CCA2B873B7A0163 /* Products */ = {
+		22B346B6134076A5027C1EEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57593D40395515D50C01521C /* libMath.dylib */,
+				62B760525FE3546F4D9C671C /* libMath.dylib */,
 			);
 			name = "Products";
 			sourceTree = "<group>";
@@ -93,13 +95,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FA045E94E351642555541A8 /* Math */ = {
+		0FFF6C867BF463DD5AB55704 /* Math */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 197D715946CD74F907FF0E19 /* Build configuration list for PBXNativeTarget "Math" */;
+			buildConfigurationList = 05A753694C9D119579230215 /* Build configuration list for PBXNativeTarget "Math" */;
 			buildPhases = (
-				1EAD73F458E80D310DCC6246 /* Resources */,
-				057E264B3C4E642B5BB101D7 /* Sources */,
-				0A2C068859AD2836091432E2 /* Frameworks */,
+				5E0753BF541E04AB32CE127F /* Resources */,
+				5041769553A45B2822632C2A /* Sources */,
+				20DC03B3716D533F756C254A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,7 +109,7 @@
 			);
 			name = "Math";
 			productName = "Math";
-			productReference = 57593D40395515D50C01521C /* libMath.dylib */;
+			productReference = 62B760525FE3546F4D9C671C /* libMath.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -118,17 +120,17 @@
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
-			mainGroup = 7851441E1ABD7D6C50302E87 /* Math */;
+			mainGroup = 74523CE514B8591D0A273CD2 /* Math */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FA045E94E351642555541A8 /* libMath.dylib */,
+				0FFF6C867BF463DD5AB55704 /* libMath.dylib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1EAD73F458E80D310DCC6246 /* Resources */ = {
+		5E0753BF541E04AB32CE127F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,16 +140,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		057E264B3C4E642B5BB101D7 /* Sources */ = {
+		5041769553A45B2822632C2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B853D2D65C43E786F250F11 /* Matrix4x4.cpp in Sources */,
-				0F8F0BC13FEB6D130B7823F4 /* Quaternion.cpp in Sources */,
-				2D6A318A05B32EAE401C6ECD /* Vector2D.cpp in Sources */,
-				4A024D375BCA5BF16C8A5C6E /* Vector3D.cpp in Sources */,
-				72974FE350EA4A932F9E3D3F /* Vector4D.cpp in Sources */,
-				175E1ED33AA80A0A182E11B3 /* stdafx.cpp in Sources */,
+				2FDE4AE7231C29DE517C4D67 /* Matrix4x4.cpp in Sources */,
+				52F959FE4447301D65887204 /* Quaternion.cpp in Sources */,
+				620207BC666316DF2A927FB4 /* Vector2D.cpp in Sources */,
+				3442646C16447A205F000367 /* Vector3D.cpp in Sources */,
+				69B9126746FF101E49C22042 /* Vector4D.cpp in Sources */,
+				0E943C0A6D361D12436333DF /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +159,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		107432EE28C20C026E72173B /* Release */ = {
+		285224F553714DD57FD04C84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,7 +172,7 @@
 			};
 			name = "Release";
 		};
-		413E5B6B79D27FB74FC5236C /* Debug */ = {
+		657567970B6A6C8B23F60BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +185,7 @@
 			};
 			name = "Debug";
 		};
-		41593BD748F35EEF356B1AB2 /* Profile */ = {
+		39186DDF0A78058B294A3DBA /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +198,7 @@
 			};
 			name = "Profile";
 		};
-		2D4D394047C62EBD21CB3E39 /* Release */ = {
+		12F45384193B7EC56E5130A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -251,7 +253,7 @@
 			};
 			name = "Release";
 		};
-		103E163F2AA5393550431324 /* Debug */ = {
+		7EEF3A4A6F86654B3B502936 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -306,7 +308,7 @@
 			};
 			name = "Debug";
 		};
-		458062D05434309329470F04 /* Profile */ = {
+		7FD52C212AA806D271DF72E2 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -364,12 +366,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		197D715946CD74F907FF0E19 /* Build configuration list for PBXNativeTarget "libMath.dylib" */ = {
+		05A753694C9D119579230215 /* Build configuration list for PBXNativeTarget "libMath.dylib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				107432EE28C20C026E72173B /* Release */,
-				413E5B6B79D27FB74FC5236C /* Debug */,
-				41593BD748F35EEF356B1AB2 /* Profile */,
+				285224F553714DD57FD04C84 /* Release */,
+				657567970B6A6C8B23F60BC6 /* Debug */,
+				39186DDF0A78058B294A3DBA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";
@@ -377,9 +379,9 @@
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D4D394047C62EBD21CB3E39 /* Release */,
-				103E163F2AA5393550431324 /* Debug */,
-				458062D05434309329470F04 /* Profile */,
+				12F45384193B7EC56E5130A4 /* Release */,
+				7EEF3A4A6F86654B3B502936 /* Debug */,
+				7FD52C212AA806D271DF72E2 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";

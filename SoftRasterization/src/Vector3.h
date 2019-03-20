@@ -27,12 +27,17 @@ namespace SoftRender{
 		Vec3<T> operator+(const Vec3<T>& v) const{return Vec3<T>(x + v.x, y + v.y, z + v.z);}
 		Vec3<T> operator-(const Vec3<T>& v) const{return Vec3<T>(x - v.x, y - v.y, z - v.z);}
 		Vec3<T> operator*(const Vec3<T>& v) const{return Vec3<T>(x * v.x, y * v.y, z * v.z);}
+        
 		Vec3<T> operator*(T v) const{return Vec3<T>(x * v, y * v, z * v);}
+        
 		Vec3<T> operator/(const Vec3<T>& v) const{return Vec3(x / v.x, y / v.y, z / v.z);}
 		Vec3<T> operator/(T v) const{return Vec3<T>(x / v, y / v, z / v);}
+        
 		Vec3<T>&operator/= (const T v) { x /= v; y /= v; z /= v; return *this; }
 		Vec3<T>&operator*= (const Vec3<T>&v) {x*=v.x , y*=v.y, z*=v.z; return *this;}
+        
 		Vec3<T> operator-() const{return Vec3<T>(-x, -y, -z);}
+        
 		T operator[](int i) {
 			switch (i)
 			{
@@ -55,7 +60,8 @@ namespace SoftRender{
         
 		Vec3<T> Cross(const Vec3<T>& rhs)const{return Vec3<T>(y*rhs.z-z*rhs.y, z*rhs.x - x*rhs.z, x*rhs.y -y*rhs.x);}
 		T Dot(const Vec3<T>& rhs) const{ return x*rhs.x + y*rhs.y + z*rhs.z;}
-		T LengthSqr() const {return x*x + y*y + z*z;}
+		
+        T LengthSqr() const {return x*x + y*y + z*z;}
 		T Length() const
 		{
 			T len = LengthSqr();

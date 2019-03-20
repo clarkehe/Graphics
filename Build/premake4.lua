@@ -701,6 +701,21 @@ project "RayTracer"
 	SetTargetDirectories()
 	SetOpenGL()
 
+project "Test"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B21"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+	
+	AddFiles    ( "../Test",  nil)
+	AddIncludes { "../Math" }
+
+	SetTargetDirectories()
+	SetOpenGL()
+
 project "SoftRasterization"
 	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B32"
 	kind  "ConsoleApp"
@@ -713,13 +728,14 @@ project "SoftRasterization"
 	AddFiles    ( "../SoftRasterization/src", "stdafx" )
 	AddFiles    ( "../Common", nil )
 	AddFiles    ( "../SoftRasterization", nil )
-	files 		{ "../L2/StandardShading.*" }
+	files 		{ "../SoftRasterization/StandardShading.*" }
 
-	excludes  ("../SoftRasterization/external/**.*")
-	excludes  ("../SoftRasterization/3rdparty/**.*")
+	--excludes  ("../SoftRasterization/external/**.*")
+	--excludes  ("../SoftRasterization/3rdparty/**.*")
 
 	AddIncludes { "../Common"}
 	AddIncludes { "../SoftRasterization/src", "../SoftRasterization" }
+	AddIncludes { "../Math" }
 
 	if not IsTargetWindows() then
 		excludes "../SoftRasterization/targetver.*"
@@ -771,3 +787,26 @@ project "L2"
 	SetUpGlfw()
 	SetUpGlm()
 	SetUpAssimp()
+
+project "L3"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B35"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L3", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../L3/StandardShading.*" }
+
+	AddIncludes { "../Common"}
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+

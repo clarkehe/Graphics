@@ -19,13 +19,8 @@
           z
  */
 
-#include <iostream>
-using namespace std;
-
 class Vector2D
-{
-    friend ostream & operator << (ostream &out, const Vector2D &v);
-    
+{    
 public:
 	double x, y;
     
@@ -46,4 +41,7 @@ public:
     Vector2D operator*(const double scale) const;
 };
 
-ostream & operator << (ostream &out, const Vector2D &v);
+typedef Vector2D Vec2f;
+
+std::ostream & operator << (std::ostream &out, const Vector2D &v);
+

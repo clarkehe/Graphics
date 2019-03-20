@@ -1,5 +1,5 @@
+#include "stdafx.h"
 #include "Vector2D.hpp"
-#include <math.h>
 
 Vector2D::Vector2D(void)
 {
@@ -58,8 +58,8 @@ Vector2D Vector2D::operator*(const double scale) const
 	return Vector2D(x * scale, y * scale);
 }
 
-ostream & operator << (ostream &out, const Vector2D &v)
+std::ostream & operator << (std::ostream &out, const Vector2D &v)
 {
-    out << v.x << "," << v.y << endl;
+    out << v.x << "," << v.y << std::endl;
     return out;
 }

@@ -1,7 +1,6 @@
 #ifndef Common_h
 #define Common_h
 
-#include <vector>
 #include "slm.h"
 #include "Color.h"
 #include "Vertex.h"
@@ -10,7 +9,7 @@
 #include "Light.h"
 #include "Material.h"
 #include "Mesh.h"
-
+#include "Matrix4.h"
 
 namespace SoftRender
 {

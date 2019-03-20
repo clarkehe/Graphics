@@ -1,12 +1,8 @@
-#ifndef Slm_h
-#define Slm_h
-#include "Vector2.h"
-#include "Vector3.h"
-#include "Matrix4.h"
+#pragma once
+#include <cmath>
 
 static inline int iround(double x)
 {
 	return (int)floor(x + 0.5);
 }
 
-#endif

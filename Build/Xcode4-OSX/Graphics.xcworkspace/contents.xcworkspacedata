@@ -8,6 +8,9 @@
 		location = "group:RayTracer.xcodeproj">
 	</FileRef>
 	<FileRef
+		location = "group:Test.xcodeproj">
+	</FileRef>
+	<FileRef
 		location = "group:SoftRasterization.xcodeproj">
 	</FileRef>
 	<FileRef
@@ -15,5 +18,8 @@
 	</FileRef>
 	<FileRef
 		location = "group:L2.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:L3.xcodeproj">
 	</FileRef>
 </Workspace>

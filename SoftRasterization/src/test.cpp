@@ -1,6 +1,8 @@
 #include "test.h"
 #include "Render.h"
 #include "Material.h"
+#include "Vector3.h"
+#include "Model.h"
 
 using namespace SoftRender;
 using namespace std;

@@ -1,9 +1,10 @@
-#ifndef Mesh_h
-#define Mesh_h
-#include <memory>
+#pragma once
+#include <vector>
+#include "Vertex.h"
+#include "Texture.h"
 
-namespace SoftRender{
-
+namespace SoftRender
+{
 	struct Mesh
 	{
 		std::vector<Vertex> vertices;
@@ -29,4 +30,3 @@ namespace SoftRender{
 		}
 	};
 }
-#endif
