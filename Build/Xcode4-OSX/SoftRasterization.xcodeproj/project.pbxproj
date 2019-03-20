@@ -20,7 +20,6 @@
 		386E55671D5950BE767D285B /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402413A97838641B50B65FD1 /* TextureManager.cpp */; };
 		3A0F38B4327135A626890631 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC329B469476D1B2FF862BE /* Cocoa.framework */; };
 		3C9857931DB7032C432F472C /* tangentspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58514231330C7BBD699D48AE /* tangentspace.cpp */; };
-		3E494A6E21D545D73D823015 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72E669F556232BD6156611C1 /* test.cpp */; };
 		3FB0659C12153D3766B52491 /* libMath_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA1550546F9400652FC554D /* libMath_d.dylib */; };
 		46503FB13B1F09A418B25C09 /* SoftRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D960FC42B236B74119586C /* SoftRender.cpp */; };
 		4E20469F148E297747295A54 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64DE481919545EEF59387CBC /* Render.cpp */; };
@@ -80,7 +79,6 @@
 		478A3B4E26F72612291D6241 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ../../SoftRasterization/src/Color.h; sourceTree = "<group>"; };
 		487064F45E472A7B12B96729 /* vboindexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vboindexer.cpp; path = ../../Common/vboindexer.cpp; sourceTree = "<group>"; };
 		499429AC68622C56039E2999 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		4AE87BEE5D800ECF38AA4806 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = test.h; path = ../../SoftRasterization/src/test.h; sourceTree = "<group>"; };
 		4DB829587B0B11E5738D4941 /* Vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ../../SoftRasterization/src/Vector3.h; sourceTree = "<group>"; };
 		4FA369676AF31B5047D9011D /* slm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = slm.h; path = ../../SoftRasterization/src/slm.h; sourceTree = "<group>"; };
 		51837C1F0A0249773EED5C7E /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../Common/shader.cpp; sourceTree = "<group>"; };
@@ -98,9 +96,7 @@
 		6EDE33554E093ED466625942 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Model.cpp; path = ../../SoftRasterization/src/Model.cpp; sourceTree = "<group>"; };
 		6EF117957614489F576A2143 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../../SoftRasterization/src/Common.h; sourceTree = "<group>"; };
 		6F63761431257B4E725F793A /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../../SoftRasterization/src/Model.h; sourceTree = "<group>"; };
-		6F905C4A0B9E5E244EBE5803 /* Index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Index.h; path = ../../SoftRasterization/src/Index.h; sourceTree = "<group>"; };
 		723B0F7D5BB031374308557D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		72E669F556232BD6156611C1 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = ../../SoftRasterization/src/test.cpp; sourceTree = "<group>"; };
 		77C274834CD95ED5796B0549 /* Matrix4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Matrix4.h; path = ../../SoftRasterization/src/Matrix4.h; sourceTree = "<group>"; };
 		78EE59BF2751450D037720FD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		79CA605C4A237F567B763E41 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = ../../SoftRasterization/src/Vertex.h; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 				478A3B4E26F72612291D6241 /* Color.h */,
 				1F6A73F970F105BC21C92EFA /* Common.cpp */,
 				6EF117957614489F576A2143 /* Common.h */,
-				6F905C4A0B9E5E244EBE5803 /* Index.h */,
 				37F62EBA4C02550C47283DCD /* Light.h */,
 				6135019D088F136F704F04A7 /* Material.h */,
 				77C274834CD95ED5796B0549 /* Matrix4.h */,
@@ -166,8 +161,6 @@
 				4FA369676AF31B5047D9011D /* slm.h */,
 				247C649063FD05D032A65B8D /* stb_image.h */,
 				1C92662050550847751E280D /* stb_image_write.h */,
-				72E669F556232BD6156611C1 /* test.cpp */,
-				4AE87BEE5D800ECF38AA4806 /* test.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -335,7 +328,6 @@
 				4E20469F148E297747295A54 /* Render.cpp in Sources */,
 				46503FB13B1F09A418B25C09 /* SoftRender.cpp in Sources */,
 				386E55671D5950BE767D285B /* TextureManager.cpp in Sources */,
-				3E494A6E21D545D73D823015 /* test.cpp in Sources */,
 				65B22BBD06311428748D0C26 /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

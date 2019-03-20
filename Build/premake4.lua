@@ -709,14 +709,14 @@ project "Test"
 	if IsTargetLinux() then
 		links { "dl" }
 	end
-	
+
 	AddFiles    ( "../Test",  nil)
 	AddIncludes { "../Math" }
 
 	SetTargetDirectories()
 	SetOpenGL()
 
-project "SoftRasterization"
+project "SR"
 	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B32"
 	kind  "ConsoleApp"
 	links { "Math" }
@@ -725,21 +725,20 @@ project "SoftRasterization"
 		links { "dl" }
 	end
 
-	AddFiles    ( "../SoftRasterization/src", "stdafx" )
+	AddFiles    ( "../SR/Source", "stdafx" )
 	AddFiles    ( "../Common", nil )
-	AddFiles    ( "../SoftRasterization", nil )
-	files 		{ "../SoftRasterization/StandardShading.*" }
 
-	--excludes  ("../SoftRasterization/external/**.*")
-	--excludes  ("../SoftRasterization/3rdparty/**.*")
-
-	AddIncludes { "../Common"}
-	AddIncludes { "../SoftRasterization/src", "../SoftRasterization" }
-	AddIncludes { "../Math" }
+	files   { "../SR/*.cpp" }
+	files   { "../SR/*.h" }
+	files 	{ "../SR/StandardShading.*" }
 
 	if not IsTargetWindows() then
-		excludes "../SoftRasterization/targetver.*"
+		excludes "../SR/targetver.*"
 	end
+
+	AddIncludes { "../Common"}
+	AddIncludes { "../SR/Source", "../SR", "../SR/External", "../SR/Base" }
+	AddIncludes { "../Math" }
 
 	SetTargetDirectories()
 	SetOpenGL()

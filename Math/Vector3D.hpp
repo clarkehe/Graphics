@@ -29,6 +29,7 @@ public:
     
     Vector3D operator-() const;
     Vector3D operator+(const Vector3D &vector) const;
+    Vector3D operator-(const Vector3D &vector) const;
     Vector3D operator*(const double scale) const;
     
     bool operator==(const Vector3D &vector);
