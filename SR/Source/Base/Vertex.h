@@ -9,7 +9,11 @@ namespace SoftRender
 		Vec2f uv;
 		Color color;
 		float derivZ;
-		Vertex():modelPos(Vec3f()),normal(Vec3f()), uv(Vec2f()), color(Color()){}
+        
+		Vertex()
+        {
+            derivZ = 0;
+        }
 	};
 
 	struct VertexOut
@@ -17,11 +21,16 @@ namespace SoftRender
 		Vec3f worldPos;
 		Vec3f viewPos;
 		Vec3f projPos;
+        Vec2f screenPos;
 		Vec3f normal;
 		Vec2f uv;
 		Color color;
 		float derivZ;
         
-		VertexOut():projPos(Vec3f()),normal(Vec3f()), uv(Vec2f()), color(Color()){}
+		VertexOut()
+        {
+            derivZ = 0;
+        }
 	};
 }
+

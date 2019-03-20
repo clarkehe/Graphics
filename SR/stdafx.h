@@ -35,10 +35,6 @@ typedef Vector4D Vec4f;
 typedef Matrix4x4 Matrix4;
 typedef Matrix4x4 Mat4f;
 
-//#include "Vector3.h"
-//#include "Vector4.h"
-//#include "Matrix4.h"
-
 #include "Color.h"
 #include "Light.h"
 #include "Material.h"
@@ -46,3 +42,5 @@ typedef Matrix4x4 Mat4f;
 #include "Texture.h"
 #include "Vertex.h"
 #include "slm.h"
+
+using namespace SoftRender;

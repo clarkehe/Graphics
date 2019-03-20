@@ -6,10 +6,7 @@
 #include <GLFW/glfw3.h>
 
 using namespace SoftRender;
-
-#ifndef M_PI_2
-    #define M_PI_2     1.57079632679489661923   // pi/2
-#endif
+#define HALF_PI  1.57079632679489661923   // pi/2
 
 GLuint loadFarmeBufferToTexture(Color *frameBufer, int width, int height);
 
@@ -18,7 +15,7 @@ uint testRender()
 	const int WIDTH = 1024, HEIGHT = 768;
 	Render render(WIDTH, HEIGHT);
 
-	render.SetFrustum(M_PI_2, float(WIDTH)/(float)HEIGHT, 0.1f, 1000.0f);
+	render.SetFrustum(HALF_PI, float(WIDTH)/(float)HEIGHT, 0.1f, 1000.0f);
 	render.SetCamera(Vec3f(0, 0, 15.0f));
 
 	Light light(
@@ -28,17 +25,6 @@ uint testRender()
 		Color(1.0f, 1.0f, 1.0f)
 	);
 	render.SetLight(light);
-
-	/*Material m(
-		Color(1.0f, 0.5f, 0.31f),
-		Color(1.0f, 0.5f, 0.31f),
-		Color(0.5f, 0.5f, 0.5f),
-		32.0f);
-	*/
-    
-	//render.currentMode = Textured;
-	//Model cube(std::string("../../../SR/Res/nanosuit/nanosuit.obj"), Vec3f(-10, -5, -5), m);
-	//render.DrawModel(cube);
 
 	render.currentMode = Textured;
 	Model nanosuit2(std::string("../../../SR/Res/crystal_maiden/crystal_maiden_econ.fbx"),
