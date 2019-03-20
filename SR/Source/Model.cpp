@@ -4,9 +4,10 @@
 
 namespace SoftRender
 { 
-	Model::Model(std::string path, Vec3f worldPos, Material m):
-		mPath(path), mPos(worldPos), mMaterial(m)
+	Model::Model(std::string path, Vec3f worldPos):
+        mPos(worldPos)
 	{
+        mDirectory = path.substr(0, path.find_last_of('/'));
 		loadModel(path);
 	}
 
@@ -18,9 +19,7 @@ namespace SoftRender
 		{
             std::cout << "ERROR::ASSIMP::" << import.GetErrorString() << std::endl;
 			return ;
-		} 
-
-		mDirectory = path.substr(0, path.find_last_of('/'));
+		}
 		processNode(scene->mRootNode, scene);
 	}
 
@@ -108,7 +107,9 @@ namespace SoftRender
 
             if (path.find("materials") != std::string::npos)
 				path = path.substr(path.find("materials"), path.length());
-
+            
+            std::replace( path.begin(), path.end(), '\\', '/'); // replace all '\\' to '/'
+            
 			TextureFromFile(texture, path, mDirectory);
             
 			texture.type = typeName;

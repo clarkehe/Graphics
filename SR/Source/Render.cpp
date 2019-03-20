@@ -264,8 +264,7 @@ namespace SoftRender{
 
 		// we need light position(in view space) in pixel shader
 		mLight.viewPos = MultPointMatrix(mLight.worldPos, mvMat);
-		mCurMaterial = model.mMaterial;
-
+        
 		for (int i = 0; i < model.mMeshes.size(); i++)
 		{
 			Mesh mesh = model.mMeshes[i];

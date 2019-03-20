@@ -64,4 +64,5 @@ namespace SoftRender
 		void DrawLineInternal (int x0, int y0, int x1, int y1, const Color &color, bool steep);
 	};
 }
+
 #endif

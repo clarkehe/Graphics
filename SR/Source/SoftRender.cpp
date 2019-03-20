@@ -42,8 +42,7 @@ uint testRender()
 
 	render.currentMode = Textured;
 	Model nanosuit2(std::string("../../../SR/Res/crystal_maiden/crystal_maiden_econ.fbx"),
-                    Vec3f(10, -75, -150),
-                    Material());
+                    Vec3f(10, -75, -150));
 	render.DrawModel(nanosuit2);
 
 	SaveTexture(render.frameBuffer, WIDTH, HEIGHT, "screenshot.jpg");
