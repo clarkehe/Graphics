@@ -22,7 +22,7 @@ public:
 public:
     double LengthSquare() const;
     double Length() const;
-    void Normalize();
+    Vector3D& Normalize();
     
     double Dot(const Vector3D &vector) const;
     Vector3D Cross(const Vector3D &vector) const;

@@ -1,8 +1,5 @@
 #pragma once
 
-#include "Vector3.h"
-#include "Color.h"
-
 namespace SoftRender
 {
 	struct Light

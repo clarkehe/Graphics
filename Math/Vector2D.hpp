@@ -32,7 +32,7 @@ public:
 public:
 	double LengthSquare() const;
 	double Length() const;
-	void Normalize();
+	Vector2D& Normalize();
     
 	double Dot(const Vector2D &vector) const;
 
@@ -40,8 +40,6 @@ public:
 	Vector2D operator+(const Vector2D &vector) const;
     Vector2D operator*(const double scale) const;
 };
-
-typedef Vector2D Vec2f;
 
 std::ostream & operator << (std::ostream &out, const Vector2D &v);
 

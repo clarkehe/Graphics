@@ -1,9 +1,5 @@
 #pragma once
 
-#include "Vector3.h"
-#include "Vector2D.hpp"
-#include "Color.h"
-
 namespace SoftRender
 {
 	struct Vertex

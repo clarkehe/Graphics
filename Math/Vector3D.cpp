@@ -36,15 +36,17 @@ double Vector3D::Length() const
     return sqrt(LengthSquare());
 }
 
-void Vector3D::Normalize()
+Vector3D& Vector3D::Normalize()
 {
     const double len = Length();
     if (len <= std::numeric_limits<double>::epsilon())
-        return;
+        return *this;
     
     this->x /= len;
     this->y /= len;
     this->z /= len;
+    
+    return *this;
 }
 
 double Vector3D::Dot(const Vector3D &vector) const

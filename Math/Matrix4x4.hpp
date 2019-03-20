@@ -34,6 +34,7 @@ public:
         };
         
         double m[16];
+        double mm[4][4];
     };
     
 public:

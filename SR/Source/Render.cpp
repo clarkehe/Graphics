@@ -4,7 +4,8 @@
 namespace SoftRender{
 
 	// note that the result of edge function could be represent as area as well.
-	static inline float calculateArea (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2) {
+	static inline float calculateArea (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2)
+    {
 		return ((p2.x - p0.x) * (p1.y - p0.y) - (p2.y - p0.y) * (p1.x - p0.x));
 	} 
 
@@ -13,7 +14,8 @@ namespace SoftRender{
 		return z < zbuff;
 	}
 
-	static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const VertexOut &v2, VertexOut &v, Vec3f &w) {
+	static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const VertexOut &v2, VertexOut &v, Vec3f &w)
+    {
 		float area = calculateArea (v0.projPos, v1.projPos, v2.projPos);
 
 		w.x = calculateArea (v1.projPos, v2.projPos, v.projPos) / area; 
@@ -28,7 +30,8 @@ namespace SoftRender{
 
 		v.normal = (v0.normal*w.x + v1.normal*w.y + v2.normal*w.z);
 		v.worldPos = (v0.worldPos*w.x + v1.worldPos*w.y + v2.worldPos*w.z);
-		v.viewPos = (v0.viewPos*w.x + v1.viewPos * w.y + v2.viewPos*w.z)/v.derivZ;
+        v.viewPos = (v0.viewPos*w.x + v1.viewPos * w.y + v2.viewPos*w.z);
+        v.viewPos = v.viewPos * (1.0/v.derivZ);
 	} 
 
 	void Render::SetPixel (int x, int y, const Color &color, float depth = 0) 
@@ -39,7 +42,6 @@ namespace SoftRender{
 
 	void Render::DrawLine (const Vec3f &p0, const Vec3f &p1, const Color &color) 
 	{
-#if 1
 		int start, end;
 		if (p0.x < p1.x)
 		{
@@ -69,6 +71,7 @@ namespace SoftRender{
 
 		double r0[2] = { p0.x , p1.x};
 		double r1[2] = { 1, 1};
+        
 		Matrix2x2 m(r0, r1);
         m = m.Transpose();
         m = m.Inverse();
@@ -95,52 +98,6 @@ namespace SoftRender{
 			assert(dy <= endY + 1);
 			SetPixel(dx, dy, color);
 		}
-#else
-
-		int x0 = (int)std::floor (p0.x), x1 = (int)std::floor (p1.x), y0 = (int)std::floor (p0.y), y1 = (int)std::floor (p1.y);
-		if(x0 > x1) { std::swap(x0, x1); std::swap(y0, y1); }
-
-		int dx = x1 - x0;
-		int dy = y1 - y0;
-		int delta = dy - dx;
-		int f = 0;
-
-		//斜率
-		if(dy >= 0 && dy <= dx) {
-			for(int x = x0, y = y0; x <= x1; x++) {
-				SetPixel(x, y, color);
-
-				if((f + dy) + (f + delta) < 0)
-					f += dy;
-				else { f += delta; y++; }
-			}
-		} else if(dy >= 0 && dy > dx) {
-			for(int x = x0, y = y0; y <= y1; y++) {
-				SetPixel (x, y, color);
-
-				if((f - dx) + (f - dx + dy) > 0)
-					f += -dx;
-				else { f += -dx + dy; x++; }
-			}
-		} else if(dy <= 0 && -dy <= dx) {
-			for(int x = x0, y = y0; x <= x1; x++) {
-				SetPixel (x, y, color);
-
-				if((f + dy) + (f + dy + dx) > 0)
-					f += dy;
-				else { f += dy + dx; y--; }
-			}
-		} else if(dy <= 0 && -dy > dx) {
-			for(int x = x0, y = y0; y >= y1; y--) {
-				SetPixel (x, y, color);
-
-				if((f + dx) + (f + dy + dx) < 0)
-					f += dx;
-				else { f += dy + dx; x++; }
-			}
-		}    
-
-#endif
 	} // bresenham line algorithm
 
 	void Render::DrawTriangle (const VertexOut &v0, const VertexOut &v1, const VertexOut &v2, const Color &color)

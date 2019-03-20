@@ -27,15 +27,17 @@ double Vector2D::Length() const
 	return sqrt(LengthSquare());
 }
 
-void Vector2D::Normalize()
+Vector2D& Vector2D::Normalize()
 {
     const double len = Length();
     if (len <= std::numeric_limits<double>::epsilon())
-        return;
+        return *this;
     
     assert(len > 0);
     x /= len;
 	y /= len;
+    
+    return *this;
 }
 
 double Vector2D::Dot(const Vector2D &vector) const
