@@ -27,6 +27,7 @@
 #include "Vector4D.hpp"
 #include "Matrix2x2.hpp"
 #include "Matrix4x4.hpp"
+#include "Color.hpp"
 
 typedef Vector2D Vec2f;
 typedef Vector3D Vec3f;
@@ -35,7 +36,6 @@ typedef Vector4D Vec4f;
 typedef Matrix4x4 Matrix4;
 typedef Matrix4x4 Mat4f;
 
-#include "Color.h"
 #include "Light.h"
 #include "Material.h"
 #include "Mesh.h"

@@ -55,6 +55,11 @@ Vector2D Vector2D::operator+(const Vector2D &vector) const
 	return Vector2D(x + vector.x, y + vector.y);
 }
 
+Vector2D Vector2D::operator-(const Vector2D &vector) const
+{
+    return Vector2D(x - vector.x, y - vector.y);
+}
+
 Vector2D Vector2D::operator*(const double scale) const
 {
 	return Vector2D(x * scale, y * scale);

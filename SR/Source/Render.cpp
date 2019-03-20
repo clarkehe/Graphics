@@ -67,7 +67,7 @@ static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const 
     v.projPos.z = 1/v.derivZ;// 1/v.derivZ=观察空间的Z坐标
 
     v.uv = (v0.uv * w.x + v1.uv * w.y + v2.uv * w.z) * (1/v.derivZ);
-    v.color = (v0.color*w.x + v1.color*w.y + v2.color*w.z)/v.derivZ;
+    v.color = (v0.color*w.x + v1.color*w.y + v2.color*w.z) * (1.0/v.derivZ);
 
     v.normal = (v0.normal*w.x + v1.normal*w.y + v2.normal*w.z);
     v.worldPos = (v0.worldPos*w.x + v1.worldPos*w.y + v2.worldPos*w.z);

@@ -38,8 +38,8 @@ public:
 
 	Vector2D operator-() const;
 	Vector2D operator+(const Vector2D &vector) const;
+    Vector2D operator-(const Vector2D &vector) const;
     Vector2D operator*(const double scale) const;
 };
 
 std::ostream & operator << (std::ostream &out, const Vector2D &v);
-

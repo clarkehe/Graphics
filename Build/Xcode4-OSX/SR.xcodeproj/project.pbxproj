@@ -54,7 +54,6 @@
 		00D331F40D1A350500347F8D /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = ../../SR/Source/Base/Vertex.h; sourceTree = "<group>"; };
 		021D486B04234988397B4EB7 /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextureManager.h; path = ../../SR/Source/TextureManager.h; sourceTree = "<group>"; };
 		08BB5EC240985072000C218F /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../Common/texture.cpp; sourceTree = "<group>"; };
-		0C2755101FFD27CB41277FE1 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Color.h; path = ../../SR/Source/Base/Color.h; sourceTree = "<group>"; };
 		0F065B512E0351AB5A02600D /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = controls.hpp; path = ../../Common/controls.hpp; sourceTree = "<group>"; };
 		0F8F10A9739548040220275F /* text2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = text2D.cpp; path = ../../Common/text2D.cpp; sourceTree = "<group>"; };
 		108C16526B1D3F1C7F107BCD /* Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Render.h; path = ../../SR/Source/Render.h; sourceTree = "<group>"; };
@@ -161,7 +160,6 @@
 		527F300E038D3BB92A67595F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				0C2755101FFD27CB41277FE1 /* Color.h */,
 				33C17EF53F8B4B5F07F577A1 /* Light.h */,
 				7AA1713353EA657A3F0F32FB /* Material.h */,
 				19987DC25DC3635B22206496 /* Mesh.h */,

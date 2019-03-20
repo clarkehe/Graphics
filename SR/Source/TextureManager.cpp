@@ -3,7 +3,6 @@
 #include "stb_image.h"
 #include "stb_image_write.h"
 
-
 static TextureManager * instance = NULL;
 
 TextureManager* TextureManager::getInstance()
@@ -41,7 +40,7 @@ bool TextureManager::LoadTexture (Texture &texture, std::string& file)
     for (; it != data.end(); it++)
     {
         Color &color = *it;
-        color = Color(tmp[count + 0] / 255.0f, tmp[count + 1] / 255.0f, tmp[count + 2] / 255.0f );
+        color = Color(tmp[count + 0] / 255.0, tmp[count + 1] / 255.0, tmp[count + 2] / 255.0);
         count += STBI_rgb;
     }
 
@@ -57,4 +56,3 @@ std::vector<Color> &TextureManager::getTexture(std::string & filepath)
         return textureMaps.at(filepath);
     }
 }
-
