@@ -1,6 +1,7 @@
 #include "Render.h"
+#include "Matrix2x2.hpp"
+#include "Vector2D.hpp"
 #include <assert.h>
-#include "Matrix2.h"
 
 namespace SoftRender{
 
@@ -68,14 +69,16 @@ namespace SoftRender{
 			return;
 		}
 
-		float r0[2] = { p0.x , p1.x};
-		float r1[2] = { 1, 1};
-
-		Matrix2 m(r0, r1);
-		Vec2f y(p0.y, p1.y);
+		double r0[2] = { p0.x , p1.x};
+		double r1[2] = { 1, 1};
+		Matrix2x2 m(r0, r1);
+        m = m.Transpose();
+        m = m.Inverse();
+        
+		const Vector2D y(p0.y, p1.y);
 
 		//y = a * x + b
-		Vec2f res = y * m.Inverse();
+		const Vector2D res = m * y;
 		float a = res.x;
 		float b = res.y;
 

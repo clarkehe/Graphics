@@ -254,3 +254,11 @@ Matrix4x4 Matrix4x4::Translate(const Vector3D &vector)
     return m;
 }
 
+std::ostream & operator << (std::ostream &out, const Matrix4x4 &m)
+{
+    out << m.m00 << "," << m.m01 << "," << m.m02 << "," << m.m03 << std::endl;
+    out << m.m10 << "," << m.m11 << "," << m.m12 << "," << m.m13 << std::endl;
+    out << m.m20 << "," << m.m21 << "," << m.m22 << "," << m.m23 << std::endl;
+    out << m.m30 << "," << m.m31 << "," << m.m32 << "," << m.m33 << std::endl;
+    return out;
+}

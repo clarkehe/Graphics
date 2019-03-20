@@ -70,4 +70,6 @@ public:
     static Matrix4x4 Translate(const Vector3D &vector);
 };
 
+std::ostream & operator << (std::ostream &out, const Matrix4x4 &m);
+
 #endif /* Matrix4x4_hpp */
