@@ -4,7 +4,7 @@ namespace SoftRender
 {
 	struct Light
     {
-		Vec3f worldDir;
+		Vec3f pos;
 		Color color;
         float atten;
         

@@ -72,6 +72,7 @@ static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const 
 
     v.normal = (v0.normal*w.x + v1.normal*w.y + v2.normal*w.z);
     v.worldPos = (v0.worldPos*w.x + v1.worldPos*w.y + v2.worldPos*w.z);
+    
     v.viewPos = (v0.viewPos*w.x + v1.viewPos * w.y + v2.viewPos*w.z);
     v.viewPos = v.viewPos * (1.0/v.derivZ);
 }
@@ -176,7 +177,7 @@ void Render::Rasterization(Mesh& mesh, VertexOut& v1, VertexOut& v2, VertexOut& 
 
             if (zTest(v.projPos.z, depthBuffer[x+y*width]))
             {
-                SetPixel(x, y, Shader_SimpleLambert(v, mesh, mLight, mCameraPos), v.projPos.z);
+                SetPixel(x, y, Shader_BlinnPhong(v, mesh, mLight, mCamPos), v.projPos.z);
 
                 //if (mesh.diffuseTextures.size() > 0 && mesh.specularTextures.size() > 0)
                 //    SetPixel(x, y, PixelShader(v, mesh, mLight, mCameraPos), v.projPos.z);

@@ -18,7 +18,7 @@ public:
 
 private:
     Light mLight;
-    Vec3f mCameraPos;
+    Vec3f mCamPos;
 
 public:
     Render (int w, int h) :
@@ -37,7 +37,7 @@ public:
 
     void SetCameraPos (const Vec3f &pos)
     {
-        mCameraPos = pos;
+        mCamPos = pos;        
         mViewMatrix = ViewMatrix (pos, Vec3f(), Vec3f(0.0f, 1.0f, 0.0f));
     }
 

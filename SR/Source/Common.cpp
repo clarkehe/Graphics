@@ -77,9 +77,6 @@ Mat4f Perspective(float radians, float ratio, float near, float far)
     p.mm[3][3] = 0.0;
     
     return p;
-    
-   // above is opengl projection matrix, but here use row major matrix, so transpose
-   //return p.Transpose();
 }
 
 Mat4f ModelMatrix(Vec3f & translate)
@@ -122,36 +119,22 @@ Vec4f operator*(const Vec4f& d, const Mat4f& m )
 {
     Vec4f point(d.x, d.y, d.z, 1.0);
     Vec4f v = m * point;
-    //v.w = d.x*m[0][3] + d.y*m[1][3] + d.z*m[2][3] + m[3][3];
-    //v.x = (d.x*m[0][0] + d.y*m[1][0] + d.z*m[2][0] + m[3][0]);
-    //v.y = (d.x*m[0][1] + d.y*m[1][1] + d.z*m[2][1] + m[3][1]);
-    //v.z = (d.x*m[0][2] + d.y*m[1][2] + d.z*m[2][2] + m[3][2]);
     return v;
 }
 
 Vec3 MultDirMatrix(const Vec3& d, const Matrix4& m)
 {
     Vec3 v = m * d;
-   // v.x = (d.x*m[0][0] + d.y*m[1][0] + d.z*m[2][0]);
-   // v.y = (d.x*m[0][1] + d.y*m[1][1] + d.z*m[2][1]);
-   // v.z = (d.x*m[0][2] + d.y*m[1][2] + d.z*m[2][2]);
     return v;
 }
 
 Vec3 MultPointMatrix(const Vec3& d, const Matrix4& m)
 {
-    Vec4f point(d.x, d.y, d.z, 1.0);
-    Vec4f v4 = m * point;
+    const Vec4f point(d.x, d.y, d.z, 1.0);
+    const Vec4f v4 = m * point;
     
     assert(v4.w == 1.0);
-    Vec3f v(v4.x / v4.w, v4.y / v4.w, v4.z / v4.w);
-    
-    //Vec3<T> v;
-    //T w = d.x*m[0][3] + d.y*m[1][3] + d.z*m[2][3] + m[3][3];
-    //v.x = (d.x*m[0][0] + d.y*m[1][0] + d.z*m[2][0] + m[3][0])/w;
-    //v.y = (d.x*m[0][1] + d.y*m[1][1] + d.z*m[2][1] + m[3][1])/w;
-    //v.z = (d.x*m[0][2] + d.y*m[1][2] + d.z*m[2][2] + m[3][2])/w;
-    
+    const Vec3f v(v4.x / v4.w, v4.y / v4.w, v4.z / v4.w);
     return v;
 }
 
@@ -171,6 +154,11 @@ Vec2f Ndc2Screen (Vec3f &pos, float width, float height)
     screenPos.x = (pos.x + 1)* 0.5f * width;
     screenPos.y = (1 - pos.y)* 0.5f * height; //flip y on screen coordinate
     return screenPos;
+}
+
+Vec3f Reflect(const Vec3f& incident, const Vec3f& normal)
+{
+    return incident - normal*(2.0*(normal.Dot(incident)));
 }
 
 bool BackFaceCulling (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2)
@@ -225,78 +213,8 @@ void VertexShader(Mat4f& model, Mat4f& view, Mat4f& proj, Vertex& inVertex, Vert
 
     //
     outVertex.worldPos = MultPointMatrix(inVertex.modelPos, model);
-    outVertex.viewPos = MultPointMatrix(inVertex.modelPos, mv);
+    outVertex.viewPos  = MultPointMatrix(inVertex.modelPos, mv);
 
     //normal??
     outVertex.normal = MultDirMatrix(inVertex.normal, model.Inverse().Transpose());
 }
-
-Vec3f Reflect(const Vec3f& incident, const Vec3f& normal)
-{
-    return incident - normal*(2.0*(normal.Dot(incident)));
-}
-
-/*
-Color PixelShader(VertexOut& inVertex, Texture& texture, Light& light, Vec3f& cameraPos, Material& material)
-{
-    Color ambient = light.ambient*material.ambient;
-
-    Vec3f norm = inVertex.normal.Normalize();
-    Vec3f lightDir = (light.worldPos - inVertex.worldPos).Normalize();
-    float diff = std::max((float)lightDir.Dot(norm), 0.0f);
-    Color diffuse = light.diffuse*(material.diffuse*diff);
-
-
-    Vec3f viewDir = (cameraPos - inVertex.worldPos).Normalize();
-    Vec3f reflectDir = Reflect(-lightDir, norm).Normalize();
-    float spec = std::pow(std::max((float)viewDir.Dot(reflectDir), 0.0f), 128);
-    Color specular = light.specular * (material.specular*spec);
-
-    Color result = ambient + diffuse + specular;
-    result.A = 1.0;
-    return TextureMap(texture, inVertex.uv)*result;
-}
-*/
-
-/*
-Color PixelShader(VertexOut& inVertex, Mesh& mesh, Light& light, Vec3f& cameraPos)
-{
-    
-    Color ambient = light.ambient*TextureMap(mesh.diffuseTextures[0], inVertex.uv);
-
-    Vec3f norm = inVertex.normal.Normalize();
-    Vec3f lightDir = (light.worldPos - inVertex.worldPos).Normalize();
-    float diff = std::max((float)lightDir.Dot(norm), 0.0f);
-    Color diffuse = light.diffuse*(TextureMap(mesh.diffuseTextures[0], inVertex.uv)*diff);
-
-    Vec3f viewDir = (cameraPos - inVertex.worldPos).Normalize();
-    Vec3f reflectDir = Reflect(-lightDir, norm).Normalize();
-    float spec = std::pow(std::max((float)viewDir.Dot(reflectDir), 0.0f), 128);
-    Color specular = light.specular * (TextureMap(mesh.specularTextures[0], inVertex.uv)*spec);
-
-    Color result = ambient + diffuse + specular;
-    result.A = 1.0;
-    return result;
-}
- */
-
-/*
-Color PixelShader(VertexOut& inVertex, Light& light, Vec3f& cameraPos, Material& material)
-{
-    Color ambient = light.ambient*material.ambient;
-
-    Vec3f norm = inVertex.normal.Normalize();
-    Vec3f lightDir = (light.worldPos - inVertex.worldPos).Normalize();
-    float diff = std::max((float)lightDir.Dot(norm), 0.0f);
-    Color diffuse = light.diffuse*(material.diffuse*diff);
-
-    Vec3f viewDir = (cameraPos - inVertex.worldPos).Normalize();
-    Vec3f reflectDir = Reflect(-lightDir, norm).Normalize();
-    float spec = std::pow(std::max((float)viewDir.Dot(reflectDir), 0.0f), 128);
-    Color specular = light.specular * (material.specular*spec);
-
-    Color result = ambient + diffuse + specular;
-    result.A = 1.0;
-    return result;
-}
-*/

@@ -18,7 +18,7 @@ uint testRender()
 	render.SetCameraPos(Vec3f(0, 0, 15.0f));
 
     Light light;
-    light.worldDir = Vec3f(0, 0, 1);
+    light.pos = Vec3f(0, 0, 10);
     light.color = Color(1, 1, 1, 1);
     
 	render.SetLight(light);
