@@ -215,6 +215,6 @@ void VertexShader(Mat4f& model, Mat4f& view, Mat4f& proj, Vertex& inVertex, Vert
     outVertex.worldPos = MultPointMatrix(inVertex.modelPos, model);
     outVertex.viewPos  = MultPointMatrix(inVertex.modelPos, mv);
 
-    //normal??
+    //normal from object to world space
     outVertex.normal = MultDirMatrix(inVertex.normal, model.Inverse().Transpose());
 }

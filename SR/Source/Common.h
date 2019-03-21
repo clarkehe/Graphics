@@ -27,7 +27,6 @@ T max3(T a, T b, T c)
 }
 
 void SaveTexture(Color *frameBuffer, int width, int height, std::string file);
-bool LoadTexture (Texture &texture, std::string file);
 
 void VertexShader(Mat4f& model, Mat4f& view, Mat4f& proj, Vertex& inVertex, VertexOut& outVertex);
 
