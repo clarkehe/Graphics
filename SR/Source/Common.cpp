@@ -104,7 +104,7 @@ Mat4f ViewMatrix(const Vec3f& look, const Vec3f& at, const Vec3f& up)
             zaxis.x, zaxis.y, zaxis.z, 0,
             w.x, w.y, w.z, 1);
     
-    m = m.Transpose();
+    m = m.Transpose();  //we are column major matrix, so transpose.
     return m.Inverse(); //world space to view space's matrix = (camera in world space's pos)'s inverse
 }
 
@@ -236,6 +236,7 @@ Vec3f Reflect(const Vec3f& incident, const Vec3f& normal)
     return incident - normal*(2.0*(normal.Dot(incident)));
 }
 
+/*
 Color PixelShader(VertexOut& inVertex, Texture& texture, Light& light, Vec3f& cameraPos, Material& material)
 {
     Color ambient = light.ambient*material.ambient;
@@ -255,9 +256,12 @@ Color PixelShader(VertexOut& inVertex, Texture& texture, Light& light, Vec3f& ca
     result.A = 1.0;
     return TextureMap(texture, inVertex.uv)*result;
 }
+*/
 
+/*
 Color PixelShader(VertexOut& inVertex, Mesh& mesh, Light& light, Vec3f& cameraPos)
 {
+    
     Color ambient = light.ambient*TextureMap(mesh.diffuseTextures[0], inVertex.uv);
 
     Vec3f norm = inVertex.normal.Normalize();
@@ -274,7 +278,9 @@ Color PixelShader(VertexOut& inVertex, Mesh& mesh, Light& light, Vec3f& cameraPo
     result.A = 1.0;
     return result;
 }
+ */
 
+/*
 Color PixelShader(VertexOut& inVertex, Light& light, Vec3f& cameraPos, Material& material)
 {
     Color ambient = light.ambient*material.ambient;
@@ -293,3 +299,4 @@ Color PixelShader(VertexOut& inVertex, Light& light, Vec3f& cameraPos, Material&
     result.A = 1.0;
     return result;
 }
+*/

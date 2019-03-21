@@ -1,8 +1,5 @@
 // Include standard headers
 #include "stdafx.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <vector>
 
 // Include GLEW
 #include <GL/glew.h>
@@ -200,7 +197,6 @@ int main( void )
 
 	// Get a handle for our "LightPosition" uniform
 	glUseProgram(programID);
-    
 	GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
 
     //
@@ -227,6 +223,7 @@ int main( void )
 		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &ModelMatrix[0][0]);
 		glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &ViewMatrix[0][0]);
 
+        //
 		glm::vec3 lightPos = glm::vec3(4,4,4);
 		glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
 
@@ -292,8 +289,8 @@ int main( void )
         glfwPollEvents();
 
 	} // Check if the ESC key was pressed or the window was closed
-	while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS /*&&
-		   glfwGetWindowAttrib(window, GLFW_OPENED )*/ );
+	while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&
+		   glfwWindowShouldClose(window) == 0  );
 
 	// Cleanup VBO and shader
 	glDeleteBuffers(1, &vertexbuffer);

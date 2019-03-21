@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Render.h"
+#include "Shader/Shader.h"
 
 static bool OnSameSide(Vec3f a, Vec3f b, Vec3f c, Vec3f p)
 {
@@ -64,7 +65,7 @@ static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const 
     w.z = calculateArea (v0.projPos, v1.projPos, v.projPos) / area;
 
     v.derivZ = v0.derivZ*w.x + v1.derivZ*w.y + v2.derivZ*w.z;
-    v.projPos.z = 1/v.derivZ;// 1/v.derivZ=观察空间的Z坐标
+    v.projPos.z = 1/v.derivZ;   // 1/v.derivZ=观察空间的Z坐标
 
     v.uv = (v0.uv * w.x + v1.uv * w.y + v2.uv * w.z) * (1/v.derivZ);
     v.color = (v0.color*w.x + v1.color*w.y + v2.color*w.z) * (1.0/v.derivZ);
@@ -74,6 +75,8 @@ static inline void Interpolate (const VertexOut &v0, const VertexOut &v1, const 
     v.viewPos = (v0.viewPos*w.x + v1.viewPos * w.y + v2.viewPos*w.z);
     v.viewPos = v.viewPos * (1.0/v.derivZ);
 }
+
+//-------------------------------------------------------------------------------
 
 void Render::SetPixel (int x, int y, const Color &color, float depth = 0)
 {
@@ -173,10 +176,12 @@ void Render::Rasterization(Mesh& mesh, VertexOut& v1, VertexOut& v2, VertexOut& 
 
             if (zTest(v.projPos.z, depthBuffer[x+y*width]))
             {
-                if (mesh.diffuseTextures.size() > 0 && mesh.specularTextures.size() > 0)
-                    SetPixel(x, y, PixelShader(v, mesh, mLight, mCameraPos), v.projPos.z);
-                else
-                    SetPixel(x, y,  PixelShader(v, mLight, mCameraPos, mCurMaterial), v.projPos.z);
+                SetPixel(x, y, Shader_SimpleLambert(v, mesh, mLight, mCameraPos), v.projPos.z);
+
+                //if (mesh.diffuseTextures.size() > 0 && mesh.specularTextures.size() > 0)
+                //    SetPixel(x, y, PixelShader(v, mesh, mLight, mCameraPos), v.projPos.z);
+                //else
+                 //   SetPixel(x, y,  PixelShader(v, mLight, mCameraPos, mCurMaterial), v.projPos.z);
             }
         }
     }
@@ -223,7 +228,7 @@ void Render::DrawModel (Model &model)
     nmvMat = mvMat.Inverse().Transpose ();
 
     // we need light position(in view space) in pixel shader???
-    mLight.viewPos = MultPointMatrix(mLight.worldPos, mvMat);
+    //mLight.viewPos = MultPointMatrix(mLight.worldPos, mvMat);
     
     for (int i = 0; i < model.mMeshes.size(); i++)
     {

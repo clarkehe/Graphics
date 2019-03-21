@@ -3,115 +3,115 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106C4DD859184F1775C30407 /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16284DCA2936222C230C6A80 /* Vector3D.cpp */; };
-		169C02A33C734C754ACE4B3F /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05BE12140C356BD028AA68E8 /* Matrix4x4.cpp */; };
-		306C31866D5571241EA23A02 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77023E866B114D4174E62B62 /* stdafx.cpp */; };
-		3E7A3FA2646611653DF20E6A /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13F017392B9B527D4DA1277D /* Vector4D.cpp */; };
-		5B8C48793B57093726D515E1 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A18134550CA22BB4636364E /* Vector2D.cpp */; };
-		6FF63E6623094D1E02007EAC /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00020E5116E74A68062E5251 /* CoreServices.framework */; };
-		78BF51174835482D078341E4 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54F34BD92F214386137D771E /* Quaternion.cpp */; };
+		32F45A567B61338045C52BC5 /* Matrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F9735564E6D6FA954A33099 /* Matrix4x4.cpp */; };
+		034D3B0037C65DA71FA33EE3 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2838081613932D3E68A1255B /* Quaternion.cpp */; };
+		4B3540F4004B42374BFA3D93 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 095D4EE928124D241DE3452D /* Vector2D.cpp */; };
+		742822A73C173A7A5E176FD1 /* Vector3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325E66F424B62A7179AA2F0E /* Vector3D.cpp */; };
+		53D422FD16F007900A095609 /* Vector4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B41E33E4D616334441462 /* Vector4D.cpp */; };
+		29D50F57421934866DA848FA /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F4250F3383552D800995C16 /* stdafx.cpp */; };
+		6B5602F7297E1B0322E924B7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA179F7730644EC21D619FF /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00020E5116E74A68062E5251 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		05BE12140C356BD028AA68E8 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix4x4.cpp; path = ../../Math/Matrix4x4.cpp; sourceTree = "<group>"; };
-		0E46253D50145ECD7721487A /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Quaternion.hpp; path = ../../Math/Quaternion.hpp; sourceTree = "<group>"; };
-		10454C503F0B0C945F2377A7 /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Vector2D.hpp; path = ../../Math/Vector2D.hpp; sourceTree = "<group>"; };
-		111E098D376D04EF1A847222 /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../../Math/stdafx.h; sourceTree = "<group>"; };
-		13F017392B9B527D4DA1277D /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vector4D.cpp; path = ../../Math/Vector4D.cpp; sourceTree = "<group>"; };
-		16284DCA2936222C230C6A80 /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3D.cpp; path = ../../Math/Vector3D.cpp; sourceTree = "<group>"; };
-		23D12E58535235F83BA17AD6 /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Vector3D.hpp; path = ../../Math/Vector3D.hpp; sourceTree = "<group>"; };
-		43F6A30E224272C800860406 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Color.hpp; path = ../../Math/Color.hpp; sourceTree = "<group>"; };
-		45D55F284F7053A83B6A4A5D /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Matrix4x4.hpp; path = ../../Math/Matrix4x4.hpp; sourceTree = "<group>"; };
-		4B4615E37F1B564613BC1DA4 /* Matrix2x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Matrix2x2.hpp; path = ../../Math/Matrix2x2.hpp; sourceTree = "<group>"; };
-		54F34BD92F214386137D771E /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Quaternion.cpp; path = ../../Math/Quaternion.cpp; sourceTree = "<group>"; };
-		5A18134550CA22BB4636364E /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Vector2D.cpp; path = ../../Math/Vector2D.cpp; sourceTree = "<group>"; };
-		613F7FA744AA1CFA68676041 /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Vector4D.hpp; path = ../../Math/Vector4D.hpp; sourceTree = "<group>"; };
-		73C475CC35922163739612EA /* libMath_d.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMath_d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		77023E866B114D4174E62B62 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stdafx.cpp; path = ../../Math/stdafx.cpp; sourceTree = "<group>"; };
+		585E3B872085322B4DC43D26 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Color.hpp"; path = "../../Math/Color.hpp"; sourceTree = "<group>"; };
+		3B197B9A3F4642E8471A7D09 /* Matrix2x2.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix2x2.hpp"; path = "../../Math/Matrix2x2.hpp"; sourceTree = "<group>"; };
+		7F9735564E6D6FA954A33099 /* Matrix4x4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Matrix4x4.cpp"; path = "../../Math/Matrix4x4.cpp"; sourceTree = "<group>"; };
+		161B787566D1454D758F059D /* Matrix4x4.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Matrix4x4.hpp"; path = "../../Math/Matrix4x4.hpp"; sourceTree = "<group>"; };
+		2838081613932D3E68A1255B /* Quaternion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Quaternion.cpp"; path = "../../Math/Quaternion.cpp"; sourceTree = "<group>"; };
+		57E907E964985EF06FF41CC0 /* Quaternion.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Quaternion.hpp"; path = "../../Math/Quaternion.hpp"; sourceTree = "<group>"; };
+		095D4EE928124D241DE3452D /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector2D.cpp"; path = "../../Math/Vector2D.cpp"; sourceTree = "<group>"; };
+		39C226DB20CF11A3103A5673 /* Vector2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector2D.hpp"; path = "../../Math/Vector2D.hpp"; sourceTree = "<group>"; };
+		325E66F424B62A7179AA2F0E /* Vector3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector3D.cpp"; path = "../../Math/Vector3D.cpp"; sourceTree = "<group>"; };
+		158F62574CCF36D2385C2F6E /* Vector3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector3D.hpp"; path = "../../Math/Vector3D.hpp"; sourceTree = "<group>"; };
+		0C1B41E33E4D616334441462 /* Vector4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vector4D.cpp"; path = "../../Math/Vector4D.cpp"; sourceTree = "<group>"; };
+		7B0877A44A925AC7565E5150 /* Vector4D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Vector4D.hpp"; path = "../../Math/Vector4D.hpp"; sourceTree = "<group>"; };
+		0F4250F3383552D800995C16 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../Math/stdafx.cpp"; sourceTree = "<group>"; };
+		3B063E7910380CE92B02495F /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../Math/stdafx.h"; sourceTree = "<group>"; };
+		4CA179F7730644EC21D619FF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
+		37A532841B3B47930A3C7924 /* libMath.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libMath.dylib"; path = "libMath.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		203B081E7BF85AA748D20963 /* Frameworks */ = {
+		5BF55E60320F1A2377D76FBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF63E6623094D1E02007EAC /* CoreServices.framework in Frameworks */,
+				6B5602F7297E1B0322E924B7 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02987AB063AB2961432C154C /* Math */ = {
+		7D3F64653B86084A4FEC229D /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				4B4615E37F1B564613BC1DA4 /* Matrix2x2.hpp */,
-				43F6A30E224272C800860406 /* Color.hpp */,
-				05BE12140C356BD028AA68E8 /* Matrix4x4.cpp */,
-				45D55F284F7053A83B6A4A5D /* Matrix4x4.hpp */,
-				54F34BD92F214386137D771E /* Quaternion.cpp */,
-				0E46253D50145ECD7721487A /* Quaternion.hpp */,
-				5A18134550CA22BB4636364E /* Vector2D.cpp */,
-				10454C503F0B0C945F2377A7 /* Vector2D.hpp */,
-				16284DCA2936222C230C6A80 /* Vector3D.cpp */,
-				23D12E58535235F83BA17AD6 /* Vector3D.hpp */,
-				13F017392B9B527D4DA1277D /* Vector4D.cpp */,
-				613F7FA744AA1CFA68676041 /* Vector4D.hpp */,
-				77023E866B114D4174E62B62 /* stdafx.cpp */,
-				111E098D376D04EF1A847222 /* stdafx.h */,
+				18482D7047EB441C3B670701 /* Math */,
+				1EA035F230136F4810516683 /* Frameworks */,
+				182749877F73726E2B8E1C80 /* Products */,
 			);
-			name = Math;
+			name = "Math";
 			sourceTree = "<group>";
 		};
-		28146E7561BB552F02580202 /* Frameworks */ = {
+		18482D7047EB441C3B670701 /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				00020E5116E74A68062E5251 /* CoreServices.framework */,
+				585E3B872085322B4DC43D26 /* Color.hpp */,
+				3B197B9A3F4642E8471A7D09 /* Matrix2x2.hpp */,
+				7F9735564E6D6FA954A33099 /* Matrix4x4.cpp */,
+				161B787566D1454D758F059D /* Matrix4x4.hpp */,
+				2838081613932D3E68A1255B /* Quaternion.cpp */,
+				57E907E964985EF06FF41CC0 /* Quaternion.hpp */,
+				095D4EE928124D241DE3452D /* Vector2D.cpp */,
+				39C226DB20CF11A3103A5673 /* Vector2D.hpp */,
+				325E66F424B62A7179AA2F0E /* Vector3D.cpp */,
+				158F62574CCF36D2385C2F6E /* Vector3D.hpp */,
+				0C1B41E33E4D616334441462 /* Vector4D.cpp */,
+				7B0877A44A925AC7565E5150 /* Vector4D.hpp */,
+				0F4250F3383552D800995C16 /* stdafx.cpp */,
+				3B063E7910380CE92B02495F /* stdafx.h */,
 			);
-			name = Frameworks;
+			name = "Math";
 			sourceTree = "<group>";
 		};
-		6B2B65181CAE1AEF4C165DF6 /* Math */ = {
+		1EA035F230136F4810516683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				02987AB063AB2961432C154C /* Math */,
-				28146E7561BB552F02580202 /* Frameworks */,
-				767E607D472B112A756C16FB /* Products */,
+				4CA179F7730644EC21D619FF /* CoreServices.framework */,
 			);
-			name = Math;
+			name = "Frameworks";
 			sourceTree = "<group>";
 		};
-		767E607D472B112A756C16FB /* Products */ = {
+		182749877F73726E2B8E1C80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73C475CC35922163739612EA /* libMath_d.dylib */,
+				37A532841B3B47930A3C7924 /* libMath.dylib */,
 			);
-			name = Products;
+			name = "Products";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B9514BA50C8075708425A34 /* Math */ = {
+		42A028EB04E90DFA50CE23E4 /* Math */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54405B0A09BF7D6E5E951286 /* Build configuration list for PBXNativeTarget "Math" */;
+			buildConfigurationList = 52307B2C3064771461F542EE /* Build configuration list for PBXNativeTarget "Math" */;
 			buildPhases = (
-				292632211867168B271163EB /* Resources */,
-				05A74653182E7468120E78F8 /* Sources */,
-				203B081E7BF85AA748D20963 /* Frameworks */,
+				214B564A2A0A22A4641348D5 /* Resources */,
+				257562847C4078951D3A657A /* Sources */,
+				5BF55E60320F1A2377D76FBC /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Math;
-			productName = Math;
-			productReference = 73C475CC35922163739612EA /* libMath_d.dylib */;
+			name = "Math";
+			productName = "Math";
+			productReference = 37A532841B3B47930A3C7924 /* libMath.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -119,26 +119,20 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-			};
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
 			hasScannedForEncodings = 1;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 6B2B65181CAE1AEF4C165DF6 /* Math */;
+			mainGroup = 7D3F64653B86084A4FEC229D /* Math */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B9514BA50C8075708425A34 /* Math */,
+				42A028EB04E90DFA50CE23E4 /* libMath.dylib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		292632211867168B271163EB /* Resources */ = {
+		214B564A2A0A22A4641348D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,115 +142,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05A74653182E7468120E78F8 /* Sources */ = {
+		257562847C4078951D3A657A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169C02A33C734C754ACE4B3F /* Matrix4x4.cpp in Sources */,
-				78BF51174835482D078341E4 /* Quaternion.cpp in Sources */,
-				5B8C48793B57093726D515E1 /* Vector2D.cpp in Sources */,
-				106C4DD859184F1775C30407 /* Vector3D.cpp in Sources */,
-				3E7A3FA2646611653DF20E6A /* Vector4D.cpp in Sources */,
-				306C31866D5571241EA23A02 /* stdafx.cpp in Sources */,
+				32F45A567B61338045C52BC5 /* Matrix4x4.cpp in Sources */,
+				034D3B0037C65DA71FA33EE3 /* Quaternion.cpp in Sources */,
+				4B3540F4004B42374BFA3D93 /* Vector2D.cpp in Sources */,
+				742822A73C173A7A5E176FD1 /* Vector3D.cpp in Sources */,
+				53D422FD16F007900A095609 /* Vector4D.cpp in Sources */,
+				29D50F57421934866DA848FA /* stdafx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		1A9C105F52BF091D68757F7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
-				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
-				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
-				COPY_PHASE_STRIP = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../Math/stdafx.h;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					DEBUG,
-					_DEBUG,
-					_MATH_DLL,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = (
-					../../Math/Platforms/OSX,
-					../../Math/Platforms/Apple,
-					../../Math/Platforms/Unix,
-					../../Math,
-				);
-				LIBRARY_SEARCH_PATHS = "../../External/Lib/Xcode4-OSX/Native";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OBJROOT = "../../Temp/Xcode4-OSX/Debug/Math";
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = (
-					"-Wno-unused-variable",
-					"-Wno-unused-parameter",
-					"-Wno-unused-private-field",
-					"-Wno-sign-compare",
-					"-Wno-reorder",
-					"-Wno-unreachable-code",
-					"-Wno-deprecated-declarations",
-					"-Wno-invalid-offsetof",
-					"-Wno-unused-function",
-					"-Wno-missing-field-initializers",
-					"-Wno-bitwise-op-parentheses",
-					"-Wno-sentinel",
-					"-Wno-unused-value",
-					"-Wno-switch",
-				);
-				SYMROOT = "../../Bin/Xcode4-OSX/Native";
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wextra",
-				);
-			};
-			name = Debug;
-		};
-		315E3E2318111D54007040D1 /* Profile */ = {
+		38232CD103D727EC04DF6E45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
 				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = Math_p;
+				PRODUCT_NAME = "Math";
 			};
-			name = Profile;
+			name = "Release";
 		};
-		3E3200CF336E25F46290619C /* Release */ = {
+		4B4C1EB244E34B472FF6544B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
 				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = Math;
+				PRODUCT_NAME = "Math_d";
 			};
-			name = Release;
+			name = "Debug";
 		};
-		52616C2656AB0E26673C3984 /* Debug */ = {
+		48D940904E4B45E2317D2857 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
 				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
-				PRODUCT_NAME = Math_d;
+				PRODUCT_NAME = "Math_p";
 			};
-			name = Debug;
+			name = "Profile";
 		};
-		6773314A07245C7532DE1495 /* Profile */ = {
+		169D27CE759C692A70AC6CE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -267,74 +211,23 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../Math/stdafx.h;
+				GCC_PREFIX_HEADER = "../../Math/stdafx.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					NDEBUG,
-					_NDEBUG,
-					_MATH_DLL,
+					"NDEBUG",
+					"_NDEBUG",
+					"_MATH_DLL",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				HEADER_SEARCH_PATHS = (
-					../../Math/Platforms/OSX,
-					../../Math/Platforms/Apple,
-					../../Math/Platforms/Unix,
-					../../Math,
+					"../../Math/Platforms/OSX",
+					"../../Math/Platforms/Apple",
+					"../../Math/Platforms/Unix",
+					"../../Math",
 				);
-				LIBRARY_SEARCH_PATHS = "../../External/Lib/Xcode4-OSX/Native";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OBJROOT = "../../Temp/Xcode4-OSX/Profile/Math";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = (
-					"-Wno-unused-variable",
-					"-Wno-unused-parameter",
-					"-Wno-unused-private-field",
-					"-Wno-sign-compare",
-					"-Wno-reorder",
-					"-Wno-unreachable-code",
-					"-Wno-deprecated-declarations",
-					"-Wno-invalid-offsetof",
-					"-Wno-unused-function",
-					"-Wno-missing-field-initializers",
-					"-Wno-bitwise-op-parentheses",
-					"-Wno-sentinel",
-					"-Wno-unused-value",
-					"-Wno-switch",
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
 				);
-				SYMROOT = "../../Bin/Xcode4-OSX/Native";
-				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wextra",
-				);
-			};
-			name = Profile;
-		};
-		698815A243CC396D31B64315 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
-				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
-				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
-				COPY_PHASE_STRIP = NO;
-				GCC_OPTIMIZATION_LEVEL = fast;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ../../Math/stdafx.h;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					NDEBUG,
-					_NDEBUG,
-					_MATH_DLL,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				HEADER_SEARCH_PATHS = (
-					../../Math/Platforms/OSX,
-					../../Math/Platforms/Apple,
-					../../Math/Platforms/Unix,
-					../../Math,
-				);
-				LIBRARY_SEARCH_PATHS = "../../External/Lib/Xcode4-OSX/Native";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OBJROOT = "../../Temp/Xcode4-OSX/Release/Math";
 				ONLY_ACTIVE_ARCH = NO;
@@ -360,32 +253,143 @@
 					"-Wextra",
 				);
 			};
-			name = Release;
+			name = "Release";
+		};
+		48E0732C0C710EAA4F2B4B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../../Math/stdafx.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG",
+					"_DEBUG",
+					"_MATH_DLL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Math/Platforms/OSX",
+					"../../Math/Platforms/Apple",
+					"../../Math/Platforms/Unix",
+					"../../Math",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/Math";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Debug";
+		};
+		0C634F7F21CC74FD249A31F7 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../../Math/stdafx.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"_MATH_DLL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Math/Platforms/OSX",
+					"../../Math/Platforms/Apple",
+					"../../Math/Platforms/Unix",
+					"../../Math",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/Math";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Profile";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52307B2C3064771461F542EE /* Build configuration list for PBXNativeTarget "libMath.dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38232CD103D727EC04DF6E45 /* Release */,
+				4B4C1EB244E34B472FF6544B /* Debug */,
+				48D940904E4B45E2317D2857 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Math" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				698815A243CC396D31B64315 /* Release */,
-				1A9C105F52BF091D68757F7E /* Debug */,
-				6773314A07245C7532DE1495 /* Profile */,
+				169D27CE759C692A70AC6CE3 /* Release */,
+				48E0732C0C710EAA4F2B4B09 /* Debug */,
+				0C634F7F21CC74FD249A31F7 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54405B0A09BF7D6E5E951286 /* Build configuration list for PBXNativeTarget "Math" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E3200CF336E25F46290619C /* Release */,
-				52616C2656AB0E26673C3984 /* Debug */,
-				315E3E2318111D54007040D1 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release";
 		};
 /* End XCConfigurationList section */
+
 	};
 	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
 }

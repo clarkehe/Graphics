@@ -5,7 +5,6 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-using namespace SoftRender;
 #define HALF_PI  1.57079632679489661923   // pi/2
 
 GLuint loadFarmeBufferToTexture(Color *frameBufer, int width, int height);
@@ -16,17 +15,15 @@ uint testRender()
 	Render render(WIDTH, HEIGHT);
 
 	render.SetFrustum(HALF_PI, float(WIDTH)/(float)HEIGHT, 0.1f, 1000.0f);
-	render.SetCamera(Vec3f(0, 0, 15.0f));
+	render.SetCameraPos(Vec3f(0, 0, 15.0f));
 
-	Light light(
-		Vec3f(0.0f, 0.0f, 100.0f),
-		Color(0.2f, 0.2f, 0.2f),
-		Color(0.5f, 0.5f, 0.5f),
-		Color(1.0f, 1.0f, 1.0f)
-	);
+    Light light;
+    light.worldDir = Vec3f(0, 0, 1);
+    light.color = Color(1, 1, 1, 1);
+    
 	render.SetLight(light);
-
 	render.currentMode = Textured;
+    
 	Model nanosuit2(std::string("../../../SR/Res/crystal_maiden/crystal_maiden_econ.fbx"),
                     Vec3f(10, -75, -150));
 	render.DrawModel(nanosuit2);
@@ -65,4 +62,3 @@ GLuint loadFarmeBufferToTexture(Color *frameBufer, int width, int height)
 	// Return the ID of the texture we just created
 	return textureID;
 }
-

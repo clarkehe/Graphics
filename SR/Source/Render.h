@@ -18,7 +18,6 @@ public:
 
 private:
     Light mLight;
-    Material mCurMaterial;
     Vec3f mCameraPos;
 
 public:
@@ -36,10 +35,10 @@ public:
         mProjMatrix = Perspective (hfov, ratio, n, f);
     }
 
-    void SetCamera (const Vec3f &look)
+    void SetCameraPos (const Vec3f &pos)
     {
-        mCameraPos = look;
-        mViewMatrix = ViewMatrix (look, Vec3f(), Vec3f(0.0f, 1.0f, 0.0f));
+        mCameraPos = pos;
+        mViewMatrix = ViewMatrix (pos, Vec3f(), Vec3f(0.0f, 1.0f, 0.0f));
     }
 
     void SetLight (const Light& _light)

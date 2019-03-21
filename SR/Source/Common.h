@@ -25,6 +25,7 @@ T max3(T a, T b, T c)
     return std::max(a, std::max(b, c));
 }
 
+
 void SaveTexture(Color *frameBuffer, int width, int height, std::string file);
 bool LoadTexture (Texture &texture, std::string file);
 
@@ -33,12 +34,12 @@ bool Clip(VertexOut& v);
 Vec2f Ndc2Screen (Vec3f &pos, float width, float height);
 bool BackFaceCulling (const Vec3f &p0, const Vec3f &p1, const Vec3f &p2);
 
-Color PixelShader(VertexOut& inVertex, Texture& texture, Light& light, Vec3f& cameraPos, Material& material);
-Color PixelShader(VertexOut& inVertex, Mesh& mesh, Light& light, Vec3f& cameraPos);
-Color PixelShader(VertexOut& inVertex, Light& light, Vec3f& cameraPos, Material& material);
+//Color PixelShader(VertexOut& inVertex, Texture& texture, Light& light, Vec3f& cameraPos, Material& material);
+//Color PixelShader(VertexOut& inVertex, Mesh& mesh, Light& light, Vec3f& cameraPos);
+//Color PixelShader(VertexOut& inVertex, Light& light, Vec3f& cameraPos, Material& material);
 
+Color TextureMap(Texture& texture, Vec2f& uv);
 Color BilinearFilter(Texture& texture, float s, float t);
 Color NearestFilter(Texture& texture, int s, int t);
 
 Vec4f operator*(const Vec4f& d, const Mat4f& m );
-

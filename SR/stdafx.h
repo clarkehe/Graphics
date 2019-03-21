@@ -37,7 +37,6 @@ typedef Matrix4x4 Matrix4;
 typedef Matrix4x4 Mat4f;
 
 #include "Light.h"
-#include "Material.h"
 #include "Mesh.h"
 #include "Texture.h"
 #include "Vertex.h"
