@@ -14,7 +14,8 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 [Mathonline](http://mathonline.wikidot.com/vector-cross-product)         
 [Vector Cross Product](http://people.sju.edu/~pklingsb/crossproduct.pdf)             
 [数学笔记](http://math.tianpeng.org/)                     
-[Rotations and Orientation](https://www.cs.utexas.edu/~theshark/courses/cs354/lectures/cs354-14.pdf)                 
+[Rotations and Orientation](https://www.cs.utexas.edu/~theshark/courses/cs354/lectures/cs354-14.pdf)           
+[OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)         
 
 
 **多线程、并发**   
@@ -27,3 +28,7 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
                    
 **OpenGL**                          
 [GLSL 详解](https://colin1994.github.io/2017/11/11/OpenGLES-Lesson04/)                    
+
+**Z-fighting**        
+[Depth testing](https://learnopengl.com/Advanced-OpenGL/Depth-testing)     
+[Alternatives to Using Z-Bias to Fix Z-Fighting Issues](https://software.intel.com/en-us/articles/alternatives-to-using-z-bias-to-fix-z-fighting-issues)          
