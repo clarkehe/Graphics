@@ -9,9 +9,7 @@ static bool OnSameSide(Vec3f a, Vec3f b, Vec3f c, Vec3f p)
 
 static bool PointInTrangleBySameSide(Vec3f a, Vec3f b, Vec3f c, Vec3f p)
 {
-    return OnSameSide(a, b, c, p) &&
-    OnSameSide(b, c, a, p)&&
-    OnSameSide(c, a, b, p);
+    return OnSameSide(a, b, c, p) && OnSameSide(b, c, a, p) && OnSameSide(c, a, b, p);
 }
 
 //advanced Rasterization from http://forum.devmaster.net/t/advanced-rasterization/6145/1
@@ -178,11 +176,6 @@ void Render::Rasterization(Mesh& mesh, VertexOut& v1, VertexOut& v2, VertexOut& 
             if (zTest(v.projPos.z, depthBuffer[x+y*width]))
             {
                 SetPixel(x, y, Shader_BlinnPhong(v, mesh, mLight, mCamPos), v.projPos.z);
-
-                //if (mesh.diffuseTextures.size() > 0 && mesh.specularTextures.size() > 0)
-                //    SetPixel(x, y, PixelShader(v, mesh, mLight, mCameraPos), v.projPos.z);
-                //else
-                 //   SetPixel(x, y,  PixelShader(v, mLight, mCameraPos, mCurMaterial), v.projPos.z);
             }
         }
     }

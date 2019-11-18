@@ -5,10 +5,19 @@
 		location = "group:Math.xcodeproj">
 	</FileRef>
 	<FileRef
+		location = "group:Soil.xcodeproj">
+	</FileRef>
+	<FileRef
 		location = "group:RayTracer.xcodeproj">
 	</FileRef>
 	<FileRef
 		location = "group:Test.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:Filter.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:ShadowMapping.xcodeproj">
 	</FileRef>
 	<FileRef
 		location = "group:SR.xcodeproj">
@@ -21,5 +30,17 @@
 	</FileRef>
 	<FileRef
 		location = "group:L3.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:L4.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:L5.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:L16.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:projective_texture.xcodeproj">
 	</FileRef>
 </Workspace>

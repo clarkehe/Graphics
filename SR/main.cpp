@@ -21,10 +21,6 @@ using namespace glm;
 #include "SoftRender.h"
 
 #ifdef _MSC_VER
-#include <Windows.h>
-#endif
-
-#ifdef _MSC_VER
 
 LONGLONG CalculateFrequency()
 {
@@ -210,10 +206,24 @@ int main( void )
 		glUseProgram(programID);
 
 		// Compute the MVP matrix from keyboard and mouse input
-		computeMatricesFromInputs(window);
+		//computeMatricesFromInputs(window);
         
-		glm::mat4 ProjectionMatrix = getProjectionMatrix();
-		glm::mat4 ViewMatrix = getViewMatrix();
+        glm::mat4 ProjectionMatrix = glm::ortho(-4/3.0f, 4/3.0f, -1.0f, 1.0f, 0.1f, 100.0f);
+        
+        glm::vec3 position = glm::vec3( 0, 0, 1 );
+        
+        // Camera matrix
+        glm::mat4 ViewMatrix       = glm::lookAt(
+                                       position,           // Camera is here
+                                       glm::vec3( 0, 0, 0 ),
+                                       //position+direction, // and looks here : at the same position, plus "direction"
+                                       glm::vec3( 0, 1, 0 )
+                                       //up                  // Head is up (set to 0,-1,0 to look upside-down)
+                                       );
+        
+		//glm::mat4 ProjectionMatrix = getProjectionMatrix();
+		//glm::mat4 ViewMatrix = getViewMatrix();
+        
 		glm::mat4 ModelMatrix = glm::scale(glm::mat4(1.0), glm::vec3(4/3.0f, 1.0f, 1.0f));
 		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
 

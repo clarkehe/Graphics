@@ -52,5 +52,10 @@ int main(int argc, const char * argv[])
     std::cout << "mi:" << mi;
     std::cout << "i:" << i;
     
+    Vector3D V1(1, 3, 5);
+    Vector3D V2(2, 4, 7);
+    Vector3D V3 = V1.Cross(V2);
+    std::cout << "V3:" << V3;
+    
     return 0;
 }

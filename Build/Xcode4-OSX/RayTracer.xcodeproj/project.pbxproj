@@ -7,127 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B8E0FF55C38634A3E5569CF /* RayTracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76BD03804F0D1F62709F0DEC /* RayTracer.cpp */; };
-		10D05B5B33A4735360A02B6F /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D6B153B0D01592931311E78 /* stdafx.cpp */; };
-		7FAB3EAD7D853D7A4DAA0EE7 /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379A0B9428BF50B52FE4347B /* vec3.cpp */; };
-		7BF864E460754D5475674593 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D10BFA64FC61D5090D4FFD /* CoreFoundation.framework */; };
-		499B1FCE1B031CCA19221631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460F04E64ABC16F8283C0C1B /* CoreGraphics.framework */; };
-		17A103D25E77097D177F397D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C50184432C060D6294D0D35 /* OpenGL.framework */; };
-		4398473B17854E1956AE44BE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF54BCF1B167B227B3019B7 /* AppKit.framework */; };
-		36FF22233DE249E43EA834A8 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66415F994B0C1363683E72A7 /* libMath.dylib */; };
+		36B15C5765E34D4E5C145D5F /* RayTracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BD75FD75254414C24042B81 /* RayTracer.cpp */; };
+		35A63BD75CE0039E341F613D /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24705F7E08F7358A0B611E7B /* stdafx.cpp */; };
+		5F027D49657A679D16F96DF4 /* vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65ED5CA50E084F407D3C0CD8 /* vec3.cpp */; };
+		33647C411CEC50A64F64658B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786734605B206786B263089 /* CoreFoundation.framework */; };
+		3C64012F5D191728779455C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B05755359AD099955DB2ECF /* CoreGraphics.framework */; };
+		554D4AA95452055F44115E0B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD533CF12175B3D2E61005C /* OpenGL.framework */; };
+		10BF0BF646DD5D814E5D5CF2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DE627C7BBF5E2E48B11C26 /* AppKit.framework */; };
+		7E1339AD1FAE7349762126DB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E77D5513872B1F2D411558 /* GLUT.framework */; };
+		61C4383320C6517F6CEC3734 /* libMath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A926A863CD44CA67C02E4F /* libMath.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07DF714A48B42D8121C7367D /* PBXContainerItemProxy */ = {
+		4E2A5C727F5A1F99121E7D5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3F8F018B65643A2B1B1F2361 /* Math.xcodeproj */;
+			containerPortal = 78DF16F62EA35255779575B2 /* Math.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 37A532841B3B47930A3C7924;
+			remoteGlobalIDString = 11800481581624892E603DEB;
 			remoteInfo = "libMath.dylib";
 		};
-		580820DA4B8A73313A84719F /* PBXContainerItemProxy */ = {
+		7FDE68D5379B491B401B551F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3F8F018B65643A2B1B1F2361 /* Math.xcodeproj */;
+			containerPortal = 78DF16F62EA35255779575B2 /* Math.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 42A028EB04E90DFA50CE23E4;
+			remoteGlobalIDString = 46EE687012DE64D4242F4618;
 			remoteInfo = "libMath.dylib";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76BD03804F0D1F62709F0DEC /* RayTracer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "RayTracer.cpp"; path = "../../RayTracer/RayTracer.cpp"; sourceTree = "<group>"; };
-		35DD709B6DB5316659056462 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "camera.h"; path = "../../RayTracer/camera.h"; sourceTree = "<group>"; };
-		7D246AC96D7B52E0742204CC /* hitable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hitable.h"; path = "../../RayTracer/hitable.h"; sourceTree = "<group>"; };
-		75DB010A731D344D53C93B09 /* hitable_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hitable_list.h"; path = "../../RayTracer/hitable_list.h"; sourceTree = "<group>"; };
-		4E940CE1380509931A597A62 /* ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ray.h"; path = "../../RayTracer/ray.h"; sourceTree = "<group>"; };
-		71193620020B48F42BBE5760 /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sphere.h"; path = "../../RayTracer/sphere.h"; sourceTree = "<group>"; };
-		7D6B153B0D01592931311E78 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../RayTracer/stdafx.cpp"; sourceTree = "<group>"; };
-		2FDF608A1D1D720747F527DF /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../RayTracer/stdafx.h"; sourceTree = "<group>"; };
-		379A0B9428BF50B52FE4347B /* vec3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "vec3.cpp"; path = "../../RayTracer/vec3.cpp"; sourceTree = "<group>"; };
-		74F25B6E18951E765AEA4DDC /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "vec3.h"; path = "../../RayTracer/vec3.h"; sourceTree = "<group>"; };
-		26D10BFA64FC61D5090D4FFD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
-		460F04E64ABC16F8283C0C1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
-		6C50184432C060D6294D0D35 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
-		4EF54BCF1B167B227B3019B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
-		0B436C0B7A5D0E6B4CDD5A87 /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "RayTracer"; path = "RayTracer"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F8F018B65643A2B1B1F2361 /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3BD75FD75254414C24042B81 /* RayTracer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "RayTracer.cpp"; path = "../../RayTracer/RayTracer.cpp"; sourceTree = "<group>"; };
+		1E1736E902C82A77094257E6 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "camera.h"; path = "../../RayTracer/camera.h"; sourceTree = "<group>"; };
+		63F23C2765E962F00A3612DA /* hitable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hitable.h"; path = "../../RayTracer/hitable.h"; sourceTree = "<group>"; };
+		5167679A38AC277B1C5750EF /* hitable_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hitable_list.h"; path = "../../RayTracer/hitable_list.h"; sourceTree = "<group>"; };
+		0AEE392C1E6B38D9636D3AAA /* ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ray.h"; path = "../../RayTracer/ray.h"; sourceTree = "<group>"; };
+		10AF75C044EB2519419410BA /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sphere.h"; path = "../../RayTracer/sphere.h"; sourceTree = "<group>"; };
+		24705F7E08F7358A0B611E7B /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "stdafx.cpp"; path = "../../RayTracer/stdafx.cpp"; sourceTree = "<group>"; };
+		24446F6230087FD64395145B /* stdafx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "stdafx.h"; path = "../../RayTracer/stdafx.h"; sourceTree = "<group>"; };
+		65ED5CA50E084F407D3C0CD8 /* vec3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "vec3.cpp"; path = "../../RayTracer/vec3.cpp"; sourceTree = "<group>"; };
+		4C9B576F3B4557007448281F /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "vec3.h"; path = "../../RayTracer/vec3.h"; sourceTree = "<group>"; };
+		1786734605B206786B263089 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		2B05755359AD099955DB2ECF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		0AD533CF12175B3D2E61005C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		61DE627C7BBF5E2E48B11C26 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		17E77D5513872B1F2D411558 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "GLUT.framework"; path = "System/Library/Frameworks/GLUT.framework"; sourceTree = "SDKROOT"; };
+		789A51D851D106670AAF7F39 /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "RayTracer"; path = "RayTracer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DF16F62EA35255779575B2 /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Math.xcodeproj"; path = "Math.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D272DC31897104815281ECC /* Frameworks */ = {
+		7FD50B837E98488009B8104D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BF864E460754D5475674593 /* CoreFoundation.framework in Frameworks */,
-				499B1FCE1B031CCA19221631 /* CoreGraphics.framework in Frameworks */,
-				17A103D25E77097D177F397D /* OpenGL.framework in Frameworks */,
-				4398473B17854E1956AE44BE /* AppKit.framework in Frameworks */,
-				36FF22233DE249E43EA834A8 /* libMath.dylib in Frameworks */,
+				33647C411CEC50A64F64658B /* CoreFoundation.framework in Frameworks */,
+				3C64012F5D191728779455C5 /* CoreGraphics.framework in Frameworks */,
+				554D4AA95452055F44115E0B /* OpenGL.framework in Frameworks */,
+				10BF0BF646DD5D814E5D5CF2 /* AppKit.framework in Frameworks */,
+				7E1339AD1FAE7349762126DB /* GLUT.framework in Frameworks */,
+				61C4383320C6517F6CEC3734 /* libMath.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F6E56917701750D5C9D6076 /* RayTracer */ = {
+		308719487E4A37E952A573D9 /* RayTracer */ = {
 			isa = PBXGroup;
 			children = (
-				06E7541758A80B3A1E544D98 /* RayTracer */,
-				4E4405B601674D9519B21B71 /* Frameworks */,
-				2A54318A69BD129047357860 /* Products */,
-				155C03FF65B365745D620E8E /* Projects */,
+				36822326388B689D4397018E /* RayTracer */,
+				389A145509C64DB4077817EC /* Frameworks */,
+				751B44F42AAC12B32DBA22CD /* Products */,
+				6F87401324A242A56E6158A9 /* Projects */,
 			);
 			name = "RayTracer";
 			sourceTree = "<group>";
 		};
-		06E7541758A80B3A1E544D98 /* RayTracer */ = {
+		36822326388B689D4397018E /* RayTracer */ = {
 			isa = PBXGroup;
 			children = (
-				76BD03804F0D1F62709F0DEC /* RayTracer.cpp */,
-				35DD709B6DB5316659056462 /* camera.h */,
-				7D246AC96D7B52E0742204CC /* hitable.h */,
-				75DB010A731D344D53C93B09 /* hitable_list.h */,
-				4E940CE1380509931A597A62 /* ray.h */,
-				71193620020B48F42BBE5760 /* sphere.h */,
-				7D6B153B0D01592931311E78 /* stdafx.cpp */,
-				2FDF608A1D1D720747F527DF /* stdafx.h */,
-				379A0B9428BF50B52FE4347B /* vec3.cpp */,
-				74F25B6E18951E765AEA4DDC /* vec3.h */,
+				3BD75FD75254414C24042B81 /* RayTracer.cpp */,
+				1E1736E902C82A77094257E6 /* camera.h */,
+				63F23C2765E962F00A3612DA /* hitable.h */,
+				5167679A38AC277B1C5750EF /* hitable_list.h */,
+				0AEE392C1E6B38D9636D3AAA /* ray.h */,
+				10AF75C044EB2519419410BA /* sphere.h */,
+				24705F7E08F7358A0B611E7B /* stdafx.cpp */,
+				24446F6230087FD64395145B /* stdafx.h */,
+				65ED5CA50E084F407D3C0CD8 /* vec3.cpp */,
+				4C9B576F3B4557007448281F /* vec3.h */,
 			);
 			name = "RayTracer";
 			sourceTree = "<group>";
 		};
-		4E4405B601674D9519B21B71 /* Frameworks */ = {
+		389A145509C64DB4077817EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26D10BFA64FC61D5090D4FFD /* CoreFoundation.framework */,
-				460F04E64ABC16F8283C0C1B /* CoreGraphics.framework */,
-				6C50184432C060D6294D0D35 /* OpenGL.framework */,
-				4EF54BCF1B167B227B3019B7 /* AppKit.framework */,
+				1786734605B206786B263089 /* CoreFoundation.framework */,
+				2B05755359AD099955DB2ECF /* CoreGraphics.framework */,
+				0AD533CF12175B3D2E61005C /* OpenGL.framework */,
+				61DE627C7BBF5E2E48B11C26 /* AppKit.framework */,
+				17E77D5513872B1F2D411558 /* GLUT.framework */,
 			);
 			name = "Frameworks";
 			sourceTree = "<group>";
 		};
-		2A54318A69BD129047357860 /* Products */ = {
+		751B44F42AAC12B32DBA22CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B436C0B7A5D0E6B4CDD5A87 /* RayTracer */,
+				789A51D851D106670AAF7F39 /* RayTracer */,
 			);
 			name = "Products";
 			sourceTree = "<group>";
 		};
-		155C03FF65B365745D620E8E /* Projects */ = {
+		6F87401324A242A56E6158A9 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				3F8F018B65643A2B1B1F2361 /* Math.xcodeproj */,
+				78DF16F62EA35255779575B2 /* Math.xcodeproj */,
 			);
 			name = "Projects";
 			sourceTree = "<group>";
 		};
-		478F089A4AC77BAB41B50BB0 /* Products */ = {
+		114E1FB86A714C544E953BE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66415F994B0C1363683E72A7 /* libMath.dylib */,
+				29A926A863CD44CA67C02E4F /* libMath.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,23 +139,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7986512A336970B4655771B7 /* RayTracer */ = {
+		7AF97C4F5CF51465143617A7 /* RayTracer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0FD45E357F0946AD496D2B51 /* Build configuration list for PBXNativeTarget "RayTracer" */;
+			buildConfigurationList = 4E6152960554780A755A07B2 /* Build configuration list for PBXNativeTarget "RayTracer" */;
 			buildPhases = (
-				6CC84DAD5848153E42617027 /* Resources */,
-				1E9B61805A445B2D76705B9B /* Sources */,
-				5D272DC31897104815281ECC /* Frameworks */,
+				3ADA64FB57E700A646E1749F /* Resources */,
+				77877F001A1653827FDE0040 /* Sources */,
+				7FD50B837E98488009B8104D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BBF3E8255A61E8732F85DEE /* PBXTargetDependency */,
+				0FDC40D45844022E43E445BD /* PBXTargetDependency */,
 			);
 			name = "RayTracer";
 			productInstallPath = "$(HOME)/bin";
 			productName = "RayTracer";
-			productReference = 0B436C0B7A5D0E6B4CDD5A87 /* RayTracer */;
+			productReference = 789A51D851D106670AAF7F39 /* RayTracer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -162,33 +166,33 @@
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "RayTracer" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
-			mainGroup = 5F6E56917701750D5C9D6076 /* RayTracer */;
+			mainGroup = 308719487E4A37E952A573D9 /* RayTracer */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 478F089A4AC77BAB41B50BB0 /* Products */;
-					ProjectRef = 3F8F018B65643A2B1B1F2361 /* Math.xcodeproj */;
+					ProductGroup = 114E1FB86A714C544E953BE9 /* Products */;
+					ProjectRef = 78DF16F62EA35255779575B2 /* Math.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				7986512A336970B4655771B7 /* RayTracer */,
+				7AF97C4F5CF51465143617A7 /* RayTracer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		66415F994B0C1363683E72A7 /* libMath.dylib */ = {
+		29A926A863CD44CA67C02E4F /* libMath.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
 			path = "../../Bin/Xcode4-OSX/Native/libMath.dylib";
-			remoteRef = 07DF714A48B42D8121C7367D /* PBXContainerItemProxy */;
+			remoteRef = 4E2A5C727F5A1F99121E7D5D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6CC84DAD5848153E42617027 /* Resources */ = {
+		3ADA64FB57E700A646E1749F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,13 +202,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E9B61805A445B2D76705B9B /* Sources */ = {
+		77877F001A1653827FDE0040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8E0FF55C38634A3E5569CF /* RayTracer.cpp in Sources */,
-				10D05B5B33A4735360A02B6F /* stdafx.cpp in Sources */,
-				7FAB3EAD7D853D7A4DAA0EE7 /* vec3.cpp in Sources */,
+				36B15C5765E34D4E5C145D5F /* RayTracer.cpp in Sources */,
+				35A63BD75CE0039E341F613D /* stdafx.cpp in Sources */,
+				5F027D49657A679D16F96DF4 /* vec3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,15 +218,15 @@
 /* End PBXVariantGroup section */
 
 /* Begin PBXTargetDependency section */
-		0BBF3E8255A61E8732F85DEE /* PBXTargetDependency */ = {
+		0FDC40D45844022E43E445BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libMath.dylib";
-			targetProxy = 580820DA4B8A73313A84719F /* PBXContainerItemProxy */;
+			targetProxy = 7FDE68D5379B491B401B551F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		286528A25992252A0E5C555C /* Release */ = {
+		670D1098252C71026CDF4799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +238,7 @@
 			};
 			name = "Release";
 		};
-		01361057770666861D1E4C75 /* Debug */ = {
+		015B26032A03451D0AFF0E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +250,7 @@
 			};
 			name = "Debug";
 		};
-		3EFE3F8F5CD01C7159285C6D /* Profile */ = {
+		383E199A7A5F7D940449563F /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +262,7 @@
 			};
 			name = "Profile";
 		};
-		29A267EB14940F9E09EB3CF1 /* Release */ = {
+		311A350D105F65E556EC5C8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -312,7 +316,7 @@
 			};
 			name = "Release";
 		};
-		3D3866E764127E9661CE2C8C /* Debug */ = {
+		03E61BD408AF4F6651953634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -366,7 +370,7 @@
 			};
 			name = "Debug";
 		};
-		37310C92799C2F410DBD159A /* Profile */ = {
+		624F3E4E0E7679BE4F744F0D /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
@@ -423,12 +427,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0FD45E357F0946AD496D2B51 /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
+		4E6152960554780A755A07B2 /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				286528A25992252A0E5C555C /* Release */,
-				01361057770666861D1E4C75 /* Debug */,
-				3EFE3F8F5CD01C7159285C6D /* Profile */,
+				670D1098252C71026CDF4799 /* Release */,
+				015B26032A03451D0AFF0E70 /* Debug */,
+				383E199A7A5F7D940449563F /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";
@@ -436,9 +440,9 @@
 		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "RayTracer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29A267EB14940F9E09EB3CF1 /* Release */,
-				3D3866E764127E9661CE2C8C /* Debug */,
-				37310C92799C2F410DBD159A /* Profile */,
+				311A350D105F65E556EC5C8C /* Release */,
+				03E61BD408AF4F6651953634 /* Debug */,
+				624F3E4E0E7679BE4F744F0D /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release";

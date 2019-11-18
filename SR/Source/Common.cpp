@@ -188,6 +188,10 @@ Color BilinearFilter(Texture& texture, float s, float t)
         NearestFilter(texture, finalS-1.0f, finalT-1.0f)*(1.0-weightS)*(1.0-weightT);
 }
 
+//Trilinear
+//MipMap
+//Anisotropic Filter
+
 Color TextureMap(Texture& texture, Vec2f& uv)
 {
     float u = uv.x, v = uv.y;
@@ -208,10 +212,10 @@ void VertexShader(Mat4f& model, Mat4f& view, Mat4f& proj, Vertex& inVertex, Vert
     
     outVertex.derivZ = 1.0f/postion.w;
 
+    //???
     outVertex.uv = inVertex.uv*outVertex.derivZ;
     outVertex.color = inVertex.color;   //*outVertex.derivZ;
 
-    //
     outVertex.worldPos = MultPointMatrix(inVertex.modelPos, model);
     outVertex.viewPos  = MultPointMatrix(inVertex.modelPos, mv);
 

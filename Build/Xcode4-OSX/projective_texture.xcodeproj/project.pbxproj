@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DC09EC223E1EFE58C30B81 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B84CB674EA5A1E6ADB66EB /* CoreFoundation.framework */; };
+		00F355A2209C161C1D8C7EB4 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36CE4CA31134729D61A260F5 /* controls.cpp */; };
+		02A46451233853B003A64679 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BB30E7B3D831E9F7ED63DAE /* texture.cpp */; };
+		03E551A72D19698071B55631 /* tangentspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C424D2F4AAE122223094846 /* tangentspace.cpp */; };
+		0D20556232883AB14B9744E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DE4CB865E27A8977C86E5A /* CoreGraphics.framework */; };
+		0F6147FA040A64C57E564619 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73954A007E6936DB64004C07 /* Cocoa.framework */; };
+		0FBE1E333FC26C7643A458A4 /* text2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A9854301C4B31327C262E44 /* text2D.cpp */; };
+		130832CB660C5B27035D4F54 /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26C569333A66355F79F83BEC /* objloader.cpp */; };
+		1A46191007207D876235249D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C241E766F196A73461476B7 /* CoreVideo.framework */; };
+		235D635834980FDE53104305 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427112890C4D4AE459460BF9 /* OpenGL.framework */; };
+		588C518B3C335614795B003D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5A4DC1526F250D32761D11 /* AppKit.framework */; };
+		62EB6F12381D0D393287525F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0B765B03D817F5595C5E80 /* GLUT.framework */; };
+		6390299E4EC446F53BA30AAB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB825EB74293BB17F28267D /* IOKit.framework */; };
+		68B6440F351927D7196D7FBD /* projective_texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D2169EA39B26A921D055056 /* projective_texture.cpp */; };
+		6B717BCD74D829675F8F2D62 /* quaternion_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D274AA2755415AD116F313E /* quaternion_utils.cpp */; };
+		6E78377112F1297D576A2ED5 /* libSoil_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A7054642EB024A6EB472B3 /* libSoil_d.dylib */; };
+		768860793C694C0E46EE43BB /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6745129A5250182E2DBA4D06 /* shader.cpp */; };
+		7CB502865CBD217D4D8D6FCB /* libMath_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 620F68102B9378405FE34097 /* libMath_d.dylib */; };
+		7EC97C974F0C2A4F292B0353 /* vboindexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24AC3B892DFB5B117093008A /* vboindexer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EB25B776E2B796B77212B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09EB3FA72C3307FF34E008A1 /* Soil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 15C826E85BE7359904D40883;
+			remoteInfo = libSoil.dylib;
+		};
+		123D0779531E60374F3D5724 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24834E96714253EA3DE93430 /* Math.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11800481581624892E603DEB;
+			remoteInfo = libMath.dylib;
+		};
+		222011551F6F42414C341D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24834E96714253EA3DE93430 /* Math.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 46EE687012DE64D4242F4618;
+			remoteInfo = libMath.dylib;
+		};
+		67C6369E55F8272E4E1A1B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09EB3FA72C3307FF34E008A1 /* Soil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EDD0EAB32942C0865F2231C;
+			remoteInfo = libSoil.dylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09EB3FA72C3307FF34E008A1 /* Soil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Soil.xcodeproj; sourceTree = SOURCE_ROOT; };
+		147751310ADB3E0079096CEF /* objloader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = objloader.hpp; path = ../../Common/objloader.hpp; sourceTree = "<group>"; };
+		156D3E3052D349C945665AAB /* marble1-ori.jpg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "marble1-ori.jpg"; path = "../../projective_texture/marble1-ori.jpg"; sourceTree = "<group>"; };
+		1C241E766F196A73461476B7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1E5A4DC1526F250D32761D11 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		20B84CB674EA5A1E6ADB66EB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		24834E96714253EA3DE93430 /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Math.xcodeproj; sourceTree = SOURCE_ROOT; };
+		24AC3B892DFB5B117093008A /* vboindexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vboindexer.cpp; path = ../../Common/vboindexer.cpp; sourceTree = "<group>"; };
+		26046541252328AF271F24AF /* quaternion_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = quaternion_utils.hpp; path = ../../Common/quaternion_utils.hpp; sourceTree = "<group>"; };
+		26C569333A66355F79F83BEC /* objloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objloader.cpp; path = ../../Common/objloader.cpp; sourceTree = "<group>"; };
+		2BB30E7B3D831E9F7ED63DAE /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../Common/texture.cpp; sourceTree = "<group>"; };
+		34D10B3D58FF5999529B4CC2 /* marble1.jpg */ = {isa = PBXFileReference; lastKnownFileType = text; name = marble1.jpg; path = ../../projective_texture/marble1.jpg; sourceTree = "<group>"; };
+		36CE4CA31134729D61A260F5 /* controls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = controls.cpp; path = ../../Common/controls.cpp; sourceTree = "<group>"; };
+		385F25BD46DD5A6F5B22274C /* text2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = text2D.hpp; path = ../../Common/text2D.hpp; sourceTree = "<group>"; };
+		38BA6771607D5F394F4A4195 /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = texture.hpp; path = ../../Common/texture.hpp; sourceTree = "<group>"; };
+		3C424D2F4AAE122223094846 /* tangentspace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tangentspace.cpp; path = ../../Common/tangentspace.cpp; sourceTree = "<group>"; };
+		3D2169EA39B26A921D055056 /* projective_texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = projective_texture.cpp; path = ../../projective_texture/projective_texture.cpp; sourceTree = "<group>"; };
+		3DB825EB74293BB17F28267D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		427112890C4D4AE459460BF9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4A3F1CDA3516691118E8485A /* mona_lisa.jpg */ = {isa = PBXFileReference; lastKnownFileType = text; name = mona_lisa.jpg; path = ../../projective_texture/mona_lisa.jpg; sourceTree = "<group>"; };
+		4A9854301C4B31327C262E44 /* text2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = text2D.cpp; path = ../../Common/text2D.cpp; sourceTree = "<group>"; };
+		4D274AA2755415AD116F313E /* quaternion_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = quaternion_utils.cpp; path = ../../Common/quaternion_utils.cpp; sourceTree = "<group>"; };
+		4DA0640535833D4659582199 /* tangentspace.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = tangentspace.hpp; path = ../../Common/tangentspace.hpp; sourceTree = "<group>"; };
+		4F683D04556D27A626403942 /* projective_texture_d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = projective_texture_d; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0B765B03D817F5595C5E80 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		5E01150866773E9125D23934 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = shader.hpp; path = ../../Common/shader.hpp; sourceTree = "<group>"; };
+		60DE4CB865E27A8977C86E5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		668000A9781E2ED2149D100F /* mona_lisa-ori.jpg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "mona_lisa-ori.jpg"; path = "../../projective_texture/mona_lisa-ori.jpg"; sourceTree = "<group>"; };
+		6745129A5250182E2DBA4D06 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../Common/shader.cpp; sourceTree = "<group>"; };
+		6A0B3843601B239871EF0F3D /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = controls.hpp; path = ../../Common/controls.hpp; sourceTree = "<group>"; };
+		73954A007E6936DB64004C07 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7888577232FA61FC766E683A /* vboindexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = vboindexer.hpp; path = ../../Common/vboindexer.hpp; sourceTree = "<group>"; };
+		7CDC795A17835047182624AF /* check_error.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = check_error.hpp; path = ../../projective_texture/check_error.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39A71F2D66E17D0C2574106B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DC09EC223E1EFE58C30B81 /* CoreFoundation.framework in Frameworks */,
+				0D20556232883AB14B9744E9 /* CoreGraphics.framework in Frameworks */,
+				235D635834980FDE53104305 /* OpenGL.framework in Frameworks */,
+				588C518B3C335614795B003D /* AppKit.framework in Frameworks */,
+				62EB6F12381D0D393287525F /* GLUT.framework in Frameworks */,
+				0F6147FA040A64C57E564619 /* Cocoa.framework in Frameworks */,
+				6390299E4EC446F53BA30AAB /* IOKit.framework in Frameworks */,
+				1A46191007207D876235249D /* CoreVideo.framework in Frameworks */,
+				7CB502865CBD217D4D8D6FCB /* libMath_d.dylib in Frameworks */,
+				6E78377112F1297D576A2ED5 /* libSoil_d.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03537A6D143B5E4D13EA2949 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				36CE4CA31134729D61A260F5 /* controls.cpp */,
+				6A0B3843601B239871EF0F3D /* controls.hpp */,
+				26C569333A66355F79F83BEC /* objloader.cpp */,
+				147751310ADB3E0079096CEF /* objloader.hpp */,
+				4D274AA2755415AD116F313E /* quaternion_utils.cpp */,
+				26046541252328AF271F24AF /* quaternion_utils.hpp */,
+				6745129A5250182E2DBA4D06 /* shader.cpp */,
+				5E01150866773E9125D23934 /* shader.hpp */,
+				3C424D2F4AAE122223094846 /* tangentspace.cpp */,
+				4DA0640535833D4659582199 /* tangentspace.hpp */,
+				4A9854301C4B31327C262E44 /* text2D.cpp */,
+				385F25BD46DD5A6F5B22274C /* text2D.hpp */,
+				2BB30E7B3D831E9F7ED63DAE /* texture.cpp */,
+				38BA6771607D5F394F4A4195 /* texture.hpp */,
+				24AC3B892DFB5B117093008A /* vboindexer.cpp */,
+				7888577232FA61FC766E683A /* vboindexer.hpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		09235A857CE523F607011144 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				24834E96714253EA3DE93430 /* Math.xcodeproj */,
+				09EB3FA72C3307FF34E008A1 /* Soil.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		0B356DBE670452002F9E66FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620F68102B9378405FE34097 /* libMath_d.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11DB610724AC51046570334D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20B84CB674EA5A1E6ADB66EB /* CoreFoundation.framework */,
+				60DE4CB865E27A8977C86E5A /* CoreGraphics.framework */,
+				427112890C4D4AE459460BF9 /* OpenGL.framework */,
+				1E5A4DC1526F250D32761D11 /* AppKit.framework */,
+				5C0B765B03D817F5595C5E80 /* GLUT.framework */,
+				73954A007E6936DB64004C07 /* Cocoa.framework */,
+				3DB825EB74293BB17F28267D /* IOKit.framework */,
+				1C241E766F196A73461476B7 /* CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21BB3B6F1C8B76AC29BB47FE /* projective_texture */ = {
+			isa = PBXGroup;
+			children = (
+				03537A6D143B5E4D13EA2949 /* Common */,
+				5DA061255A2E105E29396A39 /* projective_texture */,
+				11DB610724AC51046570334D /* Frameworks */,
+				4B5D7B912E2517860E881807 /* Products */,
+				09235A857CE523F607011144 /* Projects */,
+			);
+			name = projective_texture;
+			sourceTree = "<group>";
+		};
+		2563473D32C016FE20B4103E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A7054642EB024A6EB472B3 /* libSoil_d.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B5D7B912E2517860E881807 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F683D04556D27A626403942 /* projective_texture_d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA061255A2E105E29396A39 /* projective_texture */ = {
+			isa = PBXGroup;
+			children = (
+				7CDC795A17835047182624AF /* check_error.hpp */,
+				156D3E3052D349C945665AAB /* marble1-ori.jpg */,
+				34D10B3D58FF5999529B4CC2 /* marble1.jpg */,
+				668000A9781E2ED2149D100F /* mona_lisa-ori.jpg */,
+				4A3F1CDA3516691118E8485A /* mona_lisa.jpg */,
+				3D2169EA39B26A921D055056 /* projective_texture.cpp */,
+			);
+			name = projective_texture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		310C1294670718D1719D2130 /* projective_texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4684329240DF08AB356C7416 /* Build configuration list for PBXNativeTarget "projective_texture" */;
+			buildPhases = (
+				547437AA012A199C067C7447 /* Resources */,
+				04F313426D916F64131E335F /* Sources */,
+				39A71F2D66E17D0C2574106B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62487783448F19DE7B7957AF /* PBXTargetDependency */,
+				0F6D72332C8107B515936A17 /* PBXTargetDependency */,
+			);
+			name = projective_texture;
+			productInstallPath = "$(HOME)/bin";
+			productName = projective_texture;
+			productReference = 4F683D04556D27A626403942 /* projective_texture_d */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "projective_texture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21BB3B6F1C8B76AC29BB47FE /* projective_texture */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0B356DBE670452002F9E66FD /* Products */;
+					ProjectRef = 24834E96714253EA3DE93430 /* Math.xcodeproj */;
+				},
+				{
+					ProductGroup = 2563473D32C016FE20B4103E /* Products */;
+					ProjectRef = 09EB3FA72C3307FF34E008A1 /* Soil.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				310C1294670718D1719D2130 /* projective_texture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		31A7054642EB024A6EB472B3 /* libSoil_d.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSoil_d.dylib;
+			remoteRef = 67C6369E55F8272E4E1A1B3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		620F68102B9378405FE34097 /* libMath_d.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libMath_d.dylib;
+			remoteRef = 123D0779531E60374F3D5724 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		547437AA012A199C067C7447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F313426D916F64131E335F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F355A2209C161C1D8C7EB4 /* controls.cpp in Sources */,
+				130832CB660C5B27035D4F54 /* objloader.cpp in Sources */,
+				6B717BCD74D829675F8F2D62 /* quaternion_utils.cpp in Sources */,
+				768860793C694C0E46EE43BB /* shader.cpp in Sources */,
+				03E551A72D19698071B55631 /* tangentspace.cpp in Sources */,
+				0FBE1E333FC26C7643A458A4 /* text2D.cpp in Sources */,
+				02A46451233853B003A64679 /* texture.cpp in Sources */,
+				7EC97C974F0C2A4F292B0353 /* vboindexer.cpp in Sources */,
+				68B6440F351927D7196D7FBD /* projective_texture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F6D72332C8107B515936A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libSoil.dylib;
+			targetProxy = 0EB25B776E2B796B77212B1F /* PBXContainerItemProxy */;
+		};
+		62487783448F19DE7B7957AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libMath.dylib;
+			targetProxy = 222011551F6F42414C341D55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1095314B554141A73D2F6E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = projective_texture_d;
+			};
+			name = Debug;
+		};
+		10F438EE1B1C61D5052F02A2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Soil/include/Platforms/OSX,
+					../../Soil/include/Platforms/Apple,
+					../../Soil/include/Platforms/Unix,
+					../../Soil/include,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/projective_texture";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Profile;
+		};
+		1E9F015523147E9A5EB3772E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = projective_texture;
+			};
+			name = Release;
+		};
+		266A21C124061FFA080B3873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Soil/include/Platforms/OSX,
+					../../Soil/include/Platforms/Apple,
+					../../Soil/include/Platforms/Unix,
+					../../Soil/include,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Release/projective_texture";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Release;
+		};
+		729B2CF7499C2ECB349B2C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Soil/include/Platforms/OSX,
+					../../Soil/include/Platforms/Apple,
+					../../Soil/include/Platforms/Unix,
+					../../Soil/include,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/projective_texture";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Debug;
+		};
+		7D387C1A10F60F201FE708CA /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = projective_texture_p;
+			};
+			name = Profile;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "projective_texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266A21C124061FFA080B3873 /* Release */,
+				729B2CF7499C2ECB349B2C76 /* Debug */,
+				10F438EE1B1C61D5052F02A2 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4684329240DF08AB356C7416 /* Build configuration list for PBXNativeTarget "projective_texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E9F015523147E9A5EB3772E /* Release */,
+				1095314B554141A73D2F6E87 /* Debug */,
+				7D387C1A10F60F201FE708CA /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

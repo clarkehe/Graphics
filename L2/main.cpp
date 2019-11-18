@@ -58,7 +58,7 @@ int main()
     // Create and compile our GLSL program from the shaders
     GLuint programID = LoadShaders( "../../../L2/StandardShading.vertexshader",
                                    "../../../L2/StandardShading.fragmentshader" );
-    //
+    //???
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
     glBindVertexArray(VertexArrayID);

@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27015A497AD95B074DAC09AC /* image_dxt.c in Sources */ = {isa = PBXBuildFile; fileRef = 44C0254B0FEB2DB14E9B4D43 /* image_dxt.c */; };
+		195744A62E9C28ED609E2BB3 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 32A715A04CD87F3B04670E9D /* image_helper.c */; };
+		60442EA23F8F061850D1571F /* soil.c in Sources */ = {isa = PBXBuildFile; fileRef = 207903F1554D672941D25F8F /* soil.c */; };
+		7F2F74D216AA00894E8D47BB /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 636C5A0C7BF34846036246DD /* stb_image_aug.c */; };
+		4A464BF0133F15C0729947D4 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A521E5E578437BA4A5E12BD /* CoreServices.framework */; };
+		509504234B690A8D2FFE01D7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53651A9B46B2599409F43231 /* CoreFoundation.framework */; };
+		3D5B564A3E2D27E61A2A7299 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4C2A6104F4399771754C60 /* CoreGraphics.framework */; };
+		3F31434E501111B048C73031 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393408BD4EA9669F61F80700 /* OpenGL.framework */; };
+		2C2142077B10756D54F67359 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7007835E6F716E7FB63E1A /* AppKit.framework */; };
+		3AE951EF398E4C4E4DA402A4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019A614124FB5F3465C6573C /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44C0254B0FEB2DB14E9B4D43 /* image_dxt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "image_dxt.c"; path = "../../Soil/src/image_dxt.c"; sourceTree = "<group>"; };
+		32A715A04CD87F3B04670E9D /* image_helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "image_helper.c"; path = "../../Soil/src/image_helper.c"; sourceTree = "<group>"; };
+		207903F1554D672941D25F8F /* soil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "soil.c"; path = "../../Soil/src/soil.c"; sourceTree = "<group>"; };
+		636C5A0C7BF34846036246DD /* stb_image_aug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "stb_image_aug.c"; path = "../../Soil/src/stb_image_aug.c"; sourceTree = "<group>"; };
+		7A521E5E578437BA4A5E12BD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreServices.framework"; path = "System/Library/Frameworks/CoreServices.framework"; sourceTree = "SDKROOT"; };
+		53651A9B46B2599409F43231 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		6C4C2A6104F4399771754C60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		393408BD4EA9669F61F80700 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		0B7007835E6F716E7FB63E1A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		019A614124FB5F3465C6573C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "GLUT.framework"; path = "System/Library/Frameworks/GLUT.framework"; sourceTree = "SDKROOT"; };
+		5EDD0EAB32942C0865F2231C /* libSoil.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "libSoil.dylib"; path = "libSoil.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1726574B2E325C663BB228AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A464BF0133F15C0729947D4 /* CoreServices.framework in Frameworks */,
+				509504234B690A8D2FFE01D7 /* CoreFoundation.framework in Frameworks */,
+				3D5B564A3E2D27E61A2A7299 /* CoreGraphics.framework in Frameworks */,
+				3F31434E501111B048C73031 /* OpenGL.framework in Frameworks */,
+				2C2142077B10756D54F67359 /* AppKit.framework in Frameworks */,
+				3AE951EF398E4C4E4DA402A4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3006113C7BC5661F08F00318 /* Soil */ = {
+			isa = PBXGroup;
+			children = (
+				59D14E3D1EC759C604E90633 /* Soil */,
+				7D0B64850E542E18652D0351 /* Frameworks */,
+				1C425EB375FE36C36F8A63F9 /* Products */,
+			);
+			name = "Soil";
+			sourceTree = "<group>";
+		};
+		59D14E3D1EC759C604E90633 /* Soil */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE1FEF1B042FD6426C61D0 /* src */,
+			);
+			name = "Soil";
+			sourceTree = "<group>";
+		};
+		0DEE1FEF1B042FD6426C61D0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				44C0254B0FEB2DB14E9B4D43 /* image_dxt.c */,
+				32A715A04CD87F3B04670E9D /* image_helper.c */,
+				207903F1554D672941D25F8F /* soil.c */,
+				636C5A0C7BF34846036246DD /* stb_image_aug.c */,
+			);
+			name = "src";
+			sourceTree = "<group>";
+		};
+		7D0B64850E542E18652D0351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A521E5E578437BA4A5E12BD /* CoreServices.framework */,
+				53651A9B46B2599409F43231 /* CoreFoundation.framework */,
+				6C4C2A6104F4399771754C60 /* CoreGraphics.framework */,
+				393408BD4EA9669F61F80700 /* OpenGL.framework */,
+				0B7007835E6F716E7FB63E1A /* AppKit.framework */,
+				019A614124FB5F3465C6573C /* GLUT.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		1C425EB375FE36C36F8A63F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EDD0EAB32942C0865F2231C /* libSoil.dylib */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15C826E85BE7359904D40883 /* Soil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D84C5058B85661359D0709 /* Build configuration list for PBXNativeTarget "Soil" */;
+			buildPhases = (
+				080E7C1C15B476B57FE870AF /* Resources */,
+				06DB24F17FF962961FD42746 /* Sources */,
+				1726574B2E325C663BB228AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Soil";
+			productName = "Soil";
+			productReference = 5EDD0EAB32942C0865F2231C /* libSoil.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Soil" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 3006113C7BC5661F08F00318 /* Soil */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C826E85BE7359904D40883 /* libSoil.dylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		080E7C1C15B476B57FE870AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06DB24F17FF962961FD42746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27015A497AD95B074DAC09AC /* image_dxt.c in Sources */,
+				195744A62E9C28ED609E2BB3 /* image_helper.c in Sources */,
+				60442EA23F8F061850D1571F /* soil.c in Sources */,
+				7F2F74D216AA00894E8D47BB /* stb_image_aug.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48A22F0865D94AA3241D1FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "Soil";
+			};
+			name = "Release";
+		};
+		1FA730EB4E364988045173C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "Soil_d";
+			};
+			name = "Debug";
+		};
+		64C4216728177FDB143C1C69 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "Soil_p";
+			};
+			name = "Profile";
+		};
+		353E21AF114566497EC954ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"_SOIL_DLL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Soil/include/Platforms/OSX",
+					"../../Soil/include/Platforms/Apple",
+					"../../Soil/include/Platforms/Unix",
+					"../../Soil/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Release/Soil";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Release";
+		};
+		09142C2969A5554075DC6D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG",
+					"_DEBUG",
+					"_SOIL_DLL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Soil/include/Platforms/OSX",
+					"../../Soil/include/Platforms/Apple",
+					"../../Soil/include/Platforms/Unix",
+					"../../Soil/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/Soil";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Debug";
+		};
+		3FCD6D205E41156F4D4E54B0 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"_SOIL_DLL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Soil/include/Platforms/OSX",
+					"../../Soil/include/Platforms/Apple",
+					"../../Soil/include/Platforms/Unix",
+					"../../Soil/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/Soil";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Profile";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75D84C5058B85661359D0709 /* Build configuration list for PBXNativeTarget "libSoil.dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A22F0865D94AA3241D1FA1 /* Release */,
+				1FA730EB4E364988045173C8 /* Debug */,
+				64C4216728177FDB143C1C69 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Soil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353E21AF114566497EC954ED /* Release */,
+				09142C2969A5554075DC6D74 /* Debug */,
+				3FCD6D205E41156F4D4E54B0 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1F4E02172F21165EBF5B24 /* FPS_COUNTER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE1A493D0803C05A2414C2 /* FPS_COUNTER.cpp */; };
+		6E811326362344CB27104666 /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 4201572E4820420654964685 /* GLee.c */; };
+		06110389438A1E935F8C734A /* COLOR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E186BAB29F543E636202B96 /* COLOR.cpp */; };
+		51A739FE5B9743B140132910 /* MATRIX4X4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40585302356876767CC92980 /* MATRIX4X4.cpp */; };
+		019A5C5A23D3266A1F3E2066 /* PLANE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27E2075D0DB049563A8A48EF /* PLANE.cpp */; };
+		1D7B3254377E54EE7D663671 /* VECTOR2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14402AB1541156FF3AC96AB5 /* VECTOR2D.cpp */; };
+		12B2244C7CD24D2962556860 /* VECTOR3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03202DCD239C66726E633997 /* VECTOR3D.cpp */; };
+		088A2AF60DF24682149350A2 /* VECTOR4D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DC21CFD3A9404D15A294A29 /* VECTOR4D.cpp */; };
+		010872770809276858D44A35 /* TIMER.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76FB14095D275D187A9F1B1E /* TIMER.cpp */; };
+		46530C675764001041A34955 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777D6463600C5887431F511B /* main.cpp */; };
+		4C1E4DD971092F7D71906283 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5400BC72756972696F29CE /* scene.cpp */; };
+		269736FA766A697E63653525 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AAC3DED358F552B330A7D7F /* CoreFoundation.framework */; };
+		5E2017AB753D0C1A04340612 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283D78CA408D117F45185ED2 /* CoreGraphics.framework */; };
+		31022E81440F72F41F2B6706 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7A036302201F1B40240AC9 /* OpenGL.framework */; };
+		79637CCA3DC7598E3260703F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678E31534E540D3C6828506E /* AppKit.framework */; };
+		47655AB32A641BBF59CF3331 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560A65F63472533C3DD06427 /* GLUT.framework */; };
+		242050C825CE7FA27417255B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F06330D30D5084B11C001AD /* Cocoa.framework */; };
+		4B0613C45DED3262795C30BE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C6783B29BD66666AAB284C /* IOKit.framework */; };
+		57EE575D43CB5EB43A9A54B3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205627EE047552A769BE39A8 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FDE1A493D0803C05A2414C2 /* FPS_COUNTER.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "FPS_COUNTER.cpp"; path = "../../Shadow Mapping Tutorial/FPS_COUNTER.cpp"; sourceTree = "<group>"; };
+		364E4FD6245D5A2369F96D25 /* FPS_COUNTER.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FPS_COUNTER.h"; path = "../../Shadow Mapping Tutorial/FPS_COUNTER.h"; sourceTree = "<group>"; };
+		4201572E4820420654964685 /* GLee.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "GLee.c"; path = "../../Shadow Mapping Tutorial/GLee/GLee.c"; sourceTree = "<group>"; };
+		0295104E129E6DBA090D5737 /* GLee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GLee.h"; path = "../../Shadow Mapping Tutorial/GLee/GLee.h"; sourceTree = "<group>"; };
+		1E186BAB29F543E636202B96 /* COLOR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "COLOR.cpp"; path = "../../Shadow Mapping Tutorial/Maths/COLOR.cpp"; sourceTree = "<group>"; };
+		1703625A12FE67EF2D1B0590 /* COLOR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "COLOR.h"; path = "../../Shadow Mapping Tutorial/Maths/COLOR.h"; sourceTree = "<group>"; };
+		40585302356876767CC92980 /* MATRIX4X4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "MATRIX4X4.cpp"; path = "../../Shadow Mapping Tutorial/Maths/MATRIX4X4.cpp"; sourceTree = "<group>"; };
+		64A070EE3BDA1F1261492093 /* MATRIX4X4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MATRIX4X4.h"; path = "../../Shadow Mapping Tutorial/Maths/MATRIX4X4.h"; sourceTree = "<group>"; };
+		45F15F5E29E902B54D2D6864 /* Maths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Maths.h"; path = "../../Shadow Mapping Tutorial/Maths/Maths.h"; sourceTree = "<group>"; };
+		27E2075D0DB049563A8A48EF /* PLANE.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "PLANE.cpp"; path = "../../Shadow Mapping Tutorial/Maths/PLANE.cpp"; sourceTree = "<group>"; };
+		37D127A35D2F61662CD2327E /* PLANE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PLANE.h"; path = "../../Shadow Mapping Tutorial/Maths/PLANE.h"; sourceTree = "<group>"; };
+		14402AB1541156FF3AC96AB5 /* VECTOR2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "VECTOR2D.cpp"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR2D.cpp"; sourceTree = "<group>"; };
+		52AB117929C3556A34BD12E1 /* VECTOR2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VECTOR2D.h"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR2D.h"; sourceTree = "<group>"; };
+		03202DCD239C66726E633997 /* VECTOR3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "VECTOR3D.cpp"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR3D.cpp"; sourceTree = "<group>"; };
+		1E937DFE6E1C06237D8009B3 /* VECTOR3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VECTOR3D.h"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR3D.h"; sourceTree = "<group>"; };
+		6DC21CFD3A9404D15A294A29 /* VECTOR4D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "VECTOR4D.cpp"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR4D.cpp"; sourceTree = "<group>"; };
+		40F60497763E6D6C5377696F /* VECTOR4D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VECTOR4D.h"; path = "../../Shadow Mapping Tutorial/Maths/VECTOR4D.h"; sourceTree = "<group>"; };
+		76FB14095D275D187A9F1B1E /* TIMER.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "TIMER.cpp"; path = "../../Shadow Mapping Tutorial/TIMER.cpp"; sourceTree = "<group>"; };
+		76466FDE747F4D29699B63D0 /* TIMER.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TIMER.h"; path = "../../Shadow Mapping Tutorial/TIMER.h"; sourceTree = "<group>"; };
+		777D6463600C5887431F511B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../Shadow Mapping Tutorial/main.cpp"; sourceTree = "<group>"; };
+		195E7AC153A63847611273C9 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "main.h"; path = "../../Shadow Mapping Tutorial/main.h"; sourceTree = "<group>"; };
+		3A5400BC72756972696F29CE /* scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "scene.cpp"; path = "../../Shadow Mapping Tutorial/scene.cpp"; sourceTree = "<group>"; };
+		355A3E4A023524E953320F58 /* scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "scene.h"; path = "../../Shadow Mapping Tutorial/scene.h"; sourceTree = "<group>"; };
+		7AAC3DED358F552B330A7D7F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreFoundation.framework"; path = "System/Library/Frameworks/CoreFoundation.framework"; sourceTree = "SDKROOT"; };
+		283D78CA408D117F45185ED2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = "SDKROOT"; };
+		2E7A036302201F1B40240AC9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenGL.framework"; path = "System/Library/Frameworks/OpenGL.framework"; sourceTree = "SDKROOT"; };
+		678E31534E540D3C6828506E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "System/Library/Frameworks/AppKit.framework"; sourceTree = "SDKROOT"; };
+		560A65F63472533C3DD06427 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "GLUT.framework"; path = "System/Library/Frameworks/GLUT.framework"; sourceTree = "SDKROOT"; };
+		5F06330D30D5084B11C001AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cocoa.framework"; path = "System/Library/Frameworks/Cocoa.framework"; sourceTree = "SDKROOT"; };
+		25C6783B29BD66666AAB284C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "IOKit.framework"; path = "System/Library/Frameworks/IOKit.framework"; sourceTree = "SDKROOT"; };
+		205627EE047552A769BE39A8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = "SDKROOT"; };
+		2B8D547F0CDD28C67DC31C1B /* ShadowMapping */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "ShadowMapping"; path = "ShadowMapping"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B8326EA0D723BB059E02070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				269736FA766A697E63653525 /* CoreFoundation.framework in Frameworks */,
+				5E2017AB753D0C1A04340612 /* CoreGraphics.framework in Frameworks */,
+				31022E81440F72F41F2B6706 /* OpenGL.framework in Frameworks */,
+				79637CCA3DC7598E3260703F /* AppKit.framework in Frameworks */,
+				47655AB32A641BBF59CF3331 /* GLUT.framework in Frameworks */,
+				242050C825CE7FA27417255B /* Cocoa.framework in Frameworks */,
+				4B0613C45DED3262795C30BE /* IOKit.framework in Frameworks */,
+				57EE575D43CB5EB43A9A54B3 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		329C4A99182611D2754715DD /* ShadowMapping */ = {
+			isa = PBXGroup;
+			children = (
+				71CF7C4C71215BCA2D3C7305 /* Shadow Mapping Tutorial */,
+				6D7E1DC934CA757E2B771252 /* Frameworks */,
+				5F867D0379E066083F9105E7 /* Products */,
+			);
+			name = "ShadowMapping";
+			sourceTree = "<group>";
+		};
+		71CF7C4C71215BCA2D3C7305 /* Shadow Mapping Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				4FDE1A493D0803C05A2414C2 /* FPS_COUNTER.cpp */,
+				364E4FD6245D5A2369F96D25 /* FPS_COUNTER.h */,
+				18F328895A2547182BD36092 /* GLee */,
+				12951E3C2FBC06B9769E023D /* Maths */,
+				76FB14095D275D187A9F1B1E /* TIMER.cpp */,
+				76466FDE747F4D29699B63D0 /* TIMER.h */,
+				777D6463600C5887431F511B /* main.cpp */,
+				195E7AC153A63847611273C9 /* main.h */,
+				3A5400BC72756972696F29CE /* scene.cpp */,
+				355A3E4A023524E953320F58 /* scene.h */,
+			);
+			name = "Shadow Mapping Tutorial";
+			sourceTree = "<group>";
+		};
+		18F328895A2547182BD36092 /* GLee */ = {
+			isa = PBXGroup;
+			children = (
+				4201572E4820420654964685 /* GLee.c */,
+				0295104E129E6DBA090D5737 /* GLee.h */,
+			);
+			name = "GLee";
+			sourceTree = "<group>";
+		};
+		12951E3C2FBC06B9769E023D /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				1E186BAB29F543E636202B96 /* COLOR.cpp */,
+				1703625A12FE67EF2D1B0590 /* COLOR.h */,
+				40585302356876767CC92980 /* MATRIX4X4.cpp */,
+				64A070EE3BDA1F1261492093 /* MATRIX4X4.h */,
+				45F15F5E29E902B54D2D6864 /* Maths.h */,
+				27E2075D0DB049563A8A48EF /* PLANE.cpp */,
+				37D127A35D2F61662CD2327E /* PLANE.h */,
+				14402AB1541156FF3AC96AB5 /* VECTOR2D.cpp */,
+				52AB117929C3556A34BD12E1 /* VECTOR2D.h */,
+				03202DCD239C66726E633997 /* VECTOR3D.cpp */,
+				1E937DFE6E1C06237D8009B3 /* VECTOR3D.h */,
+				6DC21CFD3A9404D15A294A29 /* VECTOR4D.cpp */,
+				40F60497763E6D6C5377696F /* VECTOR4D.h */,
+			);
+			name = "Maths";
+			sourceTree = "<group>";
+		};
+		6D7E1DC934CA757E2B771252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC3DED358F552B330A7D7F /* CoreFoundation.framework */,
+				283D78CA408D117F45185ED2 /* CoreGraphics.framework */,
+				2E7A036302201F1B40240AC9 /* OpenGL.framework */,
+				678E31534E540D3C6828506E /* AppKit.framework */,
+				560A65F63472533C3DD06427 /* GLUT.framework */,
+				5F06330D30D5084B11C001AD /* Cocoa.framework */,
+				25C6783B29BD66666AAB284C /* IOKit.framework */,
+				205627EE047552A769BE39A8 /* CoreVideo.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		5F867D0379E066083F9105E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B8D547F0CDD28C67DC31C1B /* ShadowMapping */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51640C6A401C7174341E255A /* ShadowMapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D4D481968DC5718000A482B /* Build configuration list for PBXNativeTarget "ShadowMapping" */;
+			buildPhases = (
+				22086F2706243EE06B2A326F /* Resources */,
+				2DD71FE8542158F2208A74C5 /* Sources */,
+				4B8326EA0D723BB059E02070 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShadowMapping";
+			productInstallPath = "$(HOME)/bin";
+			productName = "ShadowMapping";
+			productReference = 2B8D547F0CDD28C67DC31C1B /* ShadowMapping */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "ShadowMapping" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 329C4A99182611D2754715DD /* ShadowMapping */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51640C6A401C7174341E255A /* ShadowMapping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22086F2706243EE06B2A326F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DD71FE8542158F2208A74C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1F4E02172F21165EBF5B24 /* FPS_COUNTER.cpp in Sources */,
+				6E811326362344CB27104666 /* GLee.c in Sources */,
+				06110389438A1E935F8C734A /* COLOR.cpp in Sources */,
+				51A739FE5B9743B140132910 /* MATRIX4X4.cpp in Sources */,
+				019A5C5A23D3266A1F3E2066 /* PLANE.cpp in Sources */,
+				1D7B3254377E54EE7D663671 /* VECTOR2D.cpp in Sources */,
+				12B2244C7CD24D2962556860 /* VECTOR3D.cpp in Sources */,
+				088A2AF60DF24682149350A2 /* VECTOR4D.cpp in Sources */,
+				010872770809276858D44A35 /* TIMER.cpp in Sources */,
+				46530C675764001041A34955 /* main.cpp in Sources */,
+				4C1E4DD971092F7D71906283 /* scene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30D44F2B19214F4F61154A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "ShadowMapping";
+			};
+			name = "Release";
+		};
+		4DC200252DEB5522375F6E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "ShadowMapping_d";
+			};
+			name = "Debug";
+		};
+		72657D495B3513867AA428DC /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../Bin/Xcode4-OSX/Native;
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "ShadowMapping_p";
+			};
+			name = "Profile";
+		};
+		12E9239252BF350837635DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/OSX",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Apple",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Unix",
+					"../../Shadow\\ Mapping\\ Tutorial",
+					"../../Shadow\\ Mapping\\ Tutorial/Extensions",
+					"../../Shadow\\ Mapping\\ Tutorial/Maths",
+					"../../Shadow\\ Mapping\\ Tutorial/GLee",
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Release/ShadowMapping";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Release";
+		};
+		5F540EDE22801F1E04F5759E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG",
+					"_DEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/OSX",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Apple",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Unix",
+					"../../Shadow\\ Mapping\\ Tutorial",
+					"../../Shadow\\ Mapping\\ Tutorial/Extensions",
+					"../../Shadow\\ Mapping\\ Tutorial/Maths",
+					"../../Shadow\\ Mapping\\ Tutorial/GLee",
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/ShadowMapping";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Debug";
+		};
+		116858E60EAB23CF0A8C741F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG",
+					"_NDEBUG",
+					"GLM_ENABLE_EXPERIMENTAL",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/OSX",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Apple",
+					"../../Shadow\\ Mapping\\ Tutorial/Platforms/Unix",
+					"../../Shadow\\ Mapping\\ Tutorial",
+					"../../Shadow\\ Mapping\\ Tutorial/Extensions",
+					"../../Shadow\\ Mapping\\ Tutorial/Maths",
+					"../../Shadow\\ Mapping\\ Tutorial/GLee",
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/ShadowMapping";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = "Profile";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D4D481968DC5718000A482B /* Build configuration list for PBXNativeTarget "ShadowMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D44F2B19214F4F61154A2A /* Release */,
+				4DC200252DEB5522375F6E2F /* Debug */,
+				72657D495B3513867AA428DC /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "ShadowMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E9239252BF350837635DDE /* Release */,
+				5F540EDE22801F1E04F5759E /* Debug */,
+				116858E60EAB23CF0A8C741F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045D06804B7E69F76E9F3FCD /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5197E41B56DAC65BA5766 /* shader.cpp */; };
+		09F75FF22A9760644F5A36DF /* text2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 381D03077FB62E0011A655F4 /* text2D.cpp */; };
+		12C8239D57074D7633010A8F /* uvtemplate.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 246B27A94BDF29D30CC96D55 /* uvtemplate.bmp */; };
+		145834230705070C57EF0E75 /* tangentspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21914B745E6539B079CE45A4 /* tangentspace.cpp */; };
+		18A91AE479B15D7F77640147 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274B5B262543019052055AE5 /* IOKit.framework */; };
+		24DC1D013A060F87022358CF /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF0CE325606F866B5254E3 /* controls.cpp */; };
+		364667337B992B994C1638E6 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B1B266FD330C16EC83E70 /* texture.cpp */; };
+		3C6729A53142243D3A966FE7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F825D586978578E389555FC /* GLUT.framework */; };
+		41231BD55FB25D6000916DA6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66562CE3731D7A860A611596 /* CoreVideo.framework */; };
+		414C6B046B7C3E0343B32B8B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E627F40631E6B066BEF53BF /* OpenGL.framework */; };
+		45251273444E682A43B532B8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C270BB29DD2282339C6073 /* AppKit.framework */; };
+		539F10F353607B4845536132 /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C110717383B3BB5787D1154 /* objloader.cpp */; };
+		6195305D2FE020F47CE3475A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598342C131E7470A18343D56 /* Cocoa.framework */; };
+		6F806A740A6248C4524C2B3B /* libMath_d.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D249A32DEA1D020396094C /* libMath_d.dylib */; };
+		717E245A15D84322019044A1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E44E29693B59E8295D2A65 /* CoreFoundation.framework */; };
+		74A70E9E5BE47E3C3F0A6977 /* vboindexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DF710F25313D8522482C20 /* vboindexer.cpp */; };
+		758A4E1D044D6D73229B7D59 /* tutorial05.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 597860A9290A71A0536948FB /* tutorial05.cpp */; };
+		7674716B4315283A10900936 /* quaternion_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374C6EDA383C00AF1E916CEF /* quaternion_utils.cpp */; };
+		7DD40063170E32707A8C1D58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9243862CF0421F2BA3173A /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		309709E209603A120282358F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A0872CC462A30904E2B160E /* Math.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 46EE687012DE64D4242F4618;
+			remoteInfo = libMath.dylib;
+		};
+		39CC41A56E220AE4297167C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A0872CC462A30904E2B160E /* Math.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11800481581624892E603DEB;
+			remoteInfo = libMath.dylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A543A8048CA06772EAA212A /* vboindexer.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = vboindexer.hpp; path = ../../Common/vboindexer.hpp; sourceTree = "<group>"; };
+		0C980C101D451DEF683577D6 /* TextureFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = TextureFragmentShader.fragmentshader; path = ../../L5/TextureFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		0E627F40631E6B066BEF53BF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		0EC2746C0A1224063DEE74A1 /* uvtemplate.DDS */ = {isa = PBXFileReference; lastKnownFileType = text; name = uvtemplate.DDS; path = ../../L5/uvtemplate.DDS; sourceTree = "<group>"; };
+		2078289A175A3BF0207E4804 /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = texture.hpp; path = ../../Common/texture.hpp; sourceTree = "<group>"; };
+		21914B745E6539B079CE45A4 /* tangentspace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tangentspace.cpp; path = ../../Common/tangentspace.cpp; sourceTree = "<group>"; };
+		22DF710F25313D8522482C20 /* vboindexer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = vboindexer.cpp; path = ../../Common/vboindexer.cpp; sourceTree = "<group>"; };
+		23AD4EFE1DA14D364F0D0ABA /* L5_d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = L5_d; sourceTree = BUILT_PRODUCTS_DIR; };
+		246B27A94BDF29D30CC96D55 /* uvtemplate.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = uvtemplate.bmp; path = ../../L5/uvtemplate.bmp; sourceTree = "<group>"; };
+		274B5B262543019052055AE5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		28CD3FDE3B4954E3180912FB /* tangentspace.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = tangentspace.hpp; path = ../../Common/tangentspace.hpp; sourceTree = "<group>"; };
+		2B8B60E36CDE772200B05786 /* objloader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = objloader.hpp; path = ../../Common/objloader.hpp; sourceTree = "<group>"; };
+		3186037B179B56251A934F06 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = shader.hpp; path = ../../Common/shader.hpp; sourceTree = "<group>"; };
+		374C6EDA383C00AF1E916CEF /* quaternion_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = quaternion_utils.cpp; path = ../../Common/quaternion_utils.cpp; sourceTree = "<group>"; };
+		381D03077FB62E0011A655F4 /* text2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = text2D.cpp; path = ../../Common/text2D.cpp; sourceTree = "<group>"; };
+		399D16960E0C4FB527A96BA1 /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = controls.hpp; path = ../../Common/controls.hpp; sourceTree = "<group>"; };
+		3C110717383B3BB5787D1154 /* objloader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objloader.cpp; path = ../../Common/objloader.cpp; sourceTree = "<group>"; };
+		3E95479D26DE5B1544C3721F /* quaternion_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = quaternion_utils.hpp; path = ../../Common/quaternion_utils.hpp; sourceTree = "<group>"; };
+		41811EE233072FA2571F66BC /* TransformVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; name = TransformVertexShader.vertexshader; path = ../../L5/TransformVertexShader.vertexshader; sourceTree = "<group>"; };
+		4A0B1B266FD330C16EC83E70 /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../Common/texture.cpp; sourceTree = "<group>"; };
+		56E44E29693B59E8295D2A65 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		597860A9290A71A0536948FB /* tutorial05.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tutorial05.cpp; path = ../../L5/tutorial05.cpp; sourceTree = "<group>"; };
+		598342C131E7470A18343D56 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5A9243862CF0421F2BA3173A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5CAF0CE325606F866B5254E3 /* controls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = controls.cpp; path = ../../Common/controls.cpp; sourceTree = "<group>"; };
+		5F825D586978578E389555FC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		65FC3DFF551E26796E6D61F5 /* uvtemplate.tga */ = {isa = PBXFileReference; lastKnownFileType = text; name = uvtemplate.tga; path = ../../L5/uvtemplate.tga; sourceTree = "<group>"; };
+		66562CE3731D7A860A611596 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		69C270BB29DD2282339C6073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6A0872CC462A30904E2B160E /* Math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Math.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7C285B811B9E49AA64302CF5 /* text2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = text2D.hpp; path = ../../Common/text2D.hpp; sourceTree = "<group>"; };
+		7FC5197E41B56DAC65BA5766 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../Common/shader.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A264DB557247F0C1AA77C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717E245A15D84322019044A1 /* CoreFoundation.framework in Frameworks */,
+				7DD40063170E32707A8C1D58 /* CoreGraphics.framework in Frameworks */,
+				414C6B046B7C3E0343B32B8B /* OpenGL.framework in Frameworks */,
+				45251273444E682A43B532B8 /* AppKit.framework in Frameworks */,
+				3C6729A53142243D3A966FE7 /* GLUT.framework in Frameworks */,
+				6195305D2FE020F47CE3475A /* Cocoa.framework in Frameworks */,
+				18A91AE479B15D7F77640147 /* IOKit.framework in Frameworks */,
+				41231BD55FB25D6000916DA6 /* CoreVideo.framework in Frameworks */,
+				6F806A740A6248C4524C2B3B /* libMath_d.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D37BB33F8E29F60CED545F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5CAF0CE325606F866B5254E3 /* controls.cpp */,
+				399D16960E0C4FB527A96BA1 /* controls.hpp */,
+				3C110717383B3BB5787D1154 /* objloader.cpp */,
+				2B8B60E36CDE772200B05786 /* objloader.hpp */,
+				374C6EDA383C00AF1E916CEF /* quaternion_utils.cpp */,
+				3E95479D26DE5B1544C3721F /* quaternion_utils.hpp */,
+				7FC5197E41B56DAC65BA5766 /* shader.cpp */,
+				3186037B179B56251A934F06 /* shader.hpp */,
+				21914B745E6539B079CE45A4 /* tangentspace.cpp */,
+				28CD3FDE3B4954E3180912FB /* tangentspace.hpp */,
+				381D03077FB62E0011A655F4 /* text2D.cpp */,
+				7C285B811B9E49AA64302CF5 /* text2D.hpp */,
+				4A0B1B266FD330C16EC83E70 /* texture.cpp */,
+				2078289A175A3BF0207E4804 /* texture.hpp */,
+				22DF710F25313D8522482C20 /* vboindexer.cpp */,
+				0A543A8048CA06772EAA212A /* vboindexer.hpp */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		1245257829FF37656D0977CA /* L5 */ = {
+			isa = PBXGroup;
+			children = (
+				08D37BB33F8E29F60CED545F /* Common */,
+				5A97113422EF0BF30E834F6F /* L5 */,
+				3DAC799220F22A912772578E /* Frameworks */,
+				449F474D142268052E2B1D5B /* Products */,
+				7EE97A1D0CEE686218802893 /* Projects */,
+			);
+			name = L5;
+			sourceTree = "<group>";
+		};
+		3DAC799220F22A912772578E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E44E29693B59E8295D2A65 /* CoreFoundation.framework */,
+				5A9243862CF0421F2BA3173A /* CoreGraphics.framework */,
+				0E627F40631E6B066BEF53BF /* OpenGL.framework */,
+				69C270BB29DD2282339C6073 /* AppKit.framework */,
+				5F825D586978578E389555FC /* GLUT.framework */,
+				598342C131E7470A18343D56 /* Cocoa.framework */,
+				274B5B262543019052055AE5 /* IOKit.framework */,
+				66562CE3731D7A860A611596 /* CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449F474D142268052E2B1D5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23AD4EFE1DA14D364F0D0ABA /* L5_d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A97113422EF0BF30E834F6F /* L5 */ = {
+			isa = PBXGroup;
+			children = (
+				0C980C101D451DEF683577D6 /* TextureFragmentShader.fragmentshader */,
+				41811EE233072FA2571F66BC /* TransformVertexShader.vertexshader */,
+				597860A9290A71A0536948FB /* tutorial05.cpp */,
+				0EC2746C0A1224063DEE74A1 /* uvtemplate.DDS */,
+				246B27A94BDF29D30CC96D55 /* uvtemplate.bmp */,
+				65FC3DFF551E26796E6D61F5 /* uvtemplate.tga */,
+			);
+			name = L5;
+			sourceTree = "<group>";
+		};
+		5E2A33FF371B72B020FF7D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78D249A32DEA1D020396094C /* libMath_d.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EE97A1D0CEE686218802893 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				6A0872CC462A30904E2B160E /* Math.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		490C43760CBE3B6C64195B9D /* L5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB32330348528D6071F10C8 /* Build configuration list for PBXNativeTarget "L5" */;
+			buildPhases = (
+				57614670696F357E1F7E20B3 /* Resources */,
+				7A23154C3DF551D05DA06B3D /* Sources */,
+				0A264DB557247F0C1AA77C1C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CCF39F678AE797435F022EB /* PBXTargetDependency */,
+			);
+			name = L5;
+			productInstallPath = "$(HOME)/bin";
+			productName = L5;
+			productReference = 23AD4EFE1DA14D364F0D0ABA /* L5_d */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L5" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1245257829FF37656D0977CA /* L5 */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5E2A33FF371B72B020FF7D81 /* Products */;
+					ProjectRef = 6A0872CC462A30904E2B160E /* Math.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				490C43760CBE3B6C64195B9D /* L5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		78D249A32DEA1D020396094C /* libMath_d.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libMath_d.dylib;
+			remoteRef = 39CC41A56E220AE4297167C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57614670696F357E1F7E20B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C8239D57074D7633010A8F /* uvtemplate.bmp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A23154C3DF551D05DA06B3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC1D013A060F87022358CF /* controls.cpp in Sources */,
+				539F10F353607B4845536132 /* objloader.cpp in Sources */,
+				7674716B4315283A10900936 /* quaternion_utils.cpp in Sources */,
+				045D06804B7E69F76E9F3FCD /* shader.cpp in Sources */,
+				145834230705070C57EF0E75 /* tangentspace.cpp in Sources */,
+				09F75FF22A9760644F5A36DF /* text2D.cpp in Sources */,
+				364667337B992B994C1638E6 /* texture.cpp in Sources */,
+				74A70E9E5BE47E3C3F0A6977 /* vboindexer.cpp in Sources */,
+				758A4E1D044D6D73229B7D59 /* tutorial05.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CCF39F678AE797435F022EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libMath.dylib;
+			targetProxy = 309709E209603A120282358F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EC063EC455E5FA97A233786 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Platforms/OSX,
+					../../Platforms/Apple,
+					../../Platforms/Unix,
+					../..,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Profile/L5";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Profile;
+		};
+		289B6E49397A383B57012C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = L5;
+			};
+			name = Release;
+		};
+		2C043DAD3FF375932E577824 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = L5_p;
+			};
+			name = Profile;
+		};
+		30B16F480513250576E74D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Platforms/OSX,
+					../../Platforms/Apple,
+					../../Platforms/Unix,
+					../..,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Release/L5";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Release;
+		};
+		41B5619257E71B820A7A584B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse4.2;
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+					GLM_ENABLE_EXPERIMENTAL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Common/Platforms/OSX,
+					../../Common/Platforms/Apple,
+					../../Common/Platforms/Unix,
+					../../Common,
+					../../Platforms/OSX,
+					../../Platforms/Apple,
+					../../Platforms/Unix,
+					../..,
+					"../../External/glew-2.1.0/include",
+					"../../External/glfw-3.2.1/include",
+					"../../External/glm-0.9.9.3",
+					"../../External/assimp-4.0.1/include",
+					"../../External/assimp-4.0.1/build/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../External/Lib/Xcode4-OSX/Native",
+					"../../External/glew-2.1.0/lib",
+					"../../External/glfw-3.2.1/build/src/Debug",
+					"../../External/glm-0.9.9.3/build/glm/Debug",
+					"../../External/assimp-4.0.1/build/code/Debug",
+					"../../External/assimp-4.0.1/build/contrib/irrXML/Debug",
+					"../../External/assimp-4.0.1/build/contrib/zlib/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../Temp/Xcode4-OSX/Debug/L5";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-private-field",
+					"-Wno-sign-compare",
+					"-Wno-reorder",
+					"-Wno-unreachable-code",
+					"-Wno-deprecated-declarations",
+					"-Wno-invalid-offsetof",
+					"-Wno-unused-function",
+					"-Wno-missing-field-initializers",
+					"-Wno-bitwise-op-parentheses",
+					"-Wno-sentinel",
+					"-Wno-unused-value",
+					"-Wno-switch",
+				);
+				OTHER_LDFLAGS = (
+					"-lGLEW",
+					"-lglfw3",
+					"-lglm_static",
+					"-lassimp",
+					"-lIrrXML",
+					"-lzlibstatic",
+				);
+				SYMROOT = "../../Bin/Xcode4-OSX/Native";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
+			};
+			name = Debug;
+		};
+		4B0F5C5D1822792C5E430C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Bin/Xcode4-OSX/Native";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = L5_d;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "L5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B16F480513250576E74D75 /* Release */,
+				41B5619257E71B820A7A584B /* Debug */,
+				0EC063EC455E5FA97A233786 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB32330348528D6071F10C8 /* Build configuration list for PBXNativeTarget "L5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				289B6E49397A383B57012C4B /* Release */,
+				4B0F5C5D1822792C5E430C36 /* Debug */,
+				2C043DAD3FF375932E577824 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -248,7 +248,7 @@ function SetOpenGL()
 		links { "CoreFoundation.framework", "CoreGraphics.framework" }
 
 		if IsTargetOSX() then
-			links { "OpenGL.framework", "AppKit.framework" }
+			links { "OpenGL.framework", "AppKit.framework", "GLUT.framework" }
 		else
 			links { "OpenGLES.framework", "UIKit.framework", "QuartzCore.framework" }
 		end
@@ -681,6 +681,31 @@ project "Math"
 
 	configuration {}
 
+project "Soil"
+	uuid "EAA6F3CD-712B-4671-AEDB-7D56DDF0DBF3"
+	
+	if IsTargetLinux() then
+		links { "rt", "uuid" }
+	end
+
+	if IsTargetOSX() then
+		links { "CoreServices.framework" }
+	end
+
+	AddFiles    ( "../Soil/src", nil )
+	AddIncludes { "../Soil/include" }
+	excludes ("../Soil/src/original/**")
+
+	SetTargetDirectories()
+	SetOpenGL()
+
+	configuration { "SharedLib" }
+		defines { "_SOIL_DLL" }
+
+	configuration { "StaticLib" }
+		defines { "_SOIL_LIB" }
+
+	configuration {}
 
 project "RayTracer"
 	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B31"
@@ -715,6 +740,41 @@ project "Test"
 
 	SetTargetDirectories()
 	SetOpenGL()
+
+project "Filter"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B11"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../Filter",  nil)
+	AddIncludes { "../Math" }
+
+	SetTargetDirectories()
+	SetOpenGL()
+
+project "ShadowMapping"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B31"
+	kind  "ConsoleApp"
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../Shadow Mapping Tutorial", nil )
+	excludes 	( "../Shadow Mapping Tutorial/Extensions/*")
+
+	AddIncludes { "../Shadow Mapping Tutorial", "../Shadow Mapping Tutorial/*"  }
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
 
 project "SR"
 	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B32"
@@ -798,7 +858,7 @@ project "L3"
 
 	AddFiles    ( "../L3", nil )
 	AddFiles    ( "../Common", nil )
-	files { "../L3/StandardShading.*" }
+	files { "../L3/*shader" }
 
 	AddIncludes { "../Common"}
 
@@ -808,4 +868,95 @@ project "L3"
 	SetUpGlfw()
 	SetUpGlm()
 	SetUpAssimp()
+
+project "L4"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34C36"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L4", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../L4/*shader",  "../L4/*.obj" }
+
+	AddIncludes { "../Common"}
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+
+project "L5"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34C37"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L5", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../L5/*shader",  "../L5/uv*" }
+
+	AddIncludes { "../Common", ".."}
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+
+project "L16"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B36"
+	kind  "ConsoleApp"
+	links { "Math" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../L16", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../L16/**shader" }
+
+	AddIncludes { "../Common"}
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+
+project "projective_texture"
+	uuid  "13A070B9-2D92-4512-8296-1ECEDAB34B37"
+	kind  "ConsoleApp"
+	links { "Math" }
+	links { "Soil" }
+
+	if IsTargetLinux() then
+		links { "dl" }
+	end
+
+	AddFiles    ( "../projective_texture", nil )
+	AddFiles    ( "../Common", nil )
+	files { "../projective_texture/*.jpg" }
+
+	AddIncludes { "../Common"}
+	AddIncludes { "../Soil/include" }
+
+	SetTargetDirectories()
+	SetOpenGL()
+	SetUpGlew()
+	SetUpGlfw()
+	SetUpGlm()
+	SetUpAssimp()
+
 

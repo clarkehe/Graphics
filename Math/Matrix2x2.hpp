@@ -27,6 +27,7 @@ public:
         };
         
         double m[4];
+        double mm[2][2];
     };
     
 public:
