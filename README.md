@@ -14,7 +14,9 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 [Mathonline](http://mathonline.wikidot.com/vector-cross-product)         
 [Vector Cross Product](http://people.sju.edu/~pklingsb/crossproduct.pdf)             
 [数学笔记](http://math.tianpeng.org/)                     
-[Rotations and Orientation](https://www.cs.utexas.edu/~theshark/courses/cs354/lectures/cs354-14.pdf)           
+[Rotations and Orientation](https://www.cs.utexas.edu/~theshark/courses/cs354/lectures/cs354-14.pdf)    
+[Understanding Euler Angles](http://www.chrobotics.com/library/understanding-euler-angles)        
+[Gimbal Lock](http://www.math.umd.edu/~immortal/MATH431/lecturenotes/ch_gimballock.pdf)       
 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)         
 
 
