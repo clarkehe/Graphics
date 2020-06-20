@@ -18,6 +18,7 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 [Understanding Euler Angles](http://www.chrobotics.com/library/understanding-euler-angles)        
 [Gimbal Lock](http://www.math.umd.edu/~immortal/MATH431/lecturenotes/ch_gimballock.pdf)       
 [OpenGL Transformation](http://www.songho.ca/opengl/gl_transform.html)         
+[投影矩阵推导](http://www.songho.ca/opengl/gl_projectionmatrix.html)                    
 
 
 **多线程、并发**   
