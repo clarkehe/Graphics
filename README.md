@@ -37,3 +37,7 @@ SoftRasterization是一个完整的VS2010工程，通过CPU模拟GPU的渲染管
 **Z-fighting**        
 [Depth testing](https://learnopengl.com/Advanced-OpenGL/Depth-testing)     
 [Alternatives to Using Z-Bias to Fix Z-Fighting Issues](https://software.intel.com/en-us/articles/alternatives-to-using-z-bias-to-fix-z-fighting-issues)          
+
+
+**渲染相关**           
+[实时阴影技术总结](https://xiaoiver.github.io/coding/2018/09/27/%E5%AE%9E%E6%97%B6%E9%98%B4%E5%BD%B1%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93.html)                     
